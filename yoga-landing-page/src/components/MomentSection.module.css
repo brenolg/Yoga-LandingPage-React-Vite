@@ -1,0 +1,44 @@
+.moment_section {
+  color: var(--C4);
+  margin: auto;
+  margin-bottom: 12rem;
+  width: 112rem;
+}
+
+.title {
+  margin-bottom: 3.7rem;
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 1.6rem;
+  height: 136px;
+  text-align: center;
+  width: 328px;
+}
+
+.sub_title {
+  background: var(--C2);
+  border-radius: var(--radius-radius-full);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.img {
+  border-bottom: 16px solid var(--C2);
+  border-radius: 333px 333px 0 0;
+  border-right: 16px solid var(--C2);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}

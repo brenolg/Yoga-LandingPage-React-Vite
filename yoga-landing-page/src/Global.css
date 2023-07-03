@@ -1,0 +1,207 @@
+@font-face {
+  font-family: ivy;
+  src: url("./fonts/IvyMode-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: syne;
+  src: url("./fonts/Syne-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --C1: #efefef;
+
+  --C2: #c9d3d0;
+
+  --C3: #8ca09a;
+
+  --C4: #123939;
+
+  --C2-50p: rgba(201, 211, 208, 0.5);
+
+  --spacing-s-1: 8px;
+
+  --spacing-s-2: 10px;
+
+  /* diminui por causa das bordas do botao */
+
+  --spacing-spacing-xs: 0.4rem;
+
+  --spacing-spacing-md: 1.6rem;
+
+  --radius-radius-full: 36rem;
+
+  --radius-radius-rounded: 1.6rem;
+
+  --spacing-spacing-none: 0;
+}
+
+.H1 {
+  font-family: ivy , syne , sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 60px;
+}
+
+.H2 {
+  font-family: ivy , syne , sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.125px;
+  line-height: 56px;
+}
+
+.H3 {
+  font-family: ivy , syne , sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  line-height: 40px;
+}
+
+.H4 {
+  font-family: ivy , syne , sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 32px;
+}
+
+.H5 {
+  font-family: ivy , syne , sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.84px;
+  line-height: 24px;
+}
+
+.text-3xl {
+  font-family: syne , ivy , sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.text-xl {
+  font-family: syne , ivy , sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.55px;
+  line-height: 24px;
+}
+
+.text-lg {
+  font-family: syne , ivy , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.text-md {
+  font-family: syne , ivy , sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  line-height: 24px;
+}
+
+.text-sm {
+  font-family: syne , ivy , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.text-xs {
+  font-family: syne , ivy , sans-serif;
+  font-size: 13.5px;
+  font-style: normal;
+  font-weight: 550;
+  letter-spacing: 0.405px;
+  line-height: 24px;
+}
+
+.Button {
+  color: var(--C1);
+  font-family: Arial , sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #e3e6e5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+button:hover {
+  opacity: 0.96;
+  transition: all 0.3s linear;
+}
+
+button:active {
+  transform: scale(0.99);
+  transition: all 0.3s linear;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+::-webkit-scrollbar {
+  background: inherit;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--C3);
+  border-radius: 30rem;
+  height: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100%;
+}
+

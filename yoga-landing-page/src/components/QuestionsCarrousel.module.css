@@ -1,0 +1,31 @@
+.question_section {
+  flex-shrink: 0;
+  height: 104px;
+  margin: auto;
+  margin-bottom: 10rem;
+  position: relative;
+  text-align: center;
+  width: 1128px;
+}
+
+.question_section:after {
+  background: var(--C2);
+  border-radius: 1180px;
+  content: "";
+  filter: blur(27.5px);
+  height: 104px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1128px;
+  z-index: -1;
+}
+
+.question_text {
+  align-items: center;
+  color: rgba(18, 57, 57, 0.8);
+  display: flex;
+  flex-shrink: 0;
+  margin: auto;
+  width: 70%;
+}
