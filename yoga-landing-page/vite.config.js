@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/yoga',
+  base: '/Yoga-LandingPage-React-Vite',
   plugins: [react()],
 })
