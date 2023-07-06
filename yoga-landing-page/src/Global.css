@@ -75,7 +75,7 @@
 }
 
 .H2 {
-  font-family: ivy , syne, sans-serif;
+  font-family: ivy, syne, sans-serif;
   font-size: 45px;
   font-style: normal;
   font-weight: 300;
@@ -84,7 +84,7 @@
 }
 
 .H3 {
-  font-family: ivy , syne, sans-serif;
+  font-family: ivy, syne, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 300;
@@ -102,7 +102,7 @@
 }
 
 .H5 {
-  font-family: ivy , syne, sans-serif;
+  font-family: ivy, syne, sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
@@ -111,10 +111,10 @@
 }
 
 .text-3xl {
-  font-family: syne , ivy, sans-serif;
+  font-family: syne, ivy, sans-serif;
   font-size: 35px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 48px;
 }
 
@@ -122,7 +122,7 @@
   font-family: syne , ivy, sans-serif;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 550;
   letter-spacing: 0.55px;
   line-height: 24px;
 }
@@ -131,7 +131,7 @@
   font-family: syne, ivy, sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 550;
   line-height: 32px;
 }
 
@@ -139,7 +139,7 @@
   font-family: syne, sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 550;
   letter-spacing: 0.45px;
   line-height: 24px;
 }
