@@ -1,7 +1,11 @@
 footer {
   background: var(--C2);
   color: var(--C4);
-  padding: 2.5rem 0;
+  position: absolute;
+  height: var(--footer-height);
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .main_container {

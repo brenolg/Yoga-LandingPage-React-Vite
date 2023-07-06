@@ -1,6 +1,5 @@
 import "./Global.css";
 import { AccessSection } from "./components/AccessSection";
-import { CommentsSection } from "./components/CommentsSection";
 import { DescriptionSection } from "./components/DescriptionSection";
 import { DoubtsSection } from "./components/DoubtsSection";
 import { Footer } from "./components/Footer";
@@ -10,8 +9,10 @@ import { MomentSection } from "./components/MomentSection";
 import { PillarsSection } from "./components/PillarsSection";
 import { PricesSection } from "./components/PricesSection";
 import { QuestionsCarrousel } from "./components/QuestionsCarrousel";
+import { ReviewsCarrousel } from "./components/ReviewsCarrousel";
 
 function App() {
+  
   return (
     <>
       <Header />
@@ -20,7 +21,7 @@ function App() {
       <PillarsSection />
       <AccessSection />
       <MomentSection />
-      <CommentsSection />
+      <ReviewsCarrousel />
       <PricesSection />
       <DoubtsSection />
       <DescriptionSection/>

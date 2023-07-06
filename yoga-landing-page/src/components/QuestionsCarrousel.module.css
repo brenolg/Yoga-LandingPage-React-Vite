@@ -2,7 +2,8 @@
   flex-shrink: 0;
   height: 104px;
   margin: auto;
-  margin-bottom: 10rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   position: relative;
   text-align: center;
   width: 1128px;
@@ -28,4 +29,33 @@
   flex-shrink: 0;
   margin: auto;
   width: 70%;
+  height: 100%;
+}
+
+.translate {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  90% {
+    opacity: 1;
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.question_text {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
 }

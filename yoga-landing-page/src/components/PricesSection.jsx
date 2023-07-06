@@ -2,7 +2,7 @@ import styles from "./PricesSection.module.css";
 
 export function PricesSection() {
   return (
-    <section className={ styles.access_section_background}>
+    <section className={ styles.access_section_background} id="prices">
       <div className={styles.prices_section}>
       <h4 className={`text-3xl ${styles.title}`}>
       Planos e preços:
@@ -10,10 +10,15 @@ export function PricesSection() {
 
       <div className={styles.main_container}>
         
-        <div className={styles.text_container}> 
+        <div className={styles.text_container}
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+        data-aos-delay="300"        
+        > 
           <div className={styles.sub_container}>
             <div className={styles.title_container}>
-              <h1 className={styles.h1}>IClub</h1> <h4 className="text-xl">anual</h4> 
+              <h1 className={styles.h1}>iClub</h1> <h4 className="text-xl">anual</h4> 
             </div>
 
             <h4 className={styles.price} >R$ 39,90/mês</h4>
@@ -30,14 +35,24 @@ export function PricesSection() {
           </div>
 
           <button className={`Button ${styles.button}`}> 
+          <a 
+          href="https://pay.hotmart.com/J71174272X?off=sghdkt84&bid=1688599677773"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
           quero começar
+          </a>
           </button>
         </div>
 
-        <div className={`${styles.text_container} ${styles.premium}`}> 
+        <div className={`${styles.text_container} ${styles.premium}`}
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+        > 
           <div className={styles.sub_container}>
             <div className={styles.title_container}>
-              <h1 className={styles.h1}>IClub PRO</h1> <h4 className="text-xl">(anual)</h4> 
+              <h1 className={styles.h1}>iClub Pro</h1> <h4 className="text-xl">(anual)</h4> 
             </div>
 
             <h4 className={styles.price} >R$ 160,00/mês</h4>
@@ -54,15 +69,26 @@ export function PricesSection() {
             </ul>
           </div>
 
-          <button className={`Button ${styles.button}`}> 
+          <button className={`Button ${styles.button}`}>
+          <a 
+          href="https://pay.hotmart.com/J71174272X?off=yxz27hdf&bid=1688599747445"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
           quero começar
+          </a> 
           </button>
         </div>
 
-        <div className={styles.text_container}> 
+        <div className={styles.text_container}
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+        data-aos-delay="300"          
+        > 
           <div className={styles.sub_container}>
             <div className={styles.title_container}>
-              <h1 className={styles.h1}>IClub</h1> <h4 className="text-xl">mensal</h4> 
+              <h1 className={styles.h1}>iClub</h1> <h4 className="text-xl">mensal</h4> 
             </div>
 
             <h4 className={styles.price} >R$ 69,90/mês</h4>
@@ -79,7 +105,13 @@ export function PricesSection() {
           </div>
 
           <button className={`Button ${styles.button}`}> 
+          <a 
+          href="https://pay.hotmart.com/J71174272X?off=4o7gr397"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
           quero começar
+          </a>
           </button>
         </div>
 

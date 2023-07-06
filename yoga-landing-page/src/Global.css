@@ -2,10 +2,30 @@
   font-family: ivy;
   src: url("./fonts/IvyMode-Regular.ttf") format("truetype");
 }
-
 @font-face {
   font-family: syne;
-  src: url("./fonts/Syne-Regular.ttf") format("truetype");
+  src: url("./fonts/IvyMode-Regular.ttf") format("truetype");
+  font-weight: 100 500;
+}
+@font-face {
+  font-family: syne;
+  src: url("fonts/Syne-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: syne;
+  src: url("fonts/Syne-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: syne;
+  src: url("fonts/Syne-Bold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: syne;
+  src: url("fonts/Syne-ExtraBold.ttf") format("truetype");
+  font-weight: 900 950;
 }
 
 * {
@@ -32,8 +52,6 @@
 
   --spacing-s-2: 10px;
 
-  /* diminui por causa das bordas do botao */
-
   --spacing-spacing-xs: 0.4rem;
 
   --spacing-spacing-md: 1.6rem;
@@ -43,13 +61,15 @@
   --radius-radius-rounded: 1.6rem;
 
   --spacing-spacing-none: 0;
+
+  --footer-height: 12rem;
 }
 
 .H1 {
   font-family: ivy , syne , sans-serif;
   font-size: 50px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 5px;
   line-height: 60px;
 }
@@ -58,7 +78,7 @@
   font-family: ivy , syne , sans-serif;
   font-size: 45px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1.125px;
   line-height: 56px;
 }
@@ -67,16 +87,16 @@
   font-family: ivy , syne , sans-serif;
   font-size: 36px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1.8px;
   line-height: 40px;
 }
 
 .H4 {
   font-family: ivy , syne , sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 1.2px;
   line-height: 32px;
 }
@@ -85,7 +105,7 @@
   font-family: ivy , syne , sans-serif;
   font-size: 21px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.84px;
   line-height: 24px;
 }
@@ -94,7 +114,7 @@
   font-family: syne , ivy , sans-serif;
   font-size: 35px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 48px;
 }
 
@@ -152,11 +172,21 @@
   text-transform: uppercase;
 }
 
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 body {
   background-color: #e3e6e5;
   min-height: 100vh;
   overflow-x: hidden;
   width: 100vw;
+  position: relative;
+  padding-bottom: var(--footer-height);
 }
 
 button {

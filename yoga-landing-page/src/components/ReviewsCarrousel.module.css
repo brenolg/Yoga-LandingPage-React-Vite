@@ -1,8 +1,8 @@
-.access_section {
+.comment_section {
   color: var(--C4);
   height: 100%;
   margin: auto;
-  margin-bottom: 6rem;
+  padding-top: 6rem;
 }
 
 .title {
@@ -23,7 +23,8 @@
   display: flex;
   height: 560.25px;
   justify-content: space-around;
-  width: 100vw;
+  width: 100vw;  
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button {
@@ -57,6 +58,7 @@
   height: 456px;
   justify-content: space-evenly;
   width: 740px;
+  transition: all 0.4s ease-in-out;
 }
 
 .review {
@@ -68,6 +70,13 @@
   padding: 10px 18px;
   text-align: justify;
   width: 712px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review p {
+  margin-bottom: 0.5em;
 }
 
 .reviewer_img {

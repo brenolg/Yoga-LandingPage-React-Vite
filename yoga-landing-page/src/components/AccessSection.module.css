@@ -11,7 +11,7 @@
 }
 
 .title {
-  padding: 3.7rem;
+  padding: 3.7rem  0;
 }
 
 .main_container {
@@ -32,4 +32,9 @@
   padding: 10px 13px;
   text-align: center;
   width: 265px;
+}
+
+.sub_container img {
+  border-radius: 16px;
+  width: 100%;
 }

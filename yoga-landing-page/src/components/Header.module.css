@@ -2,6 +2,10 @@ header {
   background: var(--C2);
   height: 9.6rem;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .headerNav {

@@ -1,18 +1,18 @@
 .access_section_background {
   background: var(--C2-50p);
-  margin-bottom: 6rem;
+  padding-top: 6em;
+  padding-bottom: 6rem;
 }
 
 .prices_section {
   color: var(--C4);
   margin: auto;
   margin-bottom: 6rem;
-  padding-bottom: 6rem;
   width: 112rem;
 }
 
 .title {
-  padding: 3.7rem 0;
+  padding-bottom: 3.7rem;
 }
 
 .main_container {
@@ -40,11 +40,15 @@
 
 
 .title_container {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   gap: 10px;
   justify-content: center;
   padding: 16px;
+}
+
+.title_container h4 {
+  padding-bottom: 7px;
 }
 
 .h1 {
@@ -53,7 +57,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 5px;
-  line-height: 60px;
 }
 
 .price {

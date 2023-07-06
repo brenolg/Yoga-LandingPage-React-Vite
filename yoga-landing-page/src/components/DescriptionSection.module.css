@@ -28,6 +28,10 @@
   width: 690px;
 }
 
+.text_container p {
+  margin-bottom: 1rem;
+}
+
 .contact_container {
   color: var(--C4);
   display: flex;
@@ -42,7 +46,7 @@
   border: 3px solid transparent;
   border-radius: var(--radius-radius-full);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  padding: var(--spacing-s-2);
+  padding: 1rem 2rem;
 }
 
 .button:hover {

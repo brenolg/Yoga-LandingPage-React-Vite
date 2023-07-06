@@ -9,7 +9,12 @@ export function MomentSection() {
       </h4>
 
       <div className={styles.main_container}>
-        <div className={styles.sub_container}>
+
+        <div className={styles.sub_container}
+        data-aos="fade-down"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+        >
           <div className={styles.text_container}>
             <h4 className={`H4 ${styles.sub_title}`}>
               Para quem nunca praticou
@@ -29,11 +34,19 @@ export function MomentSection() {
           </div>
         </div>
 
-        <div className={styles.sub_container}>
+        <div className={styles.sub_container}
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        >
           <img className={styles.img} src={accessImg}></img>
         </div>
 
-        <div className={styles.sub_container}>
+        <div className={styles.sub_container}
+        data-aos="fade-down"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"        
+        >
           <div className={styles.text_container}>
             <h4 className={`H4 ${styles.sub_title}`}>Iniciantes</h4>
             <p className="text-md">

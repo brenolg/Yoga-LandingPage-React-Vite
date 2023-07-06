@@ -2,6 +2,7 @@
   color: var(--C4);
   margin: auto;
   margin-bottom: 12rem;
+  padding-top: 6em;
   width: 112rem;
 }
 
@@ -24,7 +25,7 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: 42px;
+  gap: 24px;
   justify-content: space-between;
   padding: 16px 0;
 }
@@ -33,9 +34,13 @@
   background: var(--C2);
   padding: 10px 32px;
   width: 100%;
+  font-weight: 950;
+  font-size: 22px;
 }
 
 .answer {
   padding: 0 32px;
   width: 100%;
+  font-weight: 100;
+  font-size: 20px;
 }

@@ -5,13 +5,18 @@ import styles from "./PillarsSection.module.css";
 
 export function PillarsSection() {
   return (
-    <section className={styles.pillars_section}>
+    <section className={styles.pillars_section} id="iclub">
       <h4 className={`text-3xl ${styles.title}`}>
         Como funciona o Yoga iClub?
       </h4>
 
-      <div className={styles.pillars_container}>
-        <div className={styles.pillar}>
+      <div className={styles.pillars_container} >
+
+        <div className={styles.pillar}
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        >
           <div className={styles.outer_element}>
             <img className={styles.pillar_img} src={body}></img>
           </div>
@@ -23,7 +28,11 @@ export function PillarsSection() {
           </p>
         </div>
 
-        <div className={styles.pillar}>
+        <div className={styles.pillar}       
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        >
           <div className={styles.outer_element}>
             <img className={styles.pillar_img} src={mind}></img>
           </div>
@@ -33,7 +42,12 @@ export function PillarsSection() {
             pensamentos, desenvolvendo maior inteligência e gestão emocional
           </p>
         </div>
-        <div className={styles.pillar}>
+
+        <div className={styles.pillar}
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        >
           <div className={styles.outer_element}>
             <img className={styles.pillar_img} src={soul}></img>
           </div>
