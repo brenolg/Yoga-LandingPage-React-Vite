@@ -57,6 +57,7 @@
   font-size: 18px;
   padding: 1rem 2rem;
   font-weight: 950;
+  letter-spacing: 0.2ch;
 }
 
 .button:hover {

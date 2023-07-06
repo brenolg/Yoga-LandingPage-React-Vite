@@ -97,7 +97,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.1ch;
   line-height: 32px;
 }
 
@@ -147,6 +147,7 @@
 .text-sm {
   font-family: syne , ivy , sans-serif;
   font-size: 16px;
+  letter-spacing: 0.1ch;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;

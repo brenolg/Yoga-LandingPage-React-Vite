@@ -27,14 +27,13 @@ export function Footer() {
               <Link to="students" duration={2000} delay={100} offset={-96}> alunos </Link>
             </button>
             <button className="text-md">
-              <Link to="prices" duration={2000} delay={100} offset={-96}> preços </Link>
-              aulas
+              <Link to="prices" duration={2000} delay={100} offset={-48}> preços </Link>
             </button>
           </div>
 
           <div className={styles.scroll_sub_container}>
             <button className="text-md">
-              <Link to="doubts" duration={2000} delay={100} offset={-96}> dúvidas </Link>
+              <Link to="doubts" duration={2000} delay={100} offset={-48}> dúvidas </Link>
             </button>
             <button className="text-md">
               <Link to="contact" duration={2000} delay={100} offset={-96}> contato </Link>

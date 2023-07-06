@@ -80,6 +80,7 @@
   flex-direction: column;
   gap: 5px;
   padding: 16px;
+  letter-spacing: 0.2ch;
 }
 
 .button {

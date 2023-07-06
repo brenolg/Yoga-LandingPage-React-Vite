@@ -33,6 +33,10 @@
   height: 100%;
 }
 
+.pillar p {
+  line-height: 2ch;
+}
+
 .outer_element {
   border-bottom: 16px solid var(--C2);
   border-radius: 337px 337px 0 0;
