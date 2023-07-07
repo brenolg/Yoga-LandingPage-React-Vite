@@ -10,7 +10,6 @@ export function QuestionsCarrousel() {
   const [isTextVisible, setIsTextVisible] = useState(true);
 
   useEffect(() => {
-    console.log(isMobile)
     const interval = setInterval(() => {
       setIsTextVisible(false);
 
