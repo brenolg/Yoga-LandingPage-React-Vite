@@ -10,6 +10,7 @@ export default defineConfig(({ command, mode }) => {
   if (command === 'build' && env.AWS_ACCESS_KEY_ID && env.AWS_SECRET_ACCESS_KEY) {
     return {
       plugins: [
+        react(),
         viteS3({
           s3Options: {
             accessKeyId: env.AWS_ACCESS_KEY_ID,
@@ -25,7 +26,6 @@ export default defineConfig(({ command, mode }) => {
   }
 
   return {
-    base: '/Yoga-LandingPage-React-Vite',
     plugins: [
       react(),
     ]
