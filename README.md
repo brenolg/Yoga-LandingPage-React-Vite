@@ -21,6 +21,7 @@ A Yoga Landing Page é uma página de destino atraente e responsiva para promove
 - React
 - Vite
 - AWS
+- FIGMA
 - Styled Components
 - CSS modules
 - React-scroll
