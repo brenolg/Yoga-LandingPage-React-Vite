@@ -6,7 +6,7 @@
   justify-content: space-between;
   margin: 0 auto 6rem;
   padding-top: 3vh;
-  width: 112rem;
+  max-width: 112rem;
 }
 
 .hero_text {

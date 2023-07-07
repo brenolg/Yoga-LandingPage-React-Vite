@@ -5,7 +5,7 @@ A Yoga Landing Page é uma página de destino atraente e responsiva para promove
 
 <img width="100%" src="./demo.gif" />
 
-<a	href="https://brenolg.github.io/Star-Wars-Planets-React-Context/"
+<a	href="http://isabellacayuela.com.br/"
 	target="_blank"
 	rel="noopener noreferrer"> Yoga Landing Page
 <a/>
@@ -20,15 +20,17 @@ A Yoga Landing Page é uma página de destino atraente e responsiva para promove
 
 - React
 - Vite
+- AWS
+- Styled Components
+- CSS modules
 - React-scroll
 - Animate On Scroll Library
 - JavaScript
 - HTML
 - CSS
-- CSS modules
 # Instalação do Projeto Localmente
 
-Não é necessário rodar o projeto localmente para ver o jogo rodando, pois ele está rodando nesse [link](https://brenolg.github.io/Star-Wars-Planets/).
+Não é necessário rodar o projeto localmente para ver o jogo rodando, pois ele está rodando nesse [link](http://isabellacayuela.com.br/).
 
 Caso queira rodar local mesmo assim, siga o tutorial abaixo.
 
@@ -60,7 +62,8 @@ Abra o navegador e acesse http://localhost:5173/ para visualizar a página.
 # Agradecimentos
 Gostaria de agradecer às seguintes pessoas por sua contribuição:
 
-- Marina Lavalle - Designer responsável pelo design do projeto
-- Caio Godoi - Desenvolvedor que auxiliou no deploy AWS
+- [Marina Lavalle](https://www.linkedin.com/in/marina-lavalle/) - Designer responsável pelo design do projeto.
+- [Caio Godoi](https://www.linkedin.com/in/caio-augusto-ferreira-godoy-8171a7124/)  - Desenvolvedor que auxiliou no desenvolvimento e deploy AWS.
+
 
 Obrigado a todos que contribuíram para tornar este projeto possível!

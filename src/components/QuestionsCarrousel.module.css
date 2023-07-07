@@ -30,6 +30,8 @@
   margin: auto;
   width: 70%;
   height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .translate {
@@ -51,11 +53,12 @@
   }
 }
 
-.question_text {
-  opacity: 0;
+.visible {
+  opacity: 1;
   transition: all 0.5s ease-in-out;
 }
 
-.visible {
-  opacity: 1;
+.invisible {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }

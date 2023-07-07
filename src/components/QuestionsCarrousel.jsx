@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 import { styled } from "styled-components";
 import questionsArray from "../utils/questionsArray";
 import styles from "./QuestionsCarrousel.module.css";
-import { isMobile } from "react-device-detect";
 
 export function QuestionsCarrousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,6 +10,7 @@ export function QuestionsCarrousel() {
   const [isTextVisible, setIsTextVisible] = useState(true);
 
   useEffect(() => {
+    console.log(isMobile)
     const interval = setInterval(() => {
       setIsTextVisible(false);
 
@@ -30,7 +31,7 @@ export function QuestionsCarrousel() {
   return (
     <QuestionsCarrouselContainer isMobile={isMobile}>
       <p
-        className={`${isMobile ? "H5" : "H3"} ${isAnimating ? styles.translate : ""} ${isTextVisible ? styles.visible : ""}`}
+        className={`${isMobile ? "H5" : "H3"} ${isAnimating ? styles.translate : ""} ${isTextVisible ? styles.visible : styles.invisible}`}
         onAnimationEnd={() => setIsAnimating(false)}
       >
         {questionsArray[currentIndex]}
@@ -38,7 +39,6 @@ export function QuestionsCarrousel() {
     </QuestionsCarrouselContainer>
   );
 }
-
 
 const QuestionsCarrouselContainer = styled.div`
   flex-shrink: 0;

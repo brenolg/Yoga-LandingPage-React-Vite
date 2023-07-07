@@ -1,9 +1,9 @@
+import { Fragment } from "react";
+import { isMobile } from "react-device-detect";
 import { Link } from "react-scroll";
+import { styled } from "styled-components";
 import bela from "../images/bela_hero.png";
 import styles from "./HeroSection.module.css";
-import { isMobile } from "react-device-detect";
-import { styled } from "styled-components";
-import React, { Fragment } from "react";
 
 export function HeroSection() {
   return (
