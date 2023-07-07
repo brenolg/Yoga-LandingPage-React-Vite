@@ -12,6 +12,7 @@
 }
 
 .image {
+  margin: 16px;
   border-bottom: 16px solid var(--C2);
   border-radius: 337px 337px 0 0;
   border-right: 16px solid var(--C2);
