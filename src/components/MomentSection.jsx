@@ -72,7 +72,7 @@ const MomentSectionContainer = styled.div`
   `}
 
   h4 {
-    color: var(--c-4, #123939);
+    color: var(--C4);
     font-family: Syne;
     font-size: 32px;
     font-style: normal;
@@ -102,6 +102,10 @@ const MomentItem = styled.div`
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 1.26px;
+  }
+
+  p {
+    color: var(--C4);
   }
 `
 

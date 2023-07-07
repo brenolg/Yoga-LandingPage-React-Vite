@@ -7,7 +7,7 @@ export function PricesSection() {
 }
 
 const MobilePricing = () => {
-  return <SectionContainer>
+  return <SectionContainer id="prices">
     <h4 className={`text-3xl`}>
       Planos e preços:
     </h4>
@@ -131,7 +131,7 @@ const Break = styled.div`
 const SectionContainer = styled.div`
   background: var(--C2-50p);
   padding: 16px 0px;
-  color: var(--c-4, #123939);
+  color: var(--C4);
   text-align: center;
   
   font-family: Syne;
@@ -143,6 +143,10 @@ const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h4 {
+    margin-bottom: 16px;
+  }
 `
 
 const DesktopPricing = () => {

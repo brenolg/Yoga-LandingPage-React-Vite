@@ -114,7 +114,7 @@ const SectionTitle = styled.div`
     line-height: 48px;
     height: 48px;
     font-family: syne;
-    color: var(--c-4, #123939);
+    color: var(--C4);
     ${props => props.isMobile ? `text-align: center;` : "margin-left: -32vw;"}
   }
 `

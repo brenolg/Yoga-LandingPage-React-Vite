@@ -69,7 +69,7 @@ const SectionContainer = styled.div`
   `}
 
   h4 {
-    color: var(--c-4, #123939);
+    color: var(--C4);
     font-family: Syne;
     font-size: 32px;
     font-style: normal;
@@ -78,6 +78,7 @@ const SectionContainer = styled.div`
   }
 
   p {
+    color: var(--C4);
     margin-bottom: 16px;
   }
 `
@@ -89,7 +90,7 @@ const ContactSection = styled.div`
   margin: 20px;
 
   h4 {
-    color: var(--c-4, #123939);
+    color: var(--C4);
     text-align: center;
     /* text-2xl */
     font-family: Syne;
