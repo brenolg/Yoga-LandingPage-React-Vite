@@ -10,9 +10,11 @@ import { PillarsSection } from "./components/PillarsSection";
 import { PricesSection } from "./components/PricesSection";
 import { QuestionsCarrousel } from "./components/QuestionsCarrousel";
 import { ReviewsCarrousel } from "./components/ReviewsCarrousel";
+import { isMobile } from "react-device-detect";
+import { SealSection } from "./components/SealSection";
 
 function App() {
-  
+
   return (
     <>
       <Header />
@@ -21,11 +23,12 @@ function App() {
       <PillarsSection />
       <AccessSection />
       <MomentSection />
-      <ReviewsCarrousel />
+      {!isMobile && <ReviewsCarrousel />}
       <PricesSection />
       <DoubtsSection />
-      <DescriptionSection/>
-      <Footer/>
+      <SealSection />
+      <DescriptionSection />
+      <Footer />
     </>
   );
 }

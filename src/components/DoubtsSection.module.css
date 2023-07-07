@@ -1,9 +1,9 @@
 .doubts_section {
+  padding: 16px;
   color: var(--C4);
   margin: auto;
-  margin-bottom: 12rem;
-  padding-top: 6em;
-  width: 112rem;
+  margin-bottom: 12px;
+  padding-top: 24px;
 }
 
 .title {

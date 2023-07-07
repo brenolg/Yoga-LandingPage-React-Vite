@@ -6,12 +6,7 @@
   margin: auto;
   padding-top: 6rem;
   margin-bottom: 6rem;
-  width: 112rem;
-}
-
-.title {
-  margin-bottom: 3.7rem;
-  margin-right: auto;
+  width: 100%;
 }
 
 .pillars_container {
@@ -31,6 +26,7 @@
   flex-direction: column;
   gap: 1.6rem;
   height: 100%;
+  width: 100%
 }
 
 .pillar p {
@@ -46,6 +42,8 @@
   height: 376px;
   position: relative;
   width: 280px;
+  margin: auto;
+  margin-bottom: 12px;
 }
 
 .pillar_img {

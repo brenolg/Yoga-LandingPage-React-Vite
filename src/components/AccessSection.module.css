@@ -1,13 +1,10 @@
 .access_section_background {
   background: var(--C2-50p);
-  margin-bottom: 6rem;
-  padding-bottom: 6rem;
 }
 
 .access_section {
   color: var(--C4);
   margin: auto;
-  width: 112rem;
 }
 
 .title {
@@ -24,14 +21,12 @@
   align-items: center;
   background: var(--C2);
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
   flex-shrink: 0;
   gap: 20px;
   height: 352px;
   padding: 10px 13px;
   text-align: center;
-  width: 265px;
+  max-width: 265px;
 }
 
 .sub_container img {
