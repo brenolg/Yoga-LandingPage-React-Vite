@@ -1,10 +1,15 @@
-import { Link } from "react-scroll";
-import yogaLogo from "../images/yoga_iclub.png";
-import styles from "./Header.module.css";
+import PropTypes from 'prop-types';
+import { useEffect } from "react";
 import { isMobile } from "react-device-detect";
+import { Link } from "react-scroll";
 import { styled } from "styled-components";
+import yogaLogo from "../../images/yoga_iclub.png";
+import styles from "./Header.module.css";
 
-export function Header() {
+export function Header({ device}) {
+  useEffect(() => {
+    console.log(device)
+  })
   return (
     <HeaderContainer>
       {
@@ -64,3 +69,7 @@ const MobileHeader = styled.div`
   justify-content: center;
   margin: auto;
 `
+
+Header.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

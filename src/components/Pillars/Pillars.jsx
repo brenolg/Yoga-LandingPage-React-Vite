@@ -1,12 +1,13 @@
-import { styled } from "styled-components";
-import body from "../images/body.png";
-import mind from "../images/mind.png";
-import soul from "../images/soul.png";
-import styles from "./PillarsSection.module.css";
+import PropTypes from "prop-types";
 import { isMobile } from "react-device-detect";
+import { styled } from "styled-components";
+import body from "../../images/body.png";
+import mind from "../../images/mind.png";
+import soul from "../../images/soul.png";
+import styles from "./Pillars.module.css";
 
 
-export function PillarsSection() {
+export function Pillars({device}) {
   return (
     <PillarSectionContainer isMobile={isMobile} id="iclub">
       <SectionTitle isMobile={isMobile}>
@@ -125,3 +126,7 @@ const PillarCard = styled.div`
     margin: 12px 0px;
   }
 `
+
+Pillars.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

@@ -12,10 +12,10 @@
 }
 
 .image {
-  margin: 16px;
-  border-bottom: 16px solid var(--C2);
-  border-radius: 337px 337px 0 0;
-  border-right: 16px solid var(--C2);
+  margin: 1.6rem;
+  border-bottom: 1.6rem solid var(--C2);
+  border-radius: 33.7rem 33.7rem 0 0;
+  border-right: 1.6rem solid var(--C2);
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -26,7 +26,7 @@
   gap: 6rem;
   justify-content: center;
   text-align: center;
-  width: 690px;
+  width: 69rem;
 }
 
 .text_container p {
@@ -45,14 +45,14 @@
 
 .button {
   background: var(--C4);
-  border: 3px solid transparent;
-  border-radius: var(--radius-radius-full);
+  border: 0.3rem solid transparent;
+  border-radius: var(--radius-full);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   padding: 1rem 2rem;
 }
 
 .button:hover {
   background: var(--C2);
-  border: 3px solid var(--C3);
+  border: 0.3rem solid var(--C3);
   color: var(--C4);
 }

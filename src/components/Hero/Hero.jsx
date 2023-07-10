@@ -1,11 +1,12 @@
+import PropTypes from 'prop-types';
 import { Fragment } from "react";
 import { isMobile } from "react-device-detect";
 import { Link } from "react-scroll";
 import { styled } from "styled-components";
-import bela from "../images/bela_hero.png";
-import styles from "./HeroSection.module.css";
+import bela from "../../images/bela_hero.png";
+import styles from "./Hero.module.css";
 
-export function HeroSection() {
+export function Hero({device}) {
   return (
     <HeroSectionContainer id="start" isMobile={isMobile}>
       {
@@ -178,3 +179,7 @@ const SmallTextContainer = styled.div`
     margin-bottom: 1rem;
   }
 `
+
+Hero.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

@@ -1,8 +1,9 @@
-import styles from "./PricesSection.module.css";
+import PropTypes from 'prop-types';
 import { isMobile } from "react-device-detect";
 import { styled } from "styled-components";
+import styles from "./Prices.module.css";
 
-export function PricesSection() {
+export function Prices({device}) {
   return isMobile ? MobilePricing() : DesktopPricing()
 }
 
@@ -267,3 +268,7 @@ const DesktopPricing = () => {
     </div>
   </section>
 }
+
+Prices.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

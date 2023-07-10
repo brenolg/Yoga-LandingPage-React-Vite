@@ -1,9 +1,9 @@
 .doubts_section {
-  padding: 16px;
+  padding: 1.6rem;
   color: var(--C4);
   margin: auto;
-  margin-bottom: 12px;
-  padding-top: 24px;
+  margin-bottom: 1.2rem;
+  padding-top: 2.4rem;
   max-width: 112rem;
 }
 
@@ -15,7 +15,7 @@
 .main_container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 3.2rem;
 }
 
 .doubt_container {
@@ -26,23 +26,23 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: 24px;
+  gap: 2.4rem;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 1.6rem 0;
 }
 
 .question {
   background: var(--C2);
-  padding: 10px 32px;
+  padding: 1rem 3.2rem;
   width: 100%;
   font-weight: 950;
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .answer {
-  padding: 0 32px;
+  padding: 0 3.2rem;
   width: 100%;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 2.0rem;
   letter-spacing: 0.1ch;
 }

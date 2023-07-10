@@ -1,9 +1,10 @@
-import accessImg from "../images/access_img.png";
-import styles from "./MomentSection.module.css";
+import PropTypes from "prop-types";
 import { isMobile } from "react-device-detect";
 import { styled } from "styled-components";
+import accessImg from "../../images/access_img.png";
+import styles from "./Moments.module.css";
 
-export function MomentSection() {
+export function Moments({device}) {
   return isMobile ? MobileMomentSection() : DesktopMomentSection()
 }
 
@@ -60,7 +61,7 @@ const MobileMomentSection = () => {
 }
 
 const MomentSectionContainer = styled.div`
-  padding: 16px;
+  padding: 1.6rem;
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -74,10 +75,10 @@ const MomentSectionContainer = styled.div`
   h4 {
     color: var(--C4);
     font-family: Syne;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 4rem;
   }
 `
 
@@ -95,7 +96,7 @@ const MomentItem = styled.div`
   h4 {
     margin-bottom: 16px;
     background: var(--C2);
-    border-radius: var(--radius-radius-full);
+    border-radius: var(--radius-full);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     color: var(--c-4, #123939);
     font-family: Ivy;
@@ -172,5 +173,9 @@ const DesktopMomentSection = () => {
         </div>
       </div>
     </section>
-  ); F
+  ); 
 }
+
+Moments.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

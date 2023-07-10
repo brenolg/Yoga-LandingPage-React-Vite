@@ -48,17 +48,17 @@
 
   --C2-50p: rgba(201, 211, 208, 0.5);
 
-  --spacing-s-1: 8px;
+  --spacing-s-1: 0.8rem;
 
-  --spacing-s-2: 10px;
+  --spacing-s-2: 1rem;
 
   --spacing-spacing-xs: 0.4rem;
 
   --spacing-spacing-md: 1.6rem;
 
-  --radius-radius-full: 36rem;
+  --radius-full: 36rem;
 
-  --radius-radius-rounded: 1.6rem;
+  --radius-rounded: 1.6rem;
 
   --spacing-spacing-none: 0;
 
@@ -67,118 +67,118 @@
 
 .H1 {
   font-family: ivy , syne, sans-serif;
-  font-size: 50px;
+  font-size: 5.0rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 5px;
-  line-height: 60px;
+  letter-spacing: 0.5rem;
+  line-height: 6rem;
 }
 
 .H2 {
   font-family: ivy, syne, sans-serif;
-  font-size: 45px;
+  font-size: 4.5rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 1.125px;
-  line-height: 56px;
+  letter-spacing: 0.1125rem;
+  line-height: 5.6rem;
 }
 
 .H3 {
   font-family: ivy, syne, sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 1.8px;
-  line-height: 40px;
+  letter-spacing: 0.18rem;
+  line-height: 4.0rem;
 }
 
 h3 {
   font-family: ivy, syne, sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 1.8px;
-  line-height: 40px;
+  letter-spacing: 1.8rem;
+  line-height: 4.0rem;
 }
 
 .H4 {
   font-family: ivy , syne, sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 0.1ch;
-  line-height: 32px;
+  line-height: 3.2rem;
 }
 
 .H5 {
   font-family: ivy, syne, sans-serif;
-  font-size: 21px;
+  font-size: 2.1rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 0.84px;
-  line-height: 24px;
+  letter-spacing: 0.084rem;
+  line-height: 2.4rem;
 }
 
 .text-3xl {
   font-family: syne, ivy, sans-serif;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 4.8rem;
 }
 
 .text-xl {
   font-family: syne , ivy, sans-serif;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 550;
-  letter-spacing: 0.55px;
-  line-height: 24px;
+  letter-spacing: 0.055rem;
+  line-height: 2.4rem;
 }
 
 .text-lg {
   font-family: syne, ivy, sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 530;
-  line-height: 32px;
+  line-height: 3.2rem;
 }
 
 .text-md {
   font-family: syne, sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 530;
-  letter-spacing: 0.45px;
-  line-height: 24px;
+  letter-spacing: 0.045rem;
+  line-height: 2.4rem;
 }
 
 .text-sm {
   font-family: syne , ivy , sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: 0.1ch;
   font-style: normal;
   font-weight: 520;
-  line-height: 24px;
+  line-height: 2.4rem;
 }
 
 .text-xs {
   font-family: syne , ivy , sans-serif;
-  font-size: 13.5px;
+  font-size: 1.35rem;
   font-style: normal;
   font-weight: 550;
-  letter-spacing: 0.405px;
-  line-height: 24px;
+  letter-spacing: 0.0405rem;
+  line-height: 2.4rem;
 }
 
 .Button {
   color: var(--C1);
   font-family: Arial , sans-serif;
-  font-size: 20px;
+  font-size: 2.0rem;
   font-style: normal;
   font-weight: 900;
-  letter-spacing: 1px;
-  line-height: 24px;
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem;
   text-transform: uppercase;
 }
 

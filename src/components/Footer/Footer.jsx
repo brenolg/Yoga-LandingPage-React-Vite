@@ -1,13 +1,14 @@
-import { Link } from "react-scroll";
-import instagram from "../images/instagram.svg";
-import whatsapp from "../images/whatsapp.svg";
-import logo from "../images/yoga_iclub.png";
-import youtube from "../images/youtube.svg";
-import styles from "./Footer.module.css";
+import PropTypes from 'prop-types';
 import { isMobile } from "react-device-detect";
+import { Link } from "react-scroll";
 import { styled } from "styled-components";
+import instagram from "../../images/instagram.svg";
+import whatsapp from "../../images/whatsapp.svg";
+import logo from "../../images/yoga_iclub.png";
+import youtube from "../../images/youtube.svg";
+import styles from "./Footer.module.css";
 
-export function Footer() {
+export function Footer({device}) {
   return (
     <footer>
       <FooterContainer isMobile={isMobile}>
@@ -94,3 +95,7 @@ const ScrollContainer = styled.div`
   justify-content: space-between;
   ${props => !props.isMobile && "width: 550px;"}
 `
+
+Footer.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

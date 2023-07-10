@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { useRef, useState } from "react";
-import after from "../images/afterIcon.svg";
-import prev from "../images/prevIcon.svg";
-import reviewsArray from "../utils/reviewsArray";
+import after from "../../images/afterIcon.svg";
+import prev from "../../images/prevIcon.svg";
+import reviewsArray from "../../utils/reviewsArray";
 import styles from "./ReviewsCarrousel.module.css";
 
-export function ReviewsCarrousel() {
+export function ReviewsCarrousel({device}) {
   const [index, setIndex] = useState(0);
 
   const transition = useRef();
@@ -83,3 +84,7 @@ export function ReviewsCarrousel() {
     </section>
   );
 }
+
+ReviewsCarrousel.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

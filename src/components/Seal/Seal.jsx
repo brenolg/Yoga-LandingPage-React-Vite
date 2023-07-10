@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import { isMobile } from "react-device-detect";
 import { styled } from "styled-components";
-import seal from "../images/seal.svg";
+import seal from "../../images/seal.svg";
 
 
-export function SealSection() {
+export function Seal({device}) {
   return (
     <SealSectionContainer isMobile={isMobile}>
       <img src={seal} />
@@ -40,3 +41,7 @@ const SealSectionContainer = styled.div`
     margin: auto;
   `}
 `
+
+Seal.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

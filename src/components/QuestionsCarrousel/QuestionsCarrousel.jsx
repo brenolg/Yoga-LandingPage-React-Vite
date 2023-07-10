@@ -1,16 +1,16 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 import { styled } from "styled-components";
-import questionsArray from "../utils/questionsArray";
+import questionsArray from "../../utils/questionsArray";
 import styles from "./QuestionsCarrousel.module.css";
 
-export function QuestionsCarrousel() {
+export function QuestionsCarrousel({device}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isTextVisible, setIsTextVisible] = useState(true);
 
   useEffect(() => {
-    console.log(isMobile)
     const interval = setInterval(() => {
       setIsTextVisible(false);
 
@@ -74,3 +74,7 @@ const QuestionsCarrouselContainer = styled.div`
     height: 100%;
   }
 `
+
+QuestionsCarrousel.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

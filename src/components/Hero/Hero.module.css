@@ -19,7 +19,7 @@
   justify-content: center;
   padding: var(--spacing-spacing-none);
   text-align: center;
-  width: 550px;
+  width: 55rem;
 }
 
 .main_title {
@@ -44,17 +44,17 @@
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--spacing-spacing-xs);
-  height: 96px;
+  height: 9.6rem;
   padding: var(--spacing-spacing-none);
 }
 
 .button {
   background: var(--C4);
-  border: 3px solid transparent;
-  border-radius: var(--radius-radius-full);
+  border: 0.3rem solid transparent;
+  border-radius: var(--radius-full);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  margin-bottom: 6px;
-  font-size: 18px;
+  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
   padding: 1rem 2rem;
   font-weight: 950;
   letter-spacing: 0.2ch;
@@ -62,7 +62,7 @@
 
 .button:hover {
   background-color: inherit;
-  border: 3px solid var(--C3);
+  border: 0.3rem solid var(--C3);
   color: var(--C4);
 }
 
@@ -81,13 +81,13 @@
 
 .outer_element {
   background: var(--C1);
-  border-bottom: 16px solid var(--C2);
-  border-radius: 333px 333px 0 0;
-  border-right: 16px solid var(--C2);
+  border-bottom: 1.6rem solid var(--C2);
+  border-radius: 33.3rem 33.3rem 0 0;
+  border-right: 1.6rem solid var(--C2);
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
   position: relative;
-  width: 385px;
+  width: 38.5rem;
 }
 
 .bela_img {

@@ -1,11 +1,11 @@
-import bela from "../images/bela_description.png";
-import styles from "./DescriptionSection.module.css";
+import PropTypes from 'prop-types';
+import { Fragment } from "react";
 import { isMobile } from "react-device-detect";
 import { styled } from "styled-components";
-import { Fragment } from "react";
+import bela from "../../images/bela_description.png";
+import styles from "./Description.module.css";
 
-
-export function DescriptionSection() {
+export function Description({device}) {
   return isMobile ? MobileDescriptionSection() : DesktopDescriptionSection()
 }
 
@@ -57,7 +57,7 @@ const MobileDescriptionSection = () => {
 
 const SectionContainer = styled.div`
   background: var(--C2-50p);
-  padding: 20px;
+  padding: 2.0rem;
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -71,10 +71,10 @@ const SectionContainer = styled.div`
   h4 {
     color: var(--C4);
     font-family: Syne;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 4.0rem;
   }
 
   p {
@@ -87,18 +87,18 @@ const ContactSection = styled.div`
   flex-direction: column;
   align-items: center;
   display: flex;
-  margin: 20px;
+  margin: 2.0rem;
 
   h4 {
     color: var(--C4);
     text-align: center;
     /* text-2xl */
     font-family: Syne;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 530;
-    line-height: 40px;
-    margin-bottom: 8px;
+    line-height: 4.0rem;
+    margin-bottom: 0.8rem;
   }
 `
 
@@ -157,3 +157,7 @@ const DesktopDescriptionSection = () => {
     </>
   );
 }
+
+Description.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

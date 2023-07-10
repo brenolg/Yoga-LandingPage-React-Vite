@@ -1,6 +1,6 @@
 import styles from "./DoubtsSection.module.css";
 
-export function DoubtsSection() {
+export function Doubts() {
   return (
     <section className={styles.doubts_section} id="doubts">
       <h4 className={`text-3xl ${styles.title}`}>Dúvidas comuns</h4>

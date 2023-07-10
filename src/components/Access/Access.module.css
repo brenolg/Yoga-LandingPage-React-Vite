@@ -20,16 +20,16 @@
 .sub_container {
   align-items: center;
   background: var(--C2);
-  border-radius: 16px;
+  border-radius: 1.6rem;
   flex-shrink: 0;
-  gap: 20px;
-  height: 352px;
-  padding: 10px 13px;
+  gap: 2.0rem;
+  height: 35.2rem;
+  padding: 1rem 1.3rem;
   text-align: center;
-  max-width: 265px;
+  max-width: 26.5rem;
 }
 
 .sub_container img {
-  border-radius: 16px;
+  border-radius: 1.6rem;
   width: 100%;
 }

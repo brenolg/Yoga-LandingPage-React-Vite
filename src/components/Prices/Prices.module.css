@@ -23,17 +23,17 @@
 
 .text_container {
   background: var(--c-2, #c9d3d0);
-  border-radius: 25px;
+  border-radius: 2.5rem;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 340px;
+  width: 34rem;
 }
 
 .premium {
   background: var(--C4);
-  border-radius: 25px;
+  border-radius: 2.5rem;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: var(--C1);
 }
@@ -42,21 +42,21 @@
 .title_container {
   align-items: flex-end;
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   justify-content: center;
-  padding: 16px;
+  padding: 1.6rem;
 }
 
 .title_container h4 {
-  padding-bottom: 7px;
+  padding-bottom: 0.7rem;
 }
 
 .h1 {
   font-family: ivy , syne , sans-serif;
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 0.5rem;
 }
 
 .price {
@@ -65,36 +65,36 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   font-family: syne , ivy , sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
-  height: 50px;
+  height: 5.0rem;
   justify-content: center;
   letter-spacing: -0.36px;
-  line-height: 45px;
+  line-height: 4.5rem;
   text-align: center;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 16px;
+  gap: 0.5rem;
+  padding: 1.6rem;
   letter-spacing: 0.2ch;
 }
 
 .button {
   background: var(--C4);
   border: 3px solid transparent;
-  border-radius: var(--radius-radius-full);
+  border-radius: var(--radius-full);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  margin: 40px;
+  margin: 4.0rem;
   padding: var(--spacing-s-2) 0;
 }
 
 .button:hover {
   background-color: inherit;
-  border: 3px solid var(--C3);
+  border: 0.3rem solid var(--C3);
   color: var(--C4);
 }
 

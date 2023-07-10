@@ -1,12 +1,13 @@
-import { styled } from "styled-components";
-import arow from "../images/arow.png";
-import girlYoga from "../images/girlYoga.png";
-import graphic from "../images/graphic.png";
-import onlineTechs from "../images/onlineTechs.png";
-import styles from "./AccessSection.module.css";
+import PropTypes from "prop-types";
 import { isMobile } from "react-device-detect";
+import { styled } from "styled-components";
+import arow from "../../images/arow.png";
+import girlYoga from "../../images/girlYoga.png";
+import graphic from "../../images/graphic.png";
+import onlineTechs from "../../images/onlineTechs.png";
+import styles from "./Access.module.css";
 
-export function AccessSection() {
+export function Access({device}) {
   return (
     <AccessSectionContainer>
       <div className={styles.access_section}>
@@ -65,7 +66,7 @@ export function AccessSection() {
 const Break = styled.div`
   flex-basis: 100%;
   height: 0;
-  padding-bottom: 24px;
+  padding-bottom: 2.4rem;
 `
 
 const AccessSectionContainer = styled.div`
@@ -107,3 +108,7 @@ const AccessItem = styled.div`
     margin: 8px;
   }
 `
+
+Access.propTypes = ({
+  device: PropTypes.string.isRequired,
+});

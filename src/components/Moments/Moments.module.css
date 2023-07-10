@@ -25,20 +25,20 @@
   flex-direction: column;
   flex-shrink: 0;
   gap: 1.6rem;
-  height: 136px;
+  height: 13.6rem;
   text-align: center;
-  width: 328px;
+  width: 32.8rem;
 }
 
 .sub_title {
   background: var(--C2);
-  border-radius: var(--radius-radius-full);
+  border-radius: var(--radius-full);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .img {
-  border-bottom: 16px solid var(--C2);
-  border-radius: 333px 333px 0 0;
-  border-right: 16px solid var(--C2);
+  border-bottom: 1.6rem solid var(--C2);
+  border-radius: 33.3rem 33.3rem 0 0;
+  border-right: 1.6rem solid var(--C2);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }

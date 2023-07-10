@@ -22,7 +22,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 550px;
+  width: 55rem;
 }
 
 .scroll_sub_container {
