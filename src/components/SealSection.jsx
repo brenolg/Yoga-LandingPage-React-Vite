@@ -23,8 +23,7 @@ const SealSectionContainer = styled.div`
   justify-content: center;
   display: flex;
   width: 100%;
-  margin-bottom: 16px;
-
+  padding-bottom: 32px;
   p {
     ${props => props.isMobile && `padding: 16px;`}  
     color: var(--C4);

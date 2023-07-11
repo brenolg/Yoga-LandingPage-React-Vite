@@ -21,8 +21,7 @@ export function AccessSection() {
             <img src={onlineTechs} />
             <p className={isMobile ? "text-sm" : "text-md"}>
 
-              Aulas ao vivo toda terça e quinta as 9h e as 19h com correção e
-              ajustes
+              Aulas ao vivo toda terça e quinta as 07h, 09h e 19:30 com correção e ajustes
             </p>
           </AccessItem>
           <Break />
