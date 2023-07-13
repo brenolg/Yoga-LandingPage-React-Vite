@@ -1,14 +1,14 @@
-.access_section_background {
-  background: var(--C2-50p);
-  padding-top: 6em;
-  padding-bottom: 6rem;
-}
+import styled from 'styled-components';
+
+const PricesContainer = styled.section`
+background: var(--C2-50p);
+padding-top: 6em;
+padding-bottom: 6rem;
 
 .prices_section {
   color: var(--C4);
   margin: auto;
   margin-bottom: 6rem;
-  width: 112rem;
 }
 
 .title {
@@ -19,25 +19,29 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
-.text_container {
-  background: var(--c-2, #c9d3d0);
+.card_container {
   border-radius: 25px;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 340px;
+  margin-bottom: 3rem;
 }
 
 .premium {
   background: var(--C4);
   border-radius: 25px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 50px 0 var(--C4);
   color: var(--C1);
 }
 
+.notPremium {
+  background: var(--C2);
+}
 
 .title_container {
   align-items: flex-end;
@@ -88,7 +92,7 @@
   border: 3px solid transparent;
   border-radius: var(--radius-radius-full);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  margin: 40px;
+  margin: 4rem;
   padding: var(--spacing-s-2) 0;
 }
 
@@ -107,3 +111,33 @@
   background: var(--C4);
   color: var(--C1);
 }
+
+@media screen and (max-width: 1127px) {
+  .notPremium{
+    height: 100%;
+  }
+
+  .main_container {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .premium {
+    width: 450px;
+  }
+
+  .premium .list {
+    gap: 1.8rem;
+  }
+
+  .notPremium .list {
+    gap: 2px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  width: 100%;
+}
+`;
+
+export default PricesContainer;

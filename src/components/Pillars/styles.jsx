@@ -34,9 +34,11 @@ width: 100%;
 }
 `;
 
-const PillarStyle = styled.div`
+const PillarCardStyles = styled.div`
 display: flex;
 flex-direction: column;
+align-items: center;
+text-align: center;
 gap: 1.6rem;
 width: 28rem;
 
@@ -56,4 +58,4 @@ width: 28rem;
 }
 `;
 
-export { PillarStyle, PillarsContainer };
+export { PillarCardStyles, PillarsContainer };

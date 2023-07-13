@@ -8,25 +8,33 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import { MomentSection } from './components/MomentSection';
 import Pillars from './components/Pillars/Pillars';
-import { PricesSection } from './components/PricesSection';
+import Prices from './components/Prices/Prices';
 import QuestionsCarrousel from './components/QuestionsCarrousel/QuestionsCarrousel';
-import { ReviewsCarrousel } from './components/ReviewsCarrousel';
+import ReviewsCarrousel from './components/ReviewsCarrousel/ReviewsCarrousel';
 import { SealSection } from './components/SealSection';
 
 function App() {
-  const isTablet = useMediaQuery({ query: '(max-width: 1127px)' });
+  const isTabletAndMobile = useMediaQuery({ query: '(max-width: 1127px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 744px)' });
+
+  function isTablet() {
+    return isTablet && !isMobile;
+  }
 
   return (
     <>
-      <Header isTablet={isTablet} isMobile={isMobile} />
-      <Hero isTablet={isTablet} isMobile={isMobile} />
+      <Header isTablet={isTabletAndMobile} isMobile={isMobile} />
+      <Hero isTablet={isTabletAndMobile} isMobile={isMobile} />
       <QuestionsCarrousel isMobile={isMobile} />
-      <Pillars isTablet={isTablet} />
+      <Pillars isTablet={isTabletAndMobile} />
       <Access isMobile={isMobile} />
       <MomentSection />
       {!isMobile && <ReviewsCarrousel />}
-      <PricesSection />
+      <Prices
+        isTablet={isTablet()}
+        isMobile={isMobile}
+        isTabletAndMobile={isTabletAndMobile}
+      />
       <DoubtsSection />
       <SealSection />
       <DescriptionSection />

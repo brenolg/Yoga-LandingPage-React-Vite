@@ -22,6 +22,7 @@ justify-content: center;
 padding: var(--spacing-spacing-none);
 text-align: center;
 width: 50%;
+padding-bottom: 3rem;
 
 .main_title {
   align-self: stretch;
@@ -70,9 +71,8 @@ width: 50%;
   font-weight: 700;
 }
 
-${(props) => props.isMobile && `
+@media screen and (max-width: 850px) {
   width: 100%;
-`
 }
 `;
 
@@ -82,6 +82,7 @@ flex-shrink: 0;
 height: 65vh;
 width: 45%;
 justify-content: center;
+padding-bottom: 3rem;
 
 .outer_element {
   background: var(--C1);
@@ -103,6 +104,7 @@ justify-content: center;
 
 @media screen and (max-width: 850px) {
   gap: 2rem;
+  width: 100%;
 
   .bela_img {
     height: 90%;

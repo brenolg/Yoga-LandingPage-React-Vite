@@ -67,7 +67,7 @@
 
 .main-section {
   max-width: 114.5rem;
-  padding: 1.5rem
+  padding: 1.5rem;
 }
 
 .H1 {
@@ -89,15 +89,6 @@
 }
 
 .H3 {
-  font-family: ivy, syne, sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 1.8px;
-  line-height: 40px;
-}
-
-h3 {
   font-family: ivy, syne, sans-serif;
   font-size: 36px;
   font-style: normal;

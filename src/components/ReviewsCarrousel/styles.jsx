@@ -1,9 +1,11 @@
-.comment_section {
-  color: var(--C4);
-  height: 100%;
-  margin: auto;
-  padding-top: 6rem;
-}
+import styled from 'styled-components';
+import yoga from '../../images/practiceYoga.png';
+
+const ReviewsCarrouselContainer = styled.section`
+color: var(--C4);
+height: 100%;
+margin: auto;
+padding-top: 6rem;
 
 .title {
   color: var(--C4);
@@ -17,9 +19,10 @@
   background: linear-gradient(0deg,
   rgba(201, 211, 208, 0.5) 0%,
   rgba(201, 211, 208, 0.5) 100%),
-    url("../images/practiceYoga.png"), lightgray 50% / cover no-repeat;
+  lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-image: url(${yoga});
   display: flex;
   height: 560.25px;
   justify-content: space-around;
@@ -37,6 +40,11 @@
   width: 64px;
 }
 
+.button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
 .button:active {
   scale: 0.98;
 }
@@ -51,8 +59,9 @@
 .text_container {
   align-items: center;
   background: rgba(239, 239, 239, 0.85);
-  border-radius: var(--radius-radius-rounded, 16px);
+  border-radius: var(--radius-radius-rounded);
   display: flex;
+  padding: 0.5rem;
   flex-direction: column;
   flex-shrink: 0;
   height: 456px;
@@ -71,6 +80,7 @@
   text-align: justify;
   max-width: 712px;
   display: flex;
+  margin: 1rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -86,3 +96,6 @@
   height: 80px;
   width: 80px;
 }
+`;
+
+export default ReviewsCarrouselContainer;

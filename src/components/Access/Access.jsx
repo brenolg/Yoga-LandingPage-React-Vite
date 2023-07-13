@@ -4,7 +4,8 @@ import arow from '../../images/arow.png';
 import girlYoga from '../../images/girlYoga.png';
 import graphic from '../../images/graphic.png';
 import onlineTechs from '../../images/onlineTechs.png';
-import AccessContainer from './styles';
+import AccessCard from './AccessCard';
+import { AccessContainer } from './styles';
 
 export default function Access({ isMobile }) {
   return (
@@ -18,39 +19,31 @@ export default function Access({ isMobile }) {
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <div className="sub_container">
-            <img alt="tech-img" src={onlineTechs} />
-            <p className={isMobile ? 'text-sm' : 'text-md'}>
 
-              Aulas ao vivo toda terça e quinta as 07h, 09h e 19:30 com correção e ajustes
-            </p>
-          </div>
+          <AccessCard
+            isMobile={isMobile}
+            img={onlineTechs}
+            text="Aulas ao vivo toda terça e quinta as 07h, 09h e 19:30 com correção e ajustes"
+          />
 
-          <div className="sub_container">
-            <img alt="graphic-img" src={graphic} />
-            <p className={isMobile ? 'text-sm' : 'text-md'}>
+          <AccessCard
+            isMobile={isMobile}
+            img={graphic}
+            text="Aulas com diferentes níveis e durações para não se sentir
+            desestimulado"
+          />
 
-              Aulas com diferentes níveis e durações para não se sentir
-              desestimulado
-            </p>
-          </div>
+          <AccessCard
+            isMobile={isMobile}
+            img={girlYoga}
+            text="Módulos desenvolvidos para cultivar disciplina, constância e presença"
+          />
 
-          <div className="sub_container">
-            <img alt="girl-yoga" src={girlYoga} />
-            <p className={isMobile ? 'text-sm' : 'text-md'}>
-
-              Módulos desenvolvidos para cultivar disciplina, constância e presença
-            </p>
-          </div>
-
-          <div className="sub_container">
-            <img alt="arow-img" src={arow} />
-            <p className={isMobile ? 'text-sm' : 'text-md'}>
-
-              Estilos diferentes para variar sua prática: Hatha e Vinyasa
-            </p>
-          </div>
-
+          <AccessCard
+            isMobile={isMobile}
+            img={arow}
+            text="Estilos diferentes para variar sua prática: Hatha e Vinyasa"
+          />
         </div>
       </div>
     </AccessContainer>
