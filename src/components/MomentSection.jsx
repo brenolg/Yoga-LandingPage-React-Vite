@@ -1,13 +1,13 @@
-import accessImg from "../images/access_img.png";
-import styles from "./MomentSection.module.css";
-import { isMobile } from "react-device-detect";
-import { styled } from "styled-components";
+import { isMobile } from 'react-device-detect';
+import { styled } from 'styled-components';
+import accessImg from '../images/access_img.png';
+import styles from './MomentSection.module.css';
 
 export function MomentSection() {
-  return isMobile ? MobileMomentSection() : DesktopMomentSection()
+  return isMobile ? MobileMomentSection() : DesktopMomentSection();
 }
 
-const MobileMomentSection = () => {
+function MobileMomentSection() {
   return (
     <MomentSectionContainer>
       <h4>
@@ -15,14 +15,14 @@ const MobileMomentSection = () => {
       </h4>
       <Break />
       <MomentItem>
-        <img className={styles.img} src={accessImg}></img>
+        <img className={styles.img} src={accessImg} />
       </MomentItem>
       <Break />
       <MomentItem>
         <h4>
           Para quem nunca praticou
         </h4>
-        <p className={isMobile ? "text-sm" : "text-md"}>
+        <p className={isMobile ? 'text-sm' : 'text-md'}>
           Nunca teve contato com a prática e se sente insegura se está
           fazendo certo ou errado.
         </p>
@@ -32,7 +32,7 @@ const MobileMomentSection = () => {
         <h4 className={`H4 ${styles.sub_title}`}>
           Iniciantes
         </h4>
-        <p className={isMobile ? "text-sm" : "text-md"}>
+        <p className={isMobile ? 'text-sm' : 'text-md'}>
           Praticou algumas vezes mas nunca conseguiu dar continuidade.
         </p>
       </MomentItem>
@@ -41,7 +41,7 @@ const MobileMomentSection = () => {
         <h4 className={`H4 ${styles.sub_title}`}>
           Intermediários
         </h4>
-        <p className={isMobile ? "text-sm" : "text-md"}>
+        <p className={isMobile ? 'text-sm' : 'text-md'}>
           Já domina as técnicas mas quer avançar ainda mais na sua prática
           pessoal.
         </p>
@@ -51,12 +51,12 @@ const MobileMomentSection = () => {
         <h4 className={`H4 ${styles.sub_title}`}>
           Avançados
         </h4>
-        <p className={isMobile ? "text-sm" : "text-md"}>
+        <p className={isMobile ? 'text-sm' : 'text-md'}>
           Praticante há mais de 5 anos mas sente falta de ser guiado em sua prática pessoal.
         </p>
       </MomentItem>
     </MomentSectionContainer>
-  )
+  );
 }
 
 const MomentSectionContainer = styled.div`
@@ -67,7 +67,7 @@ const MomentSectionContainer = styled.div`
   justify-content: center;
   text-align: center;
   max-width: 1104.789px;
-  ${props => props.isMobile && `
+  ${(props) => props.isMobile && `
     flex-wrap: wrap;
   `}
 
@@ -79,13 +79,13 @@ const MomentSectionContainer = styled.div`
     font-weight: 800;
     line-height: 40px;
   }
-`
+`;
 
 const Break = styled.div`
   flex-basis: 100%;
   height: 0;
   padding-bottom: 16px;
-`
+`;
 
 const MomentItem = styled.div`
   align-items: center;
@@ -107,9 +107,9 @@ const MomentItem = styled.div`
   p {
     color: var(--C4);
   }
-`
+`;
 
-const DesktopMomentSection = () => {
+function DesktopMomentSection() {
   return (
     <section className={styles.moment_section}>
       <h4 className={`text-3xl ${styles.title}`}>
@@ -118,7 +118,8 @@ const DesktopMomentSection = () => {
 
       <div className={styles.main_container}>
 
-        <div className={styles.sub_container}
+        <div
+          className={styles.sub_container}
           data-aos="fade-down"
           data-aos-easing="ease-in-out"
           data-aos-duration="1500"
@@ -142,15 +143,17 @@ const DesktopMomentSection = () => {
           </div>
         </div>
 
-        <div className={styles.sub_container}
+        <div
+          className={styles.sub_container}
           data-aos="fade"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <img className={styles.img} src={accessImg}></img>
+          <img className={styles.img} src={accessImg} />
         </div>
 
-        <div className={styles.sub_container}
+        <div
+          className={styles.sub_container}
           data-aos="fade-down"
           data-aos-easing="ease-in-out"
           data-aos-duration="1500"
@@ -172,5 +175,5 @@ const DesktopMomentSection = () => {
         </div>
       </div>
     </section>
-  ); F
+  ); F;
 }

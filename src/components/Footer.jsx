@@ -1,18 +1,20 @@
-import { Link } from "react-scroll";
-import instagram from "../images/instagram.svg";
-import whatsapp from "../images/whatsapp.svg";
-import logo from "../images/yoga_iclub.png";
-import youtube from "../images/youtube.svg";
-import styles from "./Footer.module.css";
-import { isMobile } from "react-device-detect";
-import { styled } from "styled-components";
+import React from 'react';
+import { isMobile } from 'react-device-detect';
+import { Link } from 'react-scroll';
+import { styled } from 'styled-components';
+import instagram from '../images/instagram.svg';
+import whatsapp from '../images/whatsapp.svg';
+import logo from '../images/yoga_iclub.svg';
+import youtube from '../images/youtube.svg';
+import styles from './Footer.module.css';
 
 export function Footer() {
   return (
     <footer>
       <FooterContainer isMobile={isMobile}>
         {
-          !isMobile &&
+          !isMobile
+          && (
           <ScrollContainer isMobile={isMobile}>
             <div className={styles.scroll_sub_container}>
               <button className="text-md ">
@@ -43,6 +45,7 @@ export function Footer() {
               </button>
             </div>
           </ScrollContainer>
+          )
         }
 
         <div>
@@ -84,13 +87,13 @@ const FooterContainer = styled.div`
   flex-wrap: wrap;
   height: 100%;
   justify-content: space-between;
-  ${props => !props.isMobile && "width: 112rem;"}
+  ${(props) => !props.isMobile && 'width: 112rem;'}
   margin: auto;
-`
+`;
 
 const ScrollContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  ${props => !props.isMobile && "width: 550px;"}
-`
+  ${(props) => !props.isMobile && 'width: 550px;'}
+`;

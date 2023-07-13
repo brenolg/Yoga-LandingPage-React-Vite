@@ -1,12 +1,13 @@
-header {
-  background: var(--C2);
-  height: 9.6rem;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-}
+import styled from 'styled-components';
+
+const HeaderContainer = styled.header`
+background: var(--C2);
+height: 9.6rem;
+width: 100vw;
+position: sticky;
+top: 0;
+z-index: 1;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 
 .headerNav {
   align-items: center;
@@ -15,7 +16,11 @@ header {
   height: 100%;
   justify-content: space-between;
   margin: auto;
-  width: 112rem;
+}
+
+.headerNav img {
+  height: 75%;
+  margin: 0.8rem 0 0;
 }
 
 .button_container {
@@ -41,3 +46,16 @@ header {
   scale: 0.98;
 }
 
+/* Mobile */
+@media screen and (max-width: 744px) {
+  .button {
+    display: none;
+  }
+
+  .headerNav{
+    justify-content: center;
+  }
+}
+`;
+
+export default HeaderContainer;

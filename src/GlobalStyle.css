@@ -65,6 +65,11 @@
   --footer-height: 12rem;
 }
 
+.main-section {
+  max-width: 114.5rem;
+  padding: 1.5rem
+}
+
 .H1 {
   font-family: ivy , syne, sans-serif;
   font-size: 50px;
@@ -243,5 +248,19 @@ ul {
 
 ::-webkit-scrollbar-track {
   border-radius: 100%;
+}
+
+/* Tablet */
+@media screen and (max-width: 1127px) {
+  .main-section {
+    max-width: 107.8rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 744px) {
+  .main-section {
+    max-width: 90vw;
+  }
 }
 

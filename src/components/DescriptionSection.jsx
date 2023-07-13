@@ -1,21 +1,21 @@
-import bela from "../images/bela_description.png";
-import styles from "./DescriptionSection.module.css";
-import { isMobile } from "react-device-detect";
-import { styled } from "styled-components";
-import { Fragment } from "react";
-
+import { isMobile } from 'react-device-detect';
+import { styled } from 'styled-components';
+import bela from '../images/bela_description.png';
+import styles from './DescriptionSection.module.css';
 
 export function DescriptionSection() {
-  return isMobile ? MobileDescriptionSection() : DesktopDescriptionSection()
+  return isMobile ? MobileDescriptionSection() : DesktopDescriptionSection();
 }
 
-const MobileDescriptionSection = () => {
+function MobileDescriptionSection() {
   return (
-    <Fragment>
+    <>
       <SectionContainer>
         <h4 className="text-3xl">Olá! Eu sou Isabella Cayuela,</h4>
 
-        <img className={styles.image} src={bela}
+        <img
+          className={styles.image}
+          src={bela}
           data-aos="fade"
           data-aos-easing="linear"
           data-aos-duration="1500"
@@ -23,7 +23,8 @@ const MobileDescriptionSection = () => {
 
         <div className="text-xs">
 
-          <p>Há mais de 7 anos estudo, vivencio e ensino o Yoga para quem se propõe a embarcar na sua jornada de autoconhecimento e autocuidado.
+          <p>
+            Há mais de 7 anos estudo, vivencio e ensino o Yoga para quem se propõe a embarcar na sua jornada de autoconhecimento e autocuidado.
           </p>
 
           <p>
@@ -51,8 +52,8 @@ const MobileDescriptionSection = () => {
           </a>
         </button>
       </ContactSection>
-    </Fragment>
-  )
+    </>
+  );
 }
 
 const SectionContainer = styled.div`
@@ -64,7 +65,7 @@ const SectionContainer = styled.div`
   justify-content: center;
   text-align: center;
   max-width: 1104.789px;
-  ${props => props.isMobile && `
+  ${(props) => props.isMobile && `
     flex-wrap: wrap;
   `}
 
@@ -81,7 +82,7 @@ const SectionContainer = styled.div`
     color: var(--C4);
     margin-bottom: 16px;
   }
-`
+`;
 
 const ContactSection = styled.div`
   flex-direction: column;
@@ -100,22 +101,25 @@ const ContactSection = styled.div`
     line-height: 40px;
     margin-bottom: 8px;
   }
-`
+`;
 
-const DesktopDescriptionSection = () => {
+function DesktopDescriptionSection() {
   return (
     <>
       <section className={styles.description_section_background} id="contact">
 
         <div className={styles.description_section}>
 
-          <img className={styles.image} src={bela}
+          <img
+            className={styles.image}
+            src={bela}
             data-aos="fade"
             data-aos-easing="linear"
             data-aos-duration="1500"
           />
 
-          <div className={styles.text_container}
+          <div
+            className={styles.text_container}
             data-aos="fade"
             data-aos-easing="linear"
             data-aos-duration="1500"
@@ -123,7 +127,8 @@ const DesktopDescriptionSection = () => {
             <h4 className="text-3xl">Olá! Eu sou Isabella Cayuela,</h4>
             <div className="text-lg">
 
-              <p>Há mais de 7 anos estudo, vivencio e ensino o Yoga para quem se propõe a embarcar na sua jornada de autoconhecimento e autocuidado.
+              <p>
+                Há mais de 7 anos estudo, vivencio e ensino o Yoga para quem se propõe a embarcar na sua jornada de autoconhecimento e autocuidado.
               </p>
 
               <p>

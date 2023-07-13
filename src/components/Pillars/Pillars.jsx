@@ -1,32 +1,31 @@
-import { styled } from "styled-components";
-import body from "../images/body.png";
-import mind from "../images/mind.png";
-import soul from "../images/soul.png";
-import styles from "./PillarsSection.module.css";
-import { isMobile } from "react-device-detect";
+import React from 'react';
+import { isMobile } from 'react-device-detect';
+import styled from 'styled-components';
+import body from '../../images/body.png';
+import mind from '../../images/mind.png';
+import soul from '../../images/soul.png';
+import { PillarsContainer } from './styles';
 
-
-export function PillarsSection() {
+export default function Pillars() {
   return (
-    <PillarSectionContainer isMobile={isMobile} id="iclub">
+    <PillarsContainer isMobile={isMobile} id="iclub">
       <SectionTitle isMobile={isMobile}>
         <h3>Como funciona o Yoga iClub?</h3>
       </SectionTitle>
       <Break />
 
-
-      <PillarCardsContainer isMobile={isMobile} >
+      <PillarCardsContainer isMobile={isMobile}>
 
         <PillarCard
           data-aos="fade"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <div className={styles.outer_element}>
-            <img className={styles.pillar_img} src={body}></img>
+          <div className="outer_element">
+            <img className="pillar_img" src={body} />
           </div>
           <h4 className="H4">body</h4>
-          <p className={isMobile ? "text-sm" : "text-md"}>
+          <p className={isMobile ? 'text-sm' : 'text-md'}>
             Práticas de yoga desenvolvidas para construir consciência do corpo,
             da respiração, força, flexibilidade, equilíbrio e bem estar com
             ásanas e pránayamas
@@ -39,11 +38,11 @@ export function PillarsSection() {
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <div className={styles.outer_element}>
-            <img className={styles.pillar_img} src={mind}></img>
+          <div className="outer_element">
+            <img className="pillar_img" src={mind} />
           </div>
           <h4 className="H4">mind</h4>
-          <p className={isMobile ? "text-sm" : "text-md"}>
+          <p className={isMobile ? 'text-sm' : 'text-md'}>
             Meditações guiadas elaboradas para te tornar mais consciente de seus
             pensamentos, desenvolvendo maior inteligência e gestão emocional
           </p>
@@ -56,11 +55,11 @@ export function PillarsSection() {
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <div className={styles.outer_element}>
-            <img className={styles.pillar_img} src={soul}></img>
+          <div className="outer_element">
+            <img className="pillar_img" src={soul} />
           </div>
           <h4 className="H4">soul</h4>
-          <p className={isMobile ? "text-sm" : "text-md"}>
+          <p className={isMobile ? 'text-sm' : 'text-md'}>
             Yoga é ferramenta para desenvolvimento completo do ser, é elevação
             espiritual. Aulas teóricas que vão te convidar a um mergulho ainda
             mais profundo.
@@ -68,7 +67,7 @@ export function PillarsSection() {
         </PillarCard>
         <Break />
       </PillarCardsContainer>
-    </PillarSectionContainer>
+    </PillarsContainer>
   );
 }
 
@@ -76,7 +75,7 @@ const Break = styled.div`
   flex-basis: 100%;
   height: 0;
   padding-bottom: 24px;
-`
+`;
 
 const PillarSectionContainer = styled.div`
   flex-direction: column;
@@ -85,7 +84,7 @@ const PillarSectionContainer = styled.div`
   color: var(--C4);
   display: flex;
   width: 100%;
-`
+`;
 
 const PillarCardsContainer = styled.div`
   margin-top: 48px;
@@ -95,16 +94,16 @@ const PillarCardsContainer = styled.div`
   justify-content: center;
   text-align: center;
   max-width: 1104.789px;
-  ${props => props.isMobile && `
+  ${(props) => props.isMobile && `
     flex-wrap: wrap;
   `}
 
-  ${props => !props.isMobile && `
+  ${(props) => !props.isMobile && `
     flex-direction: row;
     justify-content: space-between;
     width: 112rem;
   `}
-`
+`;
 
 const SectionTitle = styled.div`
   h3 {
@@ -115,13 +114,13 @@ const SectionTitle = styled.div`
     height: 48px;
     font-family: syne;
     color: var(--C4);
-    ${props => props.isMobile ? `text-align: center;` : "margin-left: -32vw;"}
+    ${(props) => (props.isMobile ? 'text-align: center;' : 'margin-left: -32vw;')}
   }
-`
+`;
 
 const PillarCard = styled.div`
   min-width: 280px;
   h4 {
     margin: 12px 0px;
   }
-`
+`;

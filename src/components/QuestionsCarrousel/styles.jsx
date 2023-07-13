@@ -1,24 +1,24 @@
-.question_section {
-  flex-shrink: 0;
-  height: 104px;
-  margin: auto;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-  position: relative;
-  text-align: center;
-  width: 1128px;
-}
+import styled from 'styled-components';
 
-.question_section:after {
+const QuestionsCarrouselContainer = styled.section`
+flex-shrink: 0;
+height: 10.4rem;
+margin: auto;
+margin-top: 6rem;
+margin-bottom: 6rem;
+position: relative;
+text-align: center;
+
+.blur {
   background: var(--C2);
-  border-radius: 1180px;
+  border-radius: 118rem;
   content: "";
   filter: blur(27.5px);
-  height: 104px;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  width: 1128px;
+  width: 100%;
   z-index: -1;
 }
 
@@ -27,8 +27,10 @@
   color: rgba(18, 57, 57, 0.8);
   display: flex;
   flex-shrink: 0;
+  text-align: center;
+  justify-content: center;
   margin: auto;
-  width: 70%;
+  width: ${(props) => (props.isMobile ? '100%' : '70%')};
   height: 100%;
   opacity: 0;
   transition: all 0.5s ease-in-out;
@@ -62,3 +64,6 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
+`;
+
+export default QuestionsCarrouselContainer;
