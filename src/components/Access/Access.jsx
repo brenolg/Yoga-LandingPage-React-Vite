@@ -10,8 +10,8 @@ import { AccessContainer } from './styles';
 export default function Access({ isMobile }) {
   return (
     <AccessContainer>
-      <div className="access_section main-section">
-        <h4 className="text-3xl title">O que terá acesso?</h4>
+      <div className="access_section section-size">
+        <h4 className="text-3xl section-main-title">O que terá acesso?</h4>
 
         <div
           className="main_container"

@@ -15,7 +15,7 @@ function Header({ isTablet }) {
   return (
 
     <HeaderContainer>
-      <nav className="headerNav main-section">
+      <nav className="section-size headerNav">
         <button className={handleButtonClass()} type="button">
           <Link to="start" duration={4000} delay={100} offset={-96}> início </Link>
         </button>
@@ -29,10 +29,10 @@ function Header({ isTablet }) {
         <img alt="logo" src={yogaLogo} />
 
         <button className={handleButtonClass()} type="button">
-          <Link to="prices" duration={4000} delay={100} offset={-48}> preços </Link>
+          <Link to="prices" duration={4000} delay={100} offset={-96}> preços </Link>
         </button>
         <button className={handleButtonClass()} type="button">
-          <Link to="doubts" duration={4000} delay={100} offset={-48}> dúvidas </Link>
+          <Link to="doubts" duration={4000} delay={100} offset={-96}> dúvidas </Link>
         </button>
         <button className={handleButtonClass()} type="button">
           <Link to="contact" duration={4000} delay={100} offset={-96}> contato </Link>

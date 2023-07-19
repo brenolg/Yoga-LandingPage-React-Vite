@@ -48,13 +48,15 @@
 
   --C2-50p: rgba(201, 211, 208, 0.5);
 
-  --spacing-s-1: 8px;
+  --spacing-s-1: 0.8rem;
 
-  --spacing-s-2: 10px;
+  --spacing-s-2: 1rem;
 
-  --spacing-spacing-xs: 0.4rem;
+  --spacing-xs: 0.4rem;
 
-  --spacing-spacing-md: 1.6rem;
+  --spacing-md: 1.6rem;
+
+  --spacing--lg: 3.2rem;
 
   --radius-radius-full: 36rem;
 
@@ -65,117 +67,136 @@
   --footer-height: 12rem;
 }
 
-.main-section {
+.section-size {
   max-width: 114.5rem;
-  padding: 1.5rem;
+  padding: 3.7rem 1.5rem 6rem;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section-main-title {
+  padding-bottom: 3.7rem;
+  margin-right: auto;
 }
 
 .H1 {
   font-family: ivy , syne, sans-serif;
-  font-size: 50px;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 5px;
-  line-height: 60px;
 }
 
 .H2 {
   font-family: ivy, syne, sans-serif;
-  font-size: 45px;
+  font-size: 4.5rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 1.125px;
-  line-height: 56px;
+  letter-spacing: 0.15ch;
 }
 
 .H3 {
   font-family: ivy, syne, sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 1.8px;
-  line-height: 40px;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 
 .H4 {
   font-family: ivy , syne, sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: 800;
-  letter-spacing: 0.1ch;
-  line-height: 32px;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 
 .H5 {
   font-family: ivy, syne, sans-serif;
-  font-size: 21px;
+  font-size: 2rem;
   font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.84px;
-  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
+}
+
+.H6 {
+  font-family: ivy, syne, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  font-style: normal;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 
 .text-3xl {
   font-family: syne, ivy, sans-serif;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 48px;
+  letter-spacing: 0.1ch;
+  line-height: 1.2em;
 }
 
 .text-xl {
   font-family: syne , ivy, sans-serif;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 550;
-  letter-spacing: 0.55px;
-  line-height: 24px;
+  letter-spacing: 0.03ch;
 }
 
 .text-lg {
   font-family: syne, ivy, sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 530;
-  line-height: 32px;
+  line-height: 1.5em;
+  letter-spacing: 0.2ch;
 }
 
 .text-md {
   font-family: syne, sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 530;
-  letter-spacing: 0.45px;
-  line-height: 24px;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 
 .text-sm {
   font-family: syne , ivy , sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: 0.1ch;
   font-style: normal;
   font-weight: 520;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 .text-xs {
   font-family: syne , ivy , sans-serif;
-  font-size: 13.5px;
+  font-size: 1.35rem;
   font-style: normal;
   font-weight: 550;
-  letter-spacing: 0.405px;
-  line-height: 24px;
+  letter-spacing: 0.1ch;
+  line-height: 1.5em;
 }
 
 .Button {
   color: var(--C1);
   font-family: Arial , sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 900;
-  letter-spacing: 1px;
-  line-height: 24px;
+  letter-spacing: 0.1ch;
   text-transform: uppercase;
+  padding: 0.6em 1.2em;
 }
 
 .invisible {
@@ -193,6 +214,25 @@ body {
   width: 100vw;
   position: relative;
   padding-bottom: var(--footer-height);
+}
+
+/* Tablet */
+@media screen and (max-width: 1127px) {
+  .section-size {
+    max-width: 107.8rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 744px) {
+  .section-size {
+    max-width: 90vw;
+  }
+
+  .section-main-title {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 button {
@@ -239,19 +279,5 @@ ul {
 
 ::-webkit-scrollbar-track {
   border-radius: 100%;
-}
-
-/* Tablet */
-@media screen and (max-width: 1127px) {
-  .main-section {
-    max-width: 107.8rem;
-  }
-}
-
-/* Mobile */
-@media screen and (max-width: 744px) {
-  .main-section {
-    max-width: 90vw;
-  }
 }
 

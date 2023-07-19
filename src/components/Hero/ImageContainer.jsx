@@ -1,5 +1,5 @@
 import React from 'react';
-import bela from '../../images/bela_hero.png';
+import bela from '../../images/hero-image.png';
 import { ImageContainerStyle } from './styles';
 
 export default function ImageContainer() {

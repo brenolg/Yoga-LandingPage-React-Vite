@@ -3,9 +3,9 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { TextContainerStyle } from './styles';
 
-export default function TextContainer({ isTablet }) {
+export default function TextContainer({ isTabletAndMobile }) {
   const handleTextClass = () => {
-    if (isTablet) {
+    if (isTabletAndMobile) {
       return 'main_text text-xs';
     }
     return 'main_text text-sm';
@@ -18,9 +18,8 @@ export default function TextContainer({ isTablet }) {
       data-aos-easing="ease-in-out"
       data-aos-duration="1500"
     >
-      <h2 className={`${isTablet ? 'H3' : 'H2'} main_title `}>
-        Te apresento a plataforma de Yoga online mais completa que você já
-        viu!
+      <h2 className={`${isTabletAndMobile ? 'H3' : 'H2'} main_title `}>
+        A plataforma de yoga mais prática, didática e direta que você já acessou!
       </h2>
 
       <div>
@@ -58,5 +57,5 @@ export default function TextContainer({ isTablet }) {
 }
 
 TextContainer.propTypes = ({
-  isTablet: PropTypes.bool.isRequired,
+  isTabletAndMobile: PropTypes.bool.isRequired,
 });

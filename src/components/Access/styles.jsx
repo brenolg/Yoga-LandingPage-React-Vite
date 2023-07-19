@@ -5,13 +5,6 @@ background: var(--C2-50p);
 
 .access_section {
   color: var(--C4);
-  margin: auto;
-  padding-bottom: 6rem;
-}
-
-.title {
-  padding: 3.7rem  0;
-  margin: auto;
 }
 
 .main_container {
@@ -27,14 +20,14 @@ background: var(--C2-50p);
 const AccessCardStyles = styled.section`
 align-items: center;
 background: var(--C2);
-border-radius: 16px;
+border-radius: 1.6rem;
 flex-shrink: 0;
-padding: 10px 13px;
+padding: 1rem 1.3rem;
 text-align: center;
 max-width: 20%;
 padding-bottom: 2rem;
 margin-bottom: 6rem;
-border-radius: 16px;
+border-radius: 1.6rem;
 
 img {
   width: 100%;

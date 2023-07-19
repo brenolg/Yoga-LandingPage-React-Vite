@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import questionsArray from '../../utils/questionsArray';
 import QuestionsCarrouselContainer from './styles';
 
-export default function QuestionsCarrousel({ isMobile }) {
+export default function QuestionsCarrousel({ isMobile, isTabletAndMobile }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isTextVisible, setIsTextVisible] = useState(true);
@@ -27,7 +27,14 @@ export default function QuestionsCarrousel({ isMobile }) {
   }, []);
 
   return (
-    <QuestionsCarrouselContainer className="main-section question_section" isMobile={isMobile}>
+    <QuestionsCarrouselContainer
+      className="section-size"
+      isMobile={isMobile}
+      isTabletAndMobile={isTabletAndMobile}
+      data-aos="fade"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div className="blur" />
       <p
         className={`${isMobile ? 'H5' : 'H3'} ${isAnimating ? 'translate' : ''} ${isTextVisible ? 'visible' : 'invisible'} question_text`}
@@ -41,4 +48,5 @@ export default function QuestionsCarrousel({ isMobile }) {
 
 QuestionsCarrousel.propTypes = ({
   isMobile: PropTypes.bool.isRequired,
+  isTabletAndMobile: PropTypes.bool.isRequired,
 });

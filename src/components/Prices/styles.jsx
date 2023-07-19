@@ -2,17 +2,10 @@ import styled from 'styled-components';
 
 const PricesContainer = styled.section`
 background: var(--C2-50p);
-padding-top: 6em;
-padding-bottom: 6rem;
 
 .prices_section {
   color: var(--C4);
   margin: auto;
-  margin-bottom: 6rem;
-}
-
-.title {
-  padding-bottom: 3.7rem;
 }
 
 .main_container {
@@ -20,21 +13,21 @@ padding-bottom: 6rem;
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .card_container {
-  border-radius: 25px;
+  border-radius: 2.5rem;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 340px;
-  margin-bottom: 3rem;
+  max-width: 34rem;
 }
 
 .premium {
   background: var(--C4);
-  border-radius: 25px;
+  border-radius: 2.5rem;
   box-shadow: 4px 4px 50px 0 var(--C4);
   color: var(--C1);
 }
@@ -46,21 +39,20 @@ padding-bottom: 6rem;
 .title_container {
   align-items: flex-end;
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   justify-content: center;
-  padding: 16px;
+  padding: 1.6rem;
 }
 
 .title_container h4 {
-  padding-bottom: 7px;
+  padding-bottom: 0.7rem;
 }
 
-.h1 {
+.price-title {
   font-family: ivy , syne , sans-serif;
-  font-size: 40px;
+  font-size: 3.8rem;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 5px;
 }
 
 .price {
@@ -69,22 +61,18 @@ padding-bottom: 6rem;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   font-family: syne , ivy , sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
-  height: 50px;
   justify-content: center;
-  letter-spacing: -0.36px;
-  line-height: 45px;
   text-align: center;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 16px;
-  letter-spacing: 0.2ch;
+  gap: 0.5rem;
+  padding: 1.6rem;
 }
 
 .button {
@@ -123,7 +111,7 @@ padding-bottom: 6rem;
   }
 
   .premium {
-    width: 450px;
+    max-width: 45rem;
   }
 
   .premium .list {
@@ -131,12 +119,18 @@ padding-bottom: 6rem;
   }
 
   .notPremium .list {
-    gap: 2px;
+    gap: 0.2rem;
   }
 }
 
 @media screen and (max-width: 744px) {
-  width: 100%;
+  .premium {
+    width: 100%;
+  }
+
+  .notPremium{
+    width: 100%;
+  }
 }
 `;
 

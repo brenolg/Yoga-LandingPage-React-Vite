@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function PriceCard({
-  title, subTitle, price, list, link, isTablet, isMobile, isPro,
+  title, subTitle, price, list, link, isPro,
 }) {
   return (
 
@@ -15,7 +15,7 @@ export default function PriceCard({
 
       <div>
         <div className="title_container">
-          <h1 className="h1 text-3xl ">{title}</h1>
+          <h1 className="price-title">{title}</h1>
           <h4 className="text-xl">{subTitle}</h4>
         </div>
 
@@ -45,8 +45,6 @@ export default function PriceCard({
 }
 
 PriceCard.propTypes = ({
-  isMobile: PropTypes.bool.isRequired,
-  isTablet: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,

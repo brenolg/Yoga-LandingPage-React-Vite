@@ -10,17 +10,13 @@ z-index: 1;
 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 
 .headerNav {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   height: 100%;
-  justify-content: space-between;
-  margin: auto;
-}
+  padding: 0 1.5rem;
+}//1.5 de padding para não ficar colado no scroll da tela
 
 .headerNav img {
-  height: 75%;
-  margin: 0.8rem 0 0;
+  height: 52%;
 }
 
 .button_container {
@@ -29,8 +25,8 @@ box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: var(--spacing-spacing-xs);
-  height: 96px;
+  gap: var(--spacing-xs);
+  height: 100%;
   padding: var(--spacing-spacing-none);
 }
 

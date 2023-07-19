@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import PriceCard from './PriceCard';
 import PricesContainer from './styles';
@@ -7,8 +8,8 @@ export default function Prices({ isTabletAndMobile }) {
   return (
     <PricesContainer id="prices">
 
-      <div className="prices_section main-section">
-        <h4 className="text-3xl title">
+      <div className="prices_section section-size">
+        <h4 className="text-3xl section-main-title">
           Planos e preços:
         </h4>
 
@@ -133,3 +134,7 @@ export default function Prices({ isTabletAndMobile }) {
     </PricesContainer>
   );
 }
+
+Prices.propTypes = {
+  isTabletAndMobile: PropTypes.bool.isRequired,
+};

@@ -1,43 +1,63 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import About from './components/About/About';
 import Access from './components/Access/Access';
-import { DescriptionSection } from './components/DescriptionSection';
-import { DoubtsSection } from './components/DoubtsSection';
-import { Footer } from './components/Footer';
+import Doubts from './components/Doubts/Doubts';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import { MomentSection } from './components/MomentSection';
+import Moment from './components/Moment/Moment';
 import Pillars from './components/Pillars/Pillars';
 import Prices from './components/Prices/Prices';
 import QuestionsCarrousel from './components/QuestionsCarrousel/QuestionsCarrousel';
 import ReviewsCarrousel from './components/ReviewsCarrousel/ReviewsCarrousel';
-import { SealSection } from './components/SealSection';
-
+import Seal from './components/Seal/Seal';
+// Responsive check:  Header/ hero / Questions / pillars /
 function App() {
   const isTabletAndMobile = useMediaQuery({ query: '(max-width: 1127px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 744px)' });
 
   function isTablet() {
-    return isTablet && !isMobile;
+    return isTabletAndMobile && !isMobile;
   }
 
   return (
     <>
-      <Header isTablet={isTabletAndMobile} isMobile={isMobile} />
-      <Hero isTablet={isTabletAndMobile} isMobile={isMobile} />
-      <QuestionsCarrousel isMobile={isMobile} />
+      <Header
+        isTablet={isTabletAndMobile}
+        isMobile={isMobile}
+      />
+
+      <Hero
+        isTabletAndMobile={isTabletAndMobile}
+        isMobile={isMobile}
+      />
+
+      <QuestionsCarrousel isMobile={isMobile} isTabletAndMobile={isTabletAndMobile} />
+
       <Pillars isTablet={isTabletAndMobile} />
+
       <Access isMobile={isMobile} />
-      <MomentSection />
-      {!isMobile && <ReviewsCarrousel />}
+
+      <Moment isMobile={isMobile} isTabletAndMobile={isTabletAndMobile} />
+
+      {!isMobile && (<ReviewsCarrousel />)}
+
       <Prices
         isTablet={isTablet()}
         isMobile={isMobile}
         isTabletAndMobile={isTabletAndMobile}
       />
-      <DoubtsSection />
-      <SealSection />
-      <DescriptionSection />
+
+      <Doubts isMobile={isMobile} />
+
+      <Seal />
+
+      <About
+        isTablet={isTablet()}
+        isMobile={isMobile}
+      />
+
       <Footer />
     </>
   );

@@ -1,24 +1,26 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import ImageContainer from './ImageContainer';
 import TextContainer from './TextContainer';
 import { HeroContainer } from './styles';
 
-export default function Hero({ isMobile, isTablet }) {
+export default function Hero({ isTabletAndMobile }) {
+  const heroBreakPoint = useMediaQuery({ query: '(max-width: 950px)' });
   return (
-    <HeroContainer className="main-section" id="start" isMobile={isMobile}>
+    <HeroContainer className="section-size" id="start">
       {
-        isMobile
+        heroBreakPoint
           ? (
             <>
               <ImageContainer />
 
-              <TextContainer isTablet={isTablet} />
+              <TextContainer isTabletAndMobile={isTabletAndMobile} />
             </>
           )
           : (
             <>
-              <TextContainer isTablet={isTablet} />
+              <TextContainer isTabletAndMobile={isTabletAndMobile} />
 
               <ImageContainer />
             </>
@@ -29,6 +31,5 @@ export default function Hero({ isMobile, isTablet }) {
 }
 
 Hero.propTypes = ({
-  isMobile: PropTypes.bool.isRequired,
-  isTablet: PropTypes.bool.isRequired,
+  isTabletAndMobile: PropTypes.bool.isRequired,
 });

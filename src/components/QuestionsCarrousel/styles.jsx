@@ -2,12 +2,10 @@ import styled from 'styled-components';
 
 const QuestionsCarrouselContainer = styled.section`
 flex-shrink: 0;
-height: 10.4rem;
-margin: auto;
-margin-top: 6rem;
-margin-bottom: 6rem;
+margin-top: ${(props) => (props.isMobile ? '3rem' : '5rem')};
 position: relative;
 text-align: center;
+height: 15rem;
 
 .blur {
   background: var(--C2);
@@ -30,7 +28,7 @@ text-align: center;
   text-align: center;
   justify-content: center;
   margin: auto;
-  width: ${(props) => (props.isMobile ? '100%' : '70%')};
+  width: ${(props) => (props.isTabletAndMobile ? '100%' : '80%')};
   height: 100%;
   opacity: 0;
   transition: all 0.5s ease-in-out;

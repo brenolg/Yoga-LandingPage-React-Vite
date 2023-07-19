@@ -8,9 +8,9 @@ import { PillarsContainer } from './styles';
 
 export default function Pillars() {
   return (
-    <PillarsContainer className="main-section" isMobile={isMobile} id="iclub">
+    <PillarsContainer className="section-size" isMobile={isMobile} id="iclub">
 
-      <h3 className="title text-3xl">Como funciona o Yoga iClub?</h3>
+      <h3 className="section-main-title text-3xl">Como funciona o Yoga iClub?</h3>
 
       <div className="pillars_container ">
 

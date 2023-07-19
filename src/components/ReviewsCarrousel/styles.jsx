@@ -24,7 +24,7 @@ padding-top: 6rem;
   background-size: 100%;
   background-image: url(${yoga});
   display: flex;
-  height: 560.25px;
+  height: 56.025rem;
   justify-content: space-around;
   width: 100vw;  
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.15);
@@ -34,10 +34,10 @@ padding-top: 6rem;
   background-color: var(--C4);
   border-radius: 100%;
   flex-shrink: 0;
-  height: 64px;
+  height: 6.4rem;
   opacity: 0.7;
   position: relative;
-  width: 64px;
+  width: 6.4rem;
 }
 
 .button:hover {
@@ -64,9 +64,9 @@ padding-top: 6rem;
   padding: 0.5rem;
   flex-direction: column;
   flex-shrink: 0;
-  height: 456px;
+  height: 45.6rem;
   justify-content: space-evenly;
-  max-width: 740px;
+  max-width: 74rem;
   transition: all 0.4s ease-in-out;
 }
 
@@ -75,10 +75,10 @@ padding-top: 6rem;
   border-radius: var(--radius-radius-rounded);
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
-  height: 288px;
-  padding: 10px 18px;
+  height: 28.8rem;
+  padding: 1rem 1.8rem;
   text-align: justify;
-  max-width: 712px;
+  max-width: 71.2rem;
   display: flex;
   margin: 1rem;
   flex-direction: column;
@@ -93,8 +93,8 @@ padding-top: 6rem;
   border: 2px solid var(--C3);
   border-radius: var(--radius-radius-full);
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
-  height: 80px;
-  width: 80px;
+  height: 8rem;
+  width: 8rem;
 }
 `;
 
