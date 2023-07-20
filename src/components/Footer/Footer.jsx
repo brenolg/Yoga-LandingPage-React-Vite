@@ -29,13 +29,13 @@ export default function Footer(isMobile) {
               <Link to="students" duration={2000} delay={100} offset={-96}> alunos </Link>
             </button>
             <button className="text-md" type="button">
-              <Link to="prices" duration={2000} delay={100} offset={-48}> preços </Link>
+              <Link to="prices" duration={2000} delay={100} offset={-96}> preços </Link>
             </button>
           </div>
 
           <div className="scroll-sub-container">
             <button className="text-md" type="button">
-              <Link to="doubts" duration={2000} delay={100} offset={-48}> dúvidas </Link>
+              <Link to="doubts" duration={2000} delay={100} offset={-96}> dúvidas </Link>
             </button>
             <button className="text-md" type="button">
               <Link to="contact" duration={2000} delay={100} offset={-96}> contato </Link>
@@ -69,7 +69,9 @@ export default function Footer(isMobile) {
           </a>
         </nav>
 
-        <img className="logo" src={yogaLogo} alt="yoga-logo" />
+        <Link className="link" to="prices" duration={2000} delay={100} offset={-96}>
+          <img className="logo" src={yogaLogo} alt="yoga-logo" />
+        </Link>
       </div>
 
     </FooterContainer>

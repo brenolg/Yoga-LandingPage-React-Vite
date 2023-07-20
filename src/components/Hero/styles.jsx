@@ -95,7 +95,7 @@ padding-left: 7.5rem;
 .outer_element {
   background: var(--C1);
   border-bottom: 1.6rem solid var(--C2);
-  border-radius: 333px 333px 0 0;
+  border-radius: 33.3rem 33.3rem 0 0;
   border-right: 1.6rem solid var(--C2);
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   flex-shrink: 0;

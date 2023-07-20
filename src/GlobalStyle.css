@@ -235,6 +235,10 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 744px) {
+  :root { 
+    --footer-height: 8.8rem;
+  }
+
   .section-size {
     max-width: 90vw;
     padding: 3.7rem 1.5rem;

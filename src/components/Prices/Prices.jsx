@@ -21,6 +21,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
               <>
                 <PriceCard
                   isPremium={premium}
+                  isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
@@ -40,6 +41,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
 
                 <PriceCard
                   isPremium={false}
+                  isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="anual"
@@ -59,6 +61,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
 
                 <PriceCard
                   isPremium={false}
+                  isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="mensal"
@@ -79,6 +82,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
               <>
                 <PriceCard
                   isPremium={false}
+                  isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="anual"
@@ -98,6 +102,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
 
                 <PriceCard
                   isPremium={premium}
+                  isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
@@ -117,6 +122,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
 
                 <PriceCard
                   isPremium={false}
+                  isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="mensal"

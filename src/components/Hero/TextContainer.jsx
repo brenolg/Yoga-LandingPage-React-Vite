@@ -18,7 +18,7 @@ export default function TextContainer({ isTabletAndMobile, isMobile, isTablet })
     if (isMobile) {
       return 'H5';
     }
-    return 'H3';
+    return 'H2';
   };
 
   return (

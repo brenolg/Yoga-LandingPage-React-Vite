@@ -48,13 +48,6 @@ background: var(--C2-50p);
   padding-bottom: 0.7rem;
 }
 
-.price-title {
-  font-family: ivy , syne , sans-serif;
-  font-size: 3.8rem;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .price {
   align-items: center;
   background: var(--c-3, #8ca09a);
@@ -80,8 +73,7 @@ background: var(--C2-50p);
   border: 3px solid transparent;
   border-radius: var(--radius-radius-full);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  margin: 4rem;
-  padding: var(--spacing-s-2) 0;
+  margin: 4rem 3rem;
 }
 
 .button:hover {
@@ -143,6 +135,12 @@ background: var(--C2-50p);
   .notPremium{
     max-width: 100%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .premium .price-title {
+    font-size: 3.8rem;
   }
 }
 `;

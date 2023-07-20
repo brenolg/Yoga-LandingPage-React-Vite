@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function PriceCard({
-  title, subTitle, price, list, link, isPremium, isTabletAndMobile,
+  title, subTitle, price, list, link, isPremium, isTabletAndMobile, isMobile, isTablet,
 }) {
   const handleAosDelay = () => {
     if (isPremium && !isTabletAndMobile) {
@@ -12,6 +12,29 @@ export default function PriceCard({
       return '500';
     }
     return '0';
+  };
+
+  const handleSubTitleClass = () => {
+    // Mobile
+    if (isMobile) {
+      if (isPremium) {
+        return 'text-xl';
+      }
+      return 'text-2xl';
+    }
+    // Tablet
+    if (isTablet) {
+      if (isPremium) {
+        return 'text-xl';
+      }
+      return 'text-3xl';
+    }
+
+    // Desktop
+    if (isPremium) {
+      return 'text-xl';
+    }
+    return 'text-3xl';
   };
 
   return (
@@ -26,8 +49,8 @@ export default function PriceCard({
 
       <div>
         <div className="title_container">
-          <h1 className="price-title">{title}</h1>
-          <h4 className="text-xl">{subTitle}</h4>
+          <h1 className={`${isMobile ? 'H2' : 'H1'} price-title`}>{title}</h1>
+          <h4 className={`${handleSubTitleClass()}`}>{subTitle}</h4>
         </div>
 
         <h4 className="price">{price}</h4>
@@ -62,5 +85,7 @@ PriceCard.propTypes = ({
   list: PropTypes.arrayOf(PropTypes.string).isRequired,
   link: PropTypes.string.isRequired,
   isPremium: PropTypes.bool.isRequired,
+  isMobile: PropTypes.bool.isRequired,
   isTabletAndMobile: PropTypes.bool.isRequired,
+  isTablet: PropTypes.bool.isRequired,
 });

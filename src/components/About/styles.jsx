@@ -67,6 +67,7 @@ color: var(--C4);
 const ContactContainer = styled.section`
 color: var(--C4);
 flex-direction: row;
+padding-bottom: 3.7rem;
 
 .button {
   background: var(--C4);
