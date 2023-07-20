@@ -2,15 +2,26 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function PriceCard({
-  title, subTitle, price, list, link, isPro,
+  title, subTitle, price, list, link, isPremium, isTabletAndMobile,
 }) {
+  const handleAosDelay = () => {
+    if (isPremium && !isTabletAndMobile) {
+      return '0';
+    }
+    if (!isPremium && !isTabletAndMobile) {
+      return '500';
+    }
+    return '0';
+  };
+
   return (
 
     <div
       data-aos="fade-up"
       data-aos-easing="ease-in-out"
+      data-aos-delay={handleAosDelay()}
       data-aos-duration="1500"
-      className={`${isPro ? 'premium' : 'notPremium'} card_container`}
+      className={`${isPremium ? 'premium' : 'notPremium'} card_container`}
     >
 
       <div>
@@ -22,8 +33,8 @@ export default function PriceCard({
         <h4 className="price">{price}</h4>
 
         <ul className="text-md list">
-          {list.map((li) => (
-            <li key={li}>
+          {list.map((li, index) => (
+            <li key={`${li} ${index}`}>
               {li}
             </li>
           ))}
@@ -50,5 +61,6 @@ PriceCard.propTypes = ({
   price: PropTypes.string.isRequired,
   list: PropTypes.arrayOf(PropTypes.string).isRequired,
   link: PropTypes.string.isRequired,
-  isPro: PropTypes.bool.isRequired,
+  isPremium: PropTypes.bool.isRequired,
+  isTabletAndMobile: PropTypes.bool.isRequired,
 });

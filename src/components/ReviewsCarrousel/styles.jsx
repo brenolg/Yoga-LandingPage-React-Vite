@@ -7,6 +7,11 @@ height: 100%;
 margin: auto;
 padding-top: 6rem;
 
+h4 {
+  text-align: left;
+  align-items: flex-start;
+}
+
 .title {
   color: var(--C4);
   margin: auto;
@@ -21,10 +26,10 @@ padding-top: 6rem;
   rgba(201, 211, 208, 0.5) 100%),
   lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-image: url(${yoga});
   display: flex;
-  height: 56.025rem;
+  padding: 3rem;
   justify-content: space-around;
   width: 100vw;  
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.15);
@@ -34,10 +39,10 @@ padding-top: 6rem;
   background-color: var(--C4);
   border-radius: 100%;
   flex-shrink: 0;
-  height: 6.4rem;
+  height: ${(props) => (props.isTabletAndMobile ? '4.6rem' : '6.4rem')};
   opacity: 0.7;
   position: relative;
-  width: 6.4rem;
+  width: ${(props) => (props.isTabletAndMobile ? '4.6rem' : '6.4rem')};
 }
 
 .button:hover {
@@ -64,10 +69,10 @@ padding-top: 6rem;
   padding: 0.5rem;
   flex-direction: column;
   flex-shrink: 0;
-  height: 45.6rem;
   justify-content: space-evenly;
-  max-width: 74rem;
+  max-width: ${(props) => (props.isTabletAndMobile ? '85%' : '55%')};
   transition: all 0.4s ease-in-out;
+  height: 52rem;
 }
 
 .review {
@@ -75,10 +80,9 @@ padding-top: 6rem;
   border-radius: var(--radius-radius-rounded);
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
-  height: 28.8rem;
+  min-height: 28.8rem;
   padding: 1rem 1.8rem;
   text-align: justify;
-  max-width: 71.2rem;
   display: flex;
   margin: 1rem;
   flex-direction: column;
@@ -86,10 +90,18 @@ padding-top: 6rem;
 }
 
 .review p {
-  margin-bottom: 0.5em;
+  padding-bottom: 1em;
 }
 
-.reviewer_img {
+.img-container {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reviewer-img {
   border: 2px solid var(--C3);
   border-radius: var(--radius-radius-full);
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);

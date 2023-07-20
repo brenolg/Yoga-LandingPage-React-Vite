@@ -3,7 +3,7 @@ import React from 'react';
 import { PillarCardStyles } from './styles';
 
 export default function PillarCard({
-  isTablet, img, text, title,
+  isTabletAndMobile, img, text, title,
 }) {
   return (
 
@@ -17,7 +17,7 @@ export default function PillarCard({
       <img alt="yoga-img" className="pillar_img" src={img} />
 
       <h4 className="H4">{title}</h4>
-      <p className={isTablet ? 'text-sm' : 'text-md'}>
+      <p className={isTabletAndMobile ? 'text-sm' : 'text-md'}>
         {text}
       </p>
     </PillarCardStyles>
@@ -26,10 +26,8 @@ export default function PillarCard({
 }
 
 PillarCard.propTypes = ({
-  isTablet: PropTypes.bool.isRequired,
-  img: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-  }).isRequired,
+  isTabletAndMobile: PropTypes.bool.isRequired,
+  img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 });

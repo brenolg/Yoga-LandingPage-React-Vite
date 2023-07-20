@@ -9,6 +9,12 @@ top: 0;
 z-index: 1;
 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 
+.link {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
 .headerNav {
   flex-direction: row;
   height: 100%;

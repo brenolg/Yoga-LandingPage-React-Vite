@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 const QuestionsCarrouselContainer = styled.section`
 flex-shrink: 0;
-margin-top: ${(props) => (props.isMobile ? '3rem' : '5rem')};
+margin-top: ${(props) => (props.ismobile ? '3rem' : '5rem')};
 position: relative;
 text-align: center;
 height: 15rem;
 
 .blur {
   background: var(--C2);
-  border-radius: 118rem;
+  border-radius: 50%;
   content: "";
   filter: blur(27.5px);
   height: 100%;
@@ -28,7 +28,7 @@ height: 15rem;
   text-align: center;
   justify-content: center;
   margin: auto;
-  width: ${(props) => (props.isTabletAndMobile ? '100%' : '80%')};
+  width: ${(props) => (props.istabletandmobile ? '100%' : '80%')};
   height: 100%;
   opacity: 0;
   transition: all 0.5s ease-in-out;

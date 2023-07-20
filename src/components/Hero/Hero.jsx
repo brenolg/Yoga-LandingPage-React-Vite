@@ -5,7 +5,7 @@ import ImageContainer from './ImageContainer';
 import TextContainer from './TextContainer';
 import { HeroContainer } from './styles';
 
-export default function Hero({ isTabletAndMobile }) {
+export default function Hero({ isTabletAndMobile, isMobile, isTablet }) {
   const heroBreakPoint = useMediaQuery({ query: '(max-width: 950px)' });
   return (
     <HeroContainer className="section-size" id="start">
@@ -15,12 +15,20 @@ export default function Hero({ isTabletAndMobile }) {
             <>
               <ImageContainer />
 
-              <TextContainer isTabletAndMobile={isTabletAndMobile} />
+              <TextContainer
+                isTabletAndMobile={isTabletAndMobile}
+                isMobile={isMobile}
+                isTablet={isTablet}
+              />
             </>
           )
           : (
             <>
-              <TextContainer isTabletAndMobile={isTabletAndMobile} />
+              <TextContainer
+                isTabletAndMobile={isTabletAndMobile}
+                isMobile={isMobile}
+                isTablet={isTablet}
+              />
 
               <ImageContainer />
             </>
@@ -32,4 +40,6 @@ export default function Hero({ isTabletAndMobile }) {
 
 Hero.propTypes = ({
   isTabletAndMobile: PropTypes.bool.isRequired,
+  isTablet: PropTypes.bool.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 });

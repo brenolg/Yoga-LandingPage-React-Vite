@@ -123,12 +123,25 @@ background: var(--C2-50p);
   }
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 850px) {
   .premium {
-    width: 100%;
+    max-width: 50%;
+    width: 50%; 
   }
 
   .notPremium{
+    max-width: 45%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .premium {
+    max-width: 100%;
+    width: 100%; 
+  }
+
+  .notPremium{
+    max-width: 100%;
     width: 100%;
   }
 }

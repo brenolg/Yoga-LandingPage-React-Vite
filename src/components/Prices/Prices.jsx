@@ -3,13 +3,13 @@ import React from 'react';
 import PriceCard from './PriceCard';
 import PricesContainer from './styles';
 
-const pro = true;
-export default function Prices({ isTabletAndMobile }) {
+const premium = true;
+export default function Prices({ isTabletAndMobile, isMobile }) {
   return (
     <PricesContainer id="prices">
 
       <div className="prices_section section-size">
-        <h4 className="text-3xl section-main-title">
+        <h4 className={`${isMobile ? 'text-2xl' : 'text-3xl'} section-main-title`}>
           Planos e preços:
         </h4>
 
@@ -20,7 +20,8 @@ export default function Prices({ isTabletAndMobile }) {
             ? (
               <>
                 <PriceCard
-                  isPro={pro}
+                  isPremium={premium}
+                  isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
                   price="R$ 160,00/mês"
@@ -38,7 +39,8 @@ export default function Prices({ isTabletAndMobile }) {
                 />
 
                 <PriceCard
-                  isPro={false}
+                  isPremium={false}
+                  isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="anual"
                   price="R$ 39,90/mês"
@@ -56,7 +58,8 @@ export default function Prices({ isTabletAndMobile }) {
                 />
 
                 <PriceCard
-                  isPro={false}
+                  isPremium={false}
+                  isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="mensal"
                   price="R$ 69,90/mês"
@@ -75,7 +78,8 @@ export default function Prices({ isTabletAndMobile }) {
             ) : (
               <>
                 <PriceCard
-                  isPro={false}
+                  isPremium={false}
+                  isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="anual"
                   price="R$ 39,90/mês"
@@ -93,7 +97,8 @@ export default function Prices({ isTabletAndMobile }) {
                 />
 
                 <PriceCard
-                  isPro={pro}
+                  isPremium={premium}
+                  isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
                   price="R$ 160,00/mês"
@@ -111,7 +116,8 @@ export default function Prices({ isTabletAndMobile }) {
                 />
 
                 <PriceCard
-                  isPro={false}
+                  isPremium={false}
+                  isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="mensal"
                   price="R$ 69,90/mês"
@@ -137,4 +143,5 @@ export default function Prices({ isTabletAndMobile }) {
 
 Prices.propTypes = {
   isTabletAndMobile: PropTypes.bool.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };

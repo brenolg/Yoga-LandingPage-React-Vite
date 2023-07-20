@@ -3,7 +3,7 @@ import React from 'react';
 import { TextCardStyles } from './styles';
 
 export default function TextCard({
-  isMobile, isTabletAndMobile, title, text,
+  isTabletAndMobile, title, text,
 }) {
   return (
 
@@ -11,7 +11,7 @@ export default function TextCard({
       <h4 className={`${isTabletAndMobile ? 'H5' : 'H6'} sub-title`}>
         {title}
       </h4>
-      <p className={isMobile ? 'text-sm' : 'text-md'}>
+      <p className={isTabletAndMobile ? 'text-sm' : 'text-md'}>
         {text}
       </p>
     </TextCardStyles>
@@ -20,7 +20,6 @@ export default function TextCard({
 }
 
 TextCard.propTypes = ({
-  isMobile: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   isTabletAndMobile: PropTypes.bool.isRequired,

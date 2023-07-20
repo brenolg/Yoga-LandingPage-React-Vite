@@ -24,8 +24,6 @@ export default function AccessCard({
 
 AccessCard.propTypes = ({
   isMobile: PropTypes.bool.isRequired,
-  img: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-  }).isRequired,
+  img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 });

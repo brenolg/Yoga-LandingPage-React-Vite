@@ -6,6 +6,7 @@ import SealContainer from './styles';
 export default function Seal({ isMobile }) {
   return (
     <SealContainer isMobile={isMobile} className="section-size">
+      <div className="blur" />
       <img src={seal} alt="seal" />
       <p className={isMobile ? 'text-sm' : 'text-md'}>
         Nos do Yoga iClub criamos o 15payback, que da a você 15 dias para solicitar

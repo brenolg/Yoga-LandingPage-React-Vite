@@ -8,10 +8,12 @@ height: var(--footer-height);
 left: 0;
 bottom: 0;
 width: 100%;
+height: 12rem;
 
 .main_container {
   height: 100%;
-  flex-direction: row;
+  flex-direction: row;  
+  align-items: center;
 }
 
 .scroll-main-container{
@@ -22,7 +24,8 @@ width: 100%;
 }
 
 .logo {
-  height: 55%;
+  max-height: 6rem;
+  max-width: 45%;
 }
 
 .scroll-sub-container {
@@ -35,6 +38,37 @@ width: 100%;
 
 .scroll-sub-container > * {
   color: var(--C4);
+}
+
+@media screen and (max-width: 1127px) {
+  .main_container {
+  padding: 0 4.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+  height: 8.8rem;
+  
+  .main_container {
+    justify-content: center;
+  }
+  .scroll-main-container {
+    display: none;
+  }
+
+  .main_container {
+    padding: 0;
+  }
+
+  .social-links {
+    width: 50%;
+  }
+
+  .social-links img{
+    width: 30%;
+    max-width: 6rem;
+  }
 }
 `;
 

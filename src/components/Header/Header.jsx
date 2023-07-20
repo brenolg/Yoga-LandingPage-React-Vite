@@ -26,7 +26,9 @@ function Header({ isTablet }) {
           <Link to="students" duration={4000} delay={100} offset={-96}> alunos </Link>
         </button>
 
-        <img alt="logo" src={yogaLogo} />
+        <Link className="link" to="prices" duration={4000} delay={100} offset={-96}>
+          <img alt="logo" src={yogaLogo} />
+        </Link>
 
         <button className={handleButtonClass()} type="button">
           <Link to="prices" duration={4000} delay={100} offset={-96}> preços </Link>

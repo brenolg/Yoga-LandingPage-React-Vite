@@ -57,15 +57,12 @@ width: 100%;
   border-radius: var(--radius-radius-full);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   width: 100%;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
 }
 
 @media screen and (max-width: 1000px) {
   max-width: 100%;
-
 }
-
-
 `;
 
 export { MomentContainer, TextCardStyles };

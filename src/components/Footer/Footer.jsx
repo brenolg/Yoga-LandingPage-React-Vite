@@ -11,6 +11,7 @@ export default function Footer(isMobile) {
     <FooterContainer isMobile={isMobile}>
 
       <div className="section-size main_container">
+
         <div className="scroll-main-container">
           <div className="scroll-sub-container">
             <button className="text-md" type="button">

@@ -68,7 +68,7 @@
 }
 
 .section-size {
-  max-width: 114.5rem;
+  max-width: 116.5rem;
   padding: 3.7rem 1.5rem 6rem;
   margin: auto;
   align-items: center;
@@ -119,7 +119,7 @@
 
 .H5 {
   font-family: ivy, syne, sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.15ch;
@@ -142,6 +142,15 @@
   font-weight: 600;
   letter-spacing: 0.1ch;
   line-height: 1.2em;
+}
+
+.text-2xl {
+  font-family: syne, ivy, sans-serif;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.1ch;
+  line-height: 1.2em; 
 }
 
 .text-xl {
@@ -197,6 +206,7 @@
   letter-spacing: 0.1ch;
   text-transform: uppercase;
   padding: 0.6em 1.2em;
+  line-height: 1.5em;
 }
 
 .invisible {
@@ -227,6 +237,7 @@ body {
 @media screen and (max-width: 744px) {
   .section-size {
     max-width: 90vw;
+    padding: 3.7rem 1.5rem;
   }
 
   .section-main-title {

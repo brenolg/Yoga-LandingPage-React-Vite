@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React, { useRef, useState } from 'react';
 import after from '../../images/afterIcon.svg';
 import prev from '../../images/prevIcon.svg';
 import reviewsArray from '../../utils/reviewsArray';
 import ReviewsCarrouselContainer from './styles';
 
-export default function ReviewsCarrousel() {
+export default function ReviewsCarrousel({ isTabletAndMobile, isMobile }) {
   const [index, setIndex] = useState(0);
 
   const transition = useRef();
@@ -45,8 +46,10 @@ export default function ReviewsCarrousel() {
     }, 400);
   };
   return (
-    <ReviewsCarrouselContainer id="students">
-      <h4 className="text-3xl title">O que o alunos estão dizendo:</h4>
+    <ReviewsCarrouselContainer isTabletAndMobile={isTabletAndMobile} id="students">
+      <h4 className={`section-size section-main-title ${isMobile ? 'text-2xl' : 'text-3xl'}`}>
+        O que o alunos estão dizendo:
+      </h4>
 
       <div
         className="main_container"
@@ -54,6 +57,7 @@ export default function ReviewsCarrousel() {
         data-aos-easing="linear"
         data-aos-duration="1500"
       >
+        {!isTabletAndMobile && (
         <button
           className="button"
           onClick={handleLeftArrow}
@@ -61,12 +65,38 @@ export default function ReviewsCarrousel() {
         >
           <img className="arrow_icon" src={prev} alt="arow" />
         </button>
+        )}
 
         <div className="text_container" ref={transition}>
-          <img className="reviewer_img" src={reviewsArray[index].img} alt="avatar" />
+
+          <div className="img-container">
+
+            {isTabletAndMobile && (
+            <button
+              className="button"
+              onClick={handleLeftArrow}
+              type="button"
+            >
+              <img className="arrow_icon" src={prev} alt="arow" />
+            </button>
+            )}
+            <img className="reviewer-img" src={reviewsArray[index].img} alt="avatar" />
+
+            {isTabletAndMobile && (
+            <button
+              className="button"
+              onClick={handleRightArrow}
+              type="button"
+            >
+              <img className="arrow_icon" src={after} alt="avatar" />
+            </button>
+            )}
+
+          </div>
+
           <div className="text-xs review">
             {reviewsArray[index].review.map((r) => (
-              <p className="techsSpan" key={r}>
+              <p key={r}>
                 {r}
               </p>
             ))}
@@ -74,6 +104,7 @@ export default function ReviewsCarrousel() {
           <span className="text-md">{`- ${reviewsArray[index].name}`}</span>
         </div>
 
+        {!isTabletAndMobile && (
         <button
           className="button"
           onClick={handleRightArrow}
@@ -81,7 +112,14 @@ export default function ReviewsCarrousel() {
         >
           <img className="arrow_icon" src={after} alt="avatar" />
         </button>
+        )}
+
       </div>
     </ReviewsCarrouselContainer>
   );
 }
+
+ReviewsCarrousel.propTypes = ({
+  isTabletAndMobile: PropTypes.bool.isRequired,
+  isMobile: PropTypes.bool.isRequired,
+});

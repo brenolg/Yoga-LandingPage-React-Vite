@@ -3,12 +3,22 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { TextContainerStyle } from './styles';
 
-export default function TextContainer({ isTabletAndMobile }) {
+export default function TextContainer({ isTabletAndMobile, isMobile, isTablet }) {
   const handleTextClass = () => {
     if (isTabletAndMobile) {
       return 'main_text text-xs';
     }
     return 'main_text text-sm';
+  };
+
+  const handleTitleClass = () => {
+    if (isTablet) {
+      return 'H4';
+    }
+    if (isMobile) {
+      return 'H5';
+    }
+    return 'H3';
   };
 
   return (
@@ -18,7 +28,7 @@ export default function TextContainer({ isTabletAndMobile }) {
       data-aos-easing="ease-in-out"
       data-aos-duration="1500"
     >
-      <h2 className={`${isTabletAndMobile ? 'H3' : 'H2'} main_title `}>
+      <h2 className={`${handleTitleClass()} main_title`}>
         A plataforma de yoga mais prática, didática e direta que você já acessou!
       </h2>
 
@@ -58,4 +68,6 @@ export default function TextContainer({ isTabletAndMobile }) {
 
 TextContainer.propTypes = ({
   isTabletAndMobile: PropTypes.bool.isRequired,
+  isTablet: PropTypes.bool.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 });

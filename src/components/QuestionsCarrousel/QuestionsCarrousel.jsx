@@ -29,8 +29,8 @@ export default function QuestionsCarrousel({ isMobile, isTabletAndMobile }) {
   return (
     <QuestionsCarrouselContainer
       className="section-size"
-      isMobile={isMobile}
-      isTabletAndMobile={isTabletAndMobile}
+      ismobile={isMobile}
+      istabletandmobile={isTabletAndMobile}
       data-aos="fade"
       data-aos-easing="linear"
       data-aos-duration="1500"

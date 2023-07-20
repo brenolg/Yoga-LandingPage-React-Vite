@@ -12,53 +12,36 @@ import Prices from './components/Prices/Prices';
 import QuestionsCarrousel from './components/QuestionsCarrousel/QuestionsCarrousel';
 import ReviewsCarrousel from './components/ReviewsCarrousel/ReviewsCarrousel';
 import Seal from './components/Seal/Seal';
-// Responsive check:  Header/ hero / Questions / pillars /
+// Responsive check:  Header/ hero / Questions / pillars / access / moment /reviews / doubts / seal /
 function App() {
   const isTabletAndMobile = useMediaQuery({ query: '(max-width: 1127px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 744px)' });
+  const isTablet = useMediaQuery({ minWidth: 745, maxWidth: 1127 });
 
-  function isTablet() {
-    return isTabletAndMobile && !isMobile;
-  }
+  const devicesProps = {
+    isTabletAndMobile,
+    isMobile,
+    isTablet,
+  };
 
   return (
     <>
-      <Header
-        isTablet={isTabletAndMobile}
-        isMobile={isMobile}
-      />
+      <Header {...devicesProps} />
+      <Hero {...devicesProps} />
+      <QuestionsCarrousel {...devicesProps} />
+      <Pillars {...devicesProps} />
+      <Access {...devicesProps} />
+      <Moment {...devicesProps} />
 
-      <Hero
-        isTabletAndMobile={isTabletAndMobile}
-        isMobile={isMobile}
-      />
+      {!isMobile && (
+      <ReviewsCarrousel {...devicesProps} />
+      )}
 
-      <QuestionsCarrousel isMobile={isMobile} isTabletAndMobile={isTabletAndMobile} />
-
-      <Pillars isTablet={isTabletAndMobile} />
-
-      <Access isMobile={isMobile} />
-
-      <Moment isMobile={isMobile} isTabletAndMobile={isTabletAndMobile} />
-
-      {!isMobile && (<ReviewsCarrousel />)}
-
-      <Prices
-        isTablet={isTablet()}
-        isMobile={isMobile}
-        isTabletAndMobile={isTabletAndMobile}
-      />
-
-      <Doubts isMobile={isMobile} />
-
-      <Seal />
-
-      <About
-        isTablet={isTablet()}
-        isMobile={isMobile}
-      />
-
-      <Footer />
+      <Prices {...devicesProps} />
+      <Doubts {...devicesProps} />
+      <Seal {...devicesProps} />
+      <About {...devicesProps} />
+      <Footer {...devicesProps} />
     </>
   );
 }

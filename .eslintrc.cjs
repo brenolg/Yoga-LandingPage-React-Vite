@@ -17,5 +17,8 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/jsx-props-no-spreading': 'off',
+    'no-array-index-key': 'off',
+    'react/no-array-index-key': 'error',
   },
 };

@@ -9,11 +9,11 @@ background: var(--C2-50p);
 
 .main_container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
   gap: 3rem;
+  justify-content: space-between;
   margin: auto;
+  width: 100%;
 }
 `;
 
@@ -43,7 +43,7 @@ margin-bottom: 3rem;
 }
 /* Mobile */
 @media screen and (max-width: 744px) {
-max-width: 75%;
+max-width: 85%;
 margin-bottom: 1.6rem;
 }
 `;

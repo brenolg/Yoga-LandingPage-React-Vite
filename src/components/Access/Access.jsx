@@ -11,7 +11,7 @@ export default function Access({ isMobile }) {
   return (
     <AccessContainer>
       <div className="access_section section-size">
-        <h4 className="text-3xl section-main-title">O que terá acesso?</h4>
+        <h4 className={`${isMobile ? 'text-2xl' : 'text-3xl'} section-main-title`}>O que terá acesso?</h4>
 
         <div
           className="main_container"
