@@ -245,6 +245,7 @@ width: 100%;
 
 .logo {
   max-height: 6rem;
+  max-width: 100%;
 }
 
 .scroll-sub-container {
@@ -284,7 +285,7 @@ width: 100%;
   }
 
   .social-links {
-    width: 50%;
+    width: 48%;
   }
 
   .social-links img{
@@ -473,7 +474,7 @@ padding-left: 7.5rem;
   width: 100%;
   justify-content: center;
 }
-`;function Qc(){return v.jsx(p1,{className:"img_container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:v.jsx("div",{className:"outer_element",children:v.jsx("img",{className:"bela_img",src:c1,alt:"bela-img"})})})}function Xl({isTabletAndMobile:e,isMobile:t,isTablet:n}){const r=()=>e?"main_text text-xs":"main_text text-sm",i=()=>n?"H4":t?"H5":"H2";return v.jsxs(f1,{className:"hero_text","data-aos":"fade-up","data-aos-easing":"ease-in-out","data-aos-duration":"1500",children:[v.jsx("h2",{className:`${i()} main_title`,children:"A plataforma de yoga mais prática, didática e direta que você já acessou!"}),v.jsxs("div",{children:[v.jsx("p",{className:r(),children:"Quer começar mas não sabe por onde? Já pratica e quer evolui? O Yoga iClub é para todos!"}),v.jsx("p",{className:r(),children:"Aqui você não precisa ter flexibilidade, força, peso ou idade ideais. Vamos praticar técnicas milenares e alcançar os benefícios juntos!"}),v.jsx("p",{className:r(),children:"Yoga iClub é para todos aqueles que acreditam que é possível ter uma vida equilibrada! Meu objetivo é te ajudar a encontrar a prática e rotina ideais pra você!"})]}),v.jsxs("div",{className:"button_container",children:[v.jsx("button",{className:"Button button",type:"button",children:v.jsx(De,{to:"prices",duration:9e5,delay:100,offset:-96,children:"Quero começar!"})}),v.jsx("span",{className:"text-md span",children:"+ de 500 vidas impactadas"})]})]})}Xl.propTypes={isTabletAndMobile:D.bool.isRequired,isTablet:D.bool.isRequired,isMobile:D.bool.isRequired};function sm({isTabletAndMobile:e,isMobile:t,isTablet:n}){const r=Ur.useMediaQuery({query:"(max-width: 950px)"});return v.jsx(d1,{className:"section-size",id:"start",children:r?v.jsxs(v.Fragment,{children:[v.jsx(Qc,{}),v.jsx(Xl,{isTabletAndMobile:e,isMobile:t,isTablet:n})]}):v.jsxs(v.Fragment,{children:[v.jsx(Xl,{isTabletAndMobile:e,isMobile:t,isTablet:n}),v.jsx(Qc,{})]})})}sm.propTypes={isTabletAndMobile:D.bool.isRequired,isTablet:D.bool.isRequired,isMobile:D.bool.isRequired};const qc="/Yoga-LandingPage-React-Vite/assets/access_img-422fe4ba.png",m1=Ee.section`
+`;function Qc(){return v.jsx(p1,{className:"img_container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:v.jsx("div",{className:"outer_element",children:v.jsx("img",{className:"bela_img",src:c1,alt:"bela-img"})})})}function Xl({isTabletAndMobile:e,isMobile:t,isTablet:n}){const r=()=>e?"main_text text-xs":"main_text text-sm",i=()=>n?"H4":t?"H5":"H2";return v.jsxs(f1,{className:"hero_text","data-aos":"fade-up","data-aos-easing":"ease-in-out","data-aos-duration":"1500",children:[v.jsx("h2",{className:`${i()} main_title`,children:"A plataforma de yoga mais prática, didática e direta que você já acessou!"}),v.jsxs("div",{children:[v.jsx("p",{className:r(),children:"Quer começar mas não sabe por onde? Já pratica e quer evolui? O Yoga iClub é para todos!"}),v.jsx("p",{className:r(),children:"Aqui você não precisa ter flexibilidade, força, peso ou idade ideais. Vamos praticar técnicas milenares e alcançar os benefícios juntos!"}),v.jsx("p",{className:r(),children:"Yoga iClub é para todos aqueles que acreditam que é possível ter uma vida equilibrada! Meu objetivo é te ajudar a encontrar a prática e rotina ideais pra você!"})]}),v.jsxs("div",{className:"button_container",children:[v.jsx("button",{className:"Button button",type:"button",children:v.jsx(De,{to:"prices",duration:6e3,delay:600,offset:-96,smooth:!0,children:"Quero começar!"})}),v.jsx("span",{className:"text-md span",children:"+ de 500 vidas impactadas"})]})]})}Xl.propTypes={isTabletAndMobile:D.bool.isRequired,isTablet:D.bool.isRequired,isMobile:D.bool.isRequired};function sm({isTabletAndMobile:e,isMobile:t,isTablet:n}){const r=Ur.useMediaQuery({query:"(max-width: 950px)"});return v.jsx(d1,{className:"section-size",id:"start",children:r?v.jsxs(v.Fragment,{children:[v.jsx(Qc,{}),v.jsx(Xl,{isTabletAndMobile:e,isMobile:t,isTablet:n})]}):v.jsxs(v.Fragment,{children:[v.jsx(Xl,{isTabletAndMobile:e,isMobile:t,isTablet:n}),v.jsx(Qc,{})]})})}sm.propTypes={isTabletAndMobile:D.bool.isRequired,isTablet:D.bool.isRequired,isMobile:D.bool.isRequired};const qc="/Yoga-LandingPage-React-Vite/assets/access_img-422fe4ba.png",m1=Ee.section`
 color: var(--C4);
 
 .main-container {
