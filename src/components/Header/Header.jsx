@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-scroll';
 import yogaLogo from '../../images/yoga_iclub.svg';
+import defaultScrollProps from '../../utils/defaultScrollProps';
 import HeaderContainer from './styles';
 
 function Header({ isTablet }) {
@@ -17,27 +18,27 @@ function Header({ isTablet }) {
     <HeaderContainer>
       <nav className="section-size headerNav">
         <button className={handleButtonClass()} type="button">
-          <Link to="start" duration={4000} delay={100} offset={-96}> início </Link>
+          <Link to="start" {...defaultScrollProps}> início </Link>
         </button>
         <button className={handleButtonClass()} type="button">
-          <Link to="iclub" duration={4000} delay={100} offset={-96}> yoga iclub </Link>
+          <Link to="iclub" {...defaultScrollProps}> yoga iclub </Link>
         </button>
         <button className={handleButtonClass()} type="button">
-          <Link to="students" duration={4000} delay={100} offset={-96}> alunos </Link>
+          <Link to="students" {...defaultScrollProps}> alunos </Link>
         </button>
 
-        <Link className="link" to="prices" duration={4000} delay={100} offset={-96}>
+        <Link className="link" to="prices" {...defaultScrollProps}>
           <img alt="logo" src={yogaLogo} />
         </Link>
 
         <button className={handleButtonClass()} type="button">
-          <Link to="prices" duration={4000} delay={100} offset={-96}> preços </Link>
+          <Link to="prices" {...defaultScrollProps}> preços </Link>
         </button>
         <button className={handleButtonClass()} type="button">
-          <Link to="doubts" duration={4000} delay={100} offset={-96}> dúvidas </Link>
+          <Link to="doubts" {...defaultScrollProps}> dúvidas </Link>
         </button>
         <button className={handleButtonClass()} type="button">
-          <Link to="contact" duration={4000} delay={100} offset={-96}> contato </Link>
+          <Link to="contact" {...defaultScrollProps}> contato </Link>
         </button>
       </nav>
 

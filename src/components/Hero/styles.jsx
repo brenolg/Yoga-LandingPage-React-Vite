@@ -37,8 +37,7 @@ width: 50%;
   justify-content:center;
   flex-direction: column;
   flex-shrink: 0;
-  gap: var(--spacing-xs);
-
+  gap: 1rem;
 }
 
 .button {
@@ -46,7 +45,6 @@ width: 50%;
   border: 0.3rem solid transparent;
   border-radius: var(--radius-radius-full);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  margin-bottom: 0.6rem;
   font-size: 1.8rem;
   font-weight: 950;
 }

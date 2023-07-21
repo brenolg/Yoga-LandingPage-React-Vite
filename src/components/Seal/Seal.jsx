@@ -5,7 +5,13 @@ import SealContainer from './styles';
 
 export default function Seal({ isMobile }) {
   return (
-    <SealContainer isMobile={isMobile} className="section-size">
+    <SealContainer
+      isMobile={isMobile}
+      className="section-size"
+      data-aos="fade"
+      data-aos-easing="linear"
+      data-aos-duration="1800"
+    >
       <div className="blur" />
       <img src={seal} alt="seal" />
       <p className={isMobile ? 'text-sm' : 'text-md'}>

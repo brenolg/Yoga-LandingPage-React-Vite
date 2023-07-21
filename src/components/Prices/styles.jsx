@@ -143,6 +143,23 @@ background: var(--C2-50p);
     font-size: 3.8rem;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .premium .price-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .premium .price-title {
+    font-size: 2.8rem;
+  }
+
+  .premium .price-sub-title {
+    font-size: 2rem;
+    padding-bottom: 0.2rem;
+  }
+}
 `;
 
 export default PricesContainer;

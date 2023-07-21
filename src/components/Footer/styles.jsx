@@ -32,6 +32,7 @@ width: 100%;
 
 .logo {
   max-height: 6rem;
+  max-width: 100%;
 }
 
 .scroll-sub-container {
@@ -71,7 +72,7 @@ width: 100%;
   }
 
   .social-links {
-    width: 50%;
+    width: 48%;
   }
 
   .social-links img{

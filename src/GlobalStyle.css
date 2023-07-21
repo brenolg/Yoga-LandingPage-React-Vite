@@ -92,7 +92,7 @@
 }
 
 .H2 {
-  font-family: ivy, syne, sans-serif;
+  font-family: ivy, sans-serif;
   font-size: 4.5rem;
   font-style: normal;
   font-weight: 300;
@@ -271,6 +271,8 @@ button:active {
 a {
   color: inherit;
   text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 ul {

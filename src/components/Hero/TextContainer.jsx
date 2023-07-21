@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-scroll';
+import defaultScrollProps from '../../utils/defaultScrollProps';
 import { TextContainerStyle } from './styles';
 
 export default function TextContainer({ isTabletAndMobile, isMobile, isTablet }) {
@@ -52,11 +53,11 @@ export default function TextContainer({ isTabletAndMobile, isMobile, isTablet })
       </div>
 
       <div className="button_container">
-        <button className="Button button" type="button">
-          <Link to="prices" duration={2000} delay={100} offset={-96}>
+        <Link className="link" to="prices" {...defaultScrollProps}>
+          <button className="Button button" type="button">
             Quero começar!
-          </Link>
-        </button>
+          </button>
+        </Link>
 
         <span className="text-md span">
           + de 500 vidas impactadas

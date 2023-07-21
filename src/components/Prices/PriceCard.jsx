@@ -50,7 +50,7 @@ export default function PriceCard({
       <div>
         <div className="title_container">
           <h1 className={`${isMobile ? 'H2' : 'H1'} price-title`}>{title}</h1>
-          <h4 className={`${handleSubTitleClass()}`}>{subTitle}</h4>
+          <h4 className={`${handleSubTitleClass()} price-sub-title`}>{subTitle}</h4>
         </div>
 
         <h4 className="price">{price}</h4>

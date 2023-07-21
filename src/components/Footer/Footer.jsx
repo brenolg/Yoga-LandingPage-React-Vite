@@ -4,6 +4,7 @@ import instagram from '../../images/instagram.svg';
 import whatsapp from '../../images/whatsapp.svg';
 import yogaLogo from '../../images/yoga_iclub.svg';
 import youtube from '../../images/youtube.svg';
+import defaultScrollProps from '../../utils/defaultScrollProps';
 import FooterContainer from './styles';
 
 export default function Footer(isMobile) {
@@ -15,30 +16,30 @@ export default function Footer(isMobile) {
         <div className="scroll-main-container">
           <div className="scroll-sub-container">
             <button className="text-md" type="button">
-              <Link to="start" duration={2000} delay={100} offset={-96}> início </Link>
+              <Link to="start" {...defaultScrollProps}> início </Link>
             </button>
 
             <button className="text-md" type="button">
-              <Link to="iclub" duration={2000} delay={100} offset={-96}> iclub </Link>
+              <Link to="iclub" {...defaultScrollProps}> iclub </Link>
             </button>
           </div>
 
           <div className="scroll-sub-container">
 
             <button className="text-md" type="button">
-              <Link to="students" duration={2000} delay={100} offset={-96}> alunos </Link>
+              <Link to="students" {...defaultScrollProps}> alunos </Link>
             </button>
             <button className="text-md" type="button">
-              <Link to="prices" duration={2000} delay={100} offset={-96}> preços </Link>
+              <Link to="prices" {...defaultScrollProps}> preços </Link>
             </button>
           </div>
 
           <div className="scroll-sub-container">
             <button className="text-md" type="button">
-              <Link to="doubts" duration={2000} delay={100} offset={-96}> dúvidas </Link>
+              <Link to="doubts" {...defaultScrollProps}> dúvidas </Link>
             </button>
             <button className="text-md" type="button">
-              <Link to="contact" duration={2000} delay={100} offset={-96}> contato </Link>
+              <Link to="contact" {...defaultScrollProps}> contato </Link>
             </button>
           </div>
         </div>
@@ -69,7 +70,7 @@ export default function Footer(isMobile) {
           </a>
         </nav>
 
-        <Link className="link" to="prices" duration={2000} delay={100} offset={-96}>
+        <Link className="link" to="prices" {...defaultScrollProps}>
           <img className="logo" src={yogaLogo} alt="yoga-logo" />
         </Link>
       </div>

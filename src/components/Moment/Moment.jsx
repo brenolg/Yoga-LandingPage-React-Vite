@@ -17,11 +17,21 @@ export default function Moment({ isMobile, isTabletAndMobile }) {
       <div className="main-container">
         {isBreakPoint ? (
           <>
-            <div className="sub-container">
+            <div
+              className="sub-container"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1800"
+            >
               <img className="img" src={accessImg} alt="girl-yoga" />
             </div>
 
-            <div className="sub-container">
+            <div
+              className="sub-container"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1800"
+            >
               <TextCard
                 isMobile={isMobile}
                 isTabletAndMobile={isTabletAndMobile}
@@ -37,7 +47,12 @@ export default function Moment({ isMobile, isTabletAndMobile }) {
               />
             </div>
 
-            <div className="sub-container">
+            <div
+              className="sub-container"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1800"
+            >
               <TextCard
                 isMobile={isMobile}
                 isTabletAndMobile={isTabletAndMobile}
@@ -55,7 +70,12 @@ export default function Moment({ isMobile, isTabletAndMobile }) {
           </>
         ) : (
           <div className="main-container">
-            <div className="sub-container">
+            <div
+              className="sub-container"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1800"
+            >
               <TextCard
                 isMobile={isMobile}
                 isTabletAndMobile={isTabletAndMobile}
@@ -71,11 +91,21 @@ export default function Moment({ isMobile, isTabletAndMobile }) {
               />
             </div>
 
-            <div className="sub-container">
+            <div
+              className="sub-container"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1800"
+            >
               <img className="img" src={accessImg} alt="girl-yoga" />
             </div>
 
-            <div className="sub-container">
+            <div
+              className="sub-container"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1800"
+            >
               <TextCard
                 isMobile={isMobile}
                 isTabletAndMobile={isTabletAndMobile}
