@@ -387,7 +387,6 @@ width: 50%;
   flex-direction: column;
   flex-shrink: 0;
   gap: 1rem;
-
 }
 
 .button {
@@ -534,21 +533,21 @@ width: 100%;
 @media screen and (max-width: 1000px) {
   max-width: 100%;
 }
-`;function It({isTabletAndMobile:e,title:t,text:n}){return v.jsxs(v1,{children:[v.jsx("h4",{className:`${e?"H5":"H6"} sub-title`,children:t}),v.jsx("p",{className:e?"text-sm":"text-md",children:n})]})}It.propTypes={title:D.string.isRequired,text:D.string.isRequired,isTabletAndMobile:D.bool.isRequired};function cm({isMobile:e,isTabletAndMobile:t}){const n=Yr.useMediaQuery({query:"(max-width: 1000px)"});return v.jsxs(h1,{className:"section-size",children:[v.jsx("h4",{className:`section-main-title ${e?"text-2xl":"text-3xl"}`,children:"Encontre aulas para o seu momento"}),v.jsx("div",{className:"main-container",children:n?v.jsxs(v.Fragment,{children:[v.jsx("div",{className:"sub-container",children:v.jsx("img",{className:"img",src:Xc,alt:"girl-yoga"})}),v.jsxs("div",{className:"sub-container",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Para quem nunca praticou",text:"Nunca teve contato com a prática e se sente insegura se está fazendo certo ou errado."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Iniciantes",text:"Praticou algumas vezes mas nunca conseguiu dar continuidade."})]}),v.jsxs("div",{className:"sub-container",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Intermediários",text:"Já domina as técnicas mas quer avançar ainda mais na sua prática pessoal."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Avançados",text:"Praticante há mais de 5 anos mas sente falta de ser guiado em sua prática pessoal."})]})]}):v.jsxs("div",{className:"main-container",children:[v.jsxs("div",{className:"sub-container",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Para quem nunca praticou",text:"Nunca teve contato com a prática e se sente insegura se está fazendo certo ou errado."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Iniciantes",text:"Praticou algumas vezes mas nunca conseguiu dar continuidade."})]}),v.jsx("div",{className:"sub-container",children:v.jsx("img",{className:"img",src:Xc,alt:"girl-yoga"})}),v.jsxs("div",{className:"sub-container",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Intermediários",text:"Já domina as técnicas mas quer avançar ainda mais na sua prática pessoal."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Avançados",text:"Praticante há mais de 5 anos mas sente falta de ser guiado em sua prática pessoal."})]})]})})]})}cm.propTypes={isMobile:D.bool.isRequired,isTabletAndMobile:D.bool.isRequired};const g1="/Yoga-LandingPage-React-Vite/assets/body-3c34b9f6.png",y1="/Yoga-LandingPage-React-Vite/assets/mind-5d03e289.png",w1="/Yoga-LandingPage-React-Vite/assets/soul-1a994e46.png",x1=Ee.section`
+`;function It({isTabletAndMobile:e,title:t,text:n}){return v.jsxs(v1,{children:[v.jsx("h4",{className:`${e?"H5":"H6"} sub-title`,children:t}),v.jsx("p",{className:e?"text-sm":"text-md",children:n})]})}It.propTypes={title:D.string.isRequired,text:D.string.isRequired,isTabletAndMobile:D.bool.isRequired};function cm({isMobile:e,isTabletAndMobile:t}){const n=Yr.useMediaQuery({query:"(max-width: 1000px)"});return v.jsxs(h1,{className:"section-size",children:[v.jsx("h4",{className:`section-main-title ${e?"text-2xl":"text-3xl"}`,children:"Encontre aulas para o seu momento"}),v.jsx("div",{className:"main-container",children:n?v.jsxs(v.Fragment,{children:[v.jsx("div",{className:"sub-container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:v.jsx("img",{className:"img",src:Xc,alt:"girl-yoga"})}),v.jsxs("div",{className:"sub-container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Para quem nunca praticou",text:"Nunca teve contato com a prática e se sente insegura se está fazendo certo ou errado."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Iniciantes",text:"Praticou algumas vezes mas nunca conseguiu dar continuidade."})]}),v.jsxs("div",{className:"sub-container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Intermediários",text:"Já domina as técnicas mas quer avançar ainda mais na sua prática pessoal."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Avançados",text:"Praticante há mais de 5 anos mas sente falta de ser guiado em sua prática pessoal."})]})]}):v.jsxs("div",{className:"main-container",children:[v.jsxs("div",{className:"sub-container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Para quem nunca praticou",text:"Nunca teve contato com a prática e se sente insegura se está fazendo certo ou errado."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Iniciantes",text:"Praticou algumas vezes mas nunca conseguiu dar continuidade."})]}),v.jsx("div",{className:"sub-container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:v.jsx("img",{className:"img",src:Xc,alt:"girl-yoga"})}),v.jsxs("div",{className:"sub-container","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:[v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Intermediários",text:"Já domina as técnicas mas quer avançar ainda mais na sua prática pessoal."}),v.jsx(It,{isMobile:e,isTabletAndMobile:t,title:"Avançados",text:"Praticante há mais de 5 anos mas sente falta de ser guiado em sua prática pessoal."})]})]})})]})}cm.propTypes={isMobile:D.bool.isRequired,isTabletAndMobile:D.bool.isRequired};const g1="/Yoga-LandingPage-React-Vite/assets/body-57ecc486.png",y1="/Yoga-LandingPage-React-Vite/assets/mind-56b48d04.png",w1="/Yoga-LandingPage-React-Vite/assets/soul-fe5d1558.png",x1=Ee.section`
 color: var(--C4);
 width: 100%;
-height: 100%;
+
 
 .pillars_container {
   display: flex;
   flex-shrink: 0;
-  justify-content: space-between;
+  align-items: flex-start;
   padding-right: 0;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
   width: 100%;
-  height: 100%;
+
 }
 
 @media screen and (max-width: 1127px) {
@@ -564,7 +563,10 @@ align-items: center;
 text-align: center;
 gap: 1.6rem;
 width: 28rem;
-height: 100%;
+
+p{
+font-size: 1.6rem
+}
 
 .pillar_img {
   border-bottom: 1.6rem solid var(--C2);
@@ -573,6 +575,8 @@ height: 100%;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   width: 100%;
   margin: auto;
+  height: 36rem;
+
 }
 //altura da imagem nao funfa body um pouco menor que as outras
 `;function uo({isTabletAndMobile:e,img:t,text:n,title:r}){return v.jsxs(S1,{className:"pillar","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1500",children:[v.jsx("img",{alt:"yoga-img",className:"pillar_img",src:t}),v.jsx("h4",{className:"H4",children:r}),v.jsx("p",{className:e?"text-sm":"text-md",children:n})]})}uo.propTypes={isTabletAndMobile:D.bool.isRequired,img:D.string.isRequired,text:D.string.isRequired,title:D.string.isRequired};function dm({isMobile:e,isTabletAndMobile:t}){return v.jsxs(x1,{className:"section-size",isMobile:e,id:"iclub",children:[v.jsx("h3",{className:`section-main-title ${e?"text-2xl":"text-3xl"}`,children:"Como funciona o Yoga iClub?"}),v.jsxs("div",{className:"pillars_container ",children:[v.jsx(uo,{isTabletAndMobile:t,img:g1,title:"body",text:`Práticas de yoga desenvolvidas para construir consciência do corpo,
@@ -580,7 +584,7 @@ height: 100%;
             ásanas e pránayamas`}),v.jsx(uo,{isTabletAndMobile:t,img:y1,title:"mind",text:`Meditações guiadas elaboradas para te tornar mais consciente de seus
           pensamentos, desenvolvendo maior inteligência e gestão emocional`}),v.jsx(uo,{isTabletAndMobile:t,img:w1,title:"soul",text:`Yoga é ferramenta para desenvolvimento completo do ser, é elevação
           espiritual. Aulas teóricas que vão te convidar a um mergulho ainda
-          mais profundo.`})]})]})}dm.propTypes={isMobile:D.bool.isRequired,isTabletAndMobile:D.bool.isRequired};function gn({title:e,subTitle:t,price:n,list:r,link:i,isPremium:o,isTabletAndMobile:a,isMobile:l,isTablet:s}){const u=()=>o&&!a?"0":!o&&!a?"500":"0",m=()=>l?o?"text-xl":"text-2xl":o?"text-xl":"text-3xl";return v.jsxs("div",{"data-aos":"fade-up","data-aos-easing":"ease-in-out","data-aos-delay":u(),"data-aos-duration":"1500",className:`${o?"premium":"notPremium"} card_container`,children:[v.jsxs("div",{children:[v.jsxs("div",{className:"title_container",children:[v.jsx("h1",{className:`${l?"H2":"H1"} price-title`,children:e}),v.jsx("h4",{className:`${m()}`,children:t})]}),v.jsx("h4",{className:"price",children:n}),v.jsx("ul",{className:"text-md list",children:r.map((h,p)=>v.jsx("li",{children:h},`${h} ${p}`))})]}),v.jsx("button",{className:"Button button ",type:"button",children:v.jsx("a",{href:i,target:"_blank",rel:"noopener noreferrer",children:"quero começar"})})]})}gn.propTypes={title:D.string.isRequired,subTitle:D.string.isRequired,price:D.string.isRequired,list:D.arrayOf(D.string).isRequired,link:D.string.isRequired,isPremium:D.bool.isRequired,isMobile:D.bool.isRequired,isTabletAndMobile:D.bool.isRequired,isTablet:D.bool.isRequired};const E1=Ee.section`
+          mais profundo.`})]})]})}dm.propTypes={isMobile:D.bool.isRequired,isTabletAndMobile:D.bool.isRequired};function gn({title:e,subTitle:t,price:n,list:r,link:i,isPremium:o,isTabletAndMobile:a,isMobile:l,isTablet:s}){const u=()=>o&&!a?"0":!o&&!a?"500":"0",m=()=>l?o?"text-xl":"text-2xl":o?"text-xl":"text-3xl";return v.jsxs("div",{"data-aos":"fade-up","data-aos-easing":"ease-in-out","data-aos-delay":u(),"data-aos-duration":"1500",className:`${o?"premium":"notPremium"} card_container`,children:[v.jsxs("div",{children:[v.jsxs("div",{className:"title_container",children:[v.jsx("h1",{className:`${l?"H2":"H1"} price-title`,children:e}),v.jsx("h4",{className:`${m()} price-sub-title`,children:t})]}),v.jsx("h4",{className:"price",children:n}),v.jsx("ul",{className:"text-md list",children:r.map((h,p)=>v.jsx("li",{children:h},`${h} ${p}`))})]}),v.jsx("button",{className:"Button button ",type:"button",children:v.jsx("a",{href:i,target:"_blank",rel:"noopener noreferrer",children:"quero começar"})})]})}gn.propTypes={title:D.string.isRequired,subTitle:D.string.isRequired,price:D.string.isRequired,list:D.arrayOf(D.string).isRequired,link:D.string.isRequired,isPremium:D.bool.isRequired,isMobile:D.bool.isRequired,isTabletAndMobile:D.bool.isRequired,isTablet:D.bool.isRequired};const E1=Ee.section`
 background: var(--C2-50p);
 
 .prices_section {
@@ -721,6 +725,23 @@ background: var(--C2-50p);
 @media screen and (max-width: 420px) {
   .premium .price-title {
     font-size: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .premium .price-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .premium .price-title {
+    font-size: 2.8rem;
+  }
+
+  .premium .price-sub-title {
+    font-size: 2rem;
+    padding-bottom: 0.2rem;
   }
 }
 `,Gc=!0;function fm({isTabletAndMobile:e,isMobile:t}){return v.jsx(E1,{id:"prices",children:v.jsxs("div",{className:"prices_section section-size",children:[v.jsx("h4",{className:`${t?"text-2xl":"text-3xl"} section-main-title`,children:"Planos e preços:"}),v.jsx("div",{className:"main_container",children:e?v.jsxs(v.Fragment,{children:[v.jsx(gn,{isPremium:Gc,isMobile:t,isTabletAndMobile:e,title:"iClub Pro",subTitle:"(anual)",price:"R$ 160,00/mês",link:"https://pay.hotmart.com/J71174272X?off=yxz27hdf&bid=1688599747445",list:["Acesso as aulas AO VIVO 2x por semana","Acesso a plataforma com aulas gravadas","Temas novos todos os meses","Aulas de Hatha e Vinyasa","Aulas práticas e teóricas","Aulas didáticas para avançar e   lapidar sua prática","Acesso a bônus exclusivos da comunidade","Pagamento recorrente, 12x de R$160 (não compromete o limite do cartão)"]}),v.jsx(gn,{isPremium:!1,isMobile:t,isTabletAndMobile:e,title:"iClub",subTitle:"anual",price:"R$ 39,90/mês",link:"https://pay.hotmart.com/J71174272X?off=sghdkt84&bid=1688599677773",list:["Acesso a plataforma com aulas gravadas","Temas novos todos os meses","Aulas de Hatha e Vinyasa","Aulas práticas e teóricas","Aulas didáticas para avançar e lapidar sua prática","Acesso a bônus exclusivos da comunidade","Acesso a bônus exclusivos da comunidade","Pagamento parcelado, até 12x de R$39,90"]}),v.jsx(gn,{isPremium:!1,isMobile:t,isTabletAndMobile:e,title:"iClub",subTitle:"mensal",price:"R$ 69,90/mês",link:"https://pay.hotmart.com/J71174272X?off=4o7gr397",list:["Acesso a plataforma com aulas gravadas","Temas novos todos os meses","Aulas de Hatha e Vinyasa","Aulas práticas e teóricas","Aulas didáticas para avançar e lapidar sua prática","Acesso a bônus exclusivos da comunidade","Pagamento mensal"]})]}):v.jsxs(v.Fragment,{children:[v.jsx(gn,{isPremium:!1,isMobile:t,isTabletAndMobile:e,title:"iClub",subTitle:"anual",price:"R$ 39,90/mês",link:"https://pay.hotmart.com/J71174272X?off=sghdkt84&bid=1688599677773",list:["Acesso a plataforma com aulas gravadas","Temas novos todos os meses","Aulas de Hatha e Vinyasa","Aulas práticas e teóricas","Aulas didáticas para avançar e lapidar sua prática","Acesso a bônus exclusivos da comunidade","Acesso a bônus exclusivos da comunidade","Pagamento parcelado, até 12x de R$39,90"]}),v.jsx(gn,{isPremium:Gc,isMobile:t,isTabletAndMobile:e,title:"iClub Pro",subTitle:"(anual)",price:"R$ 160,00/mês",link:"https://pay.hotmart.com/J71174272X?off=yxz27hdf&bid=1688599747445",list:["Acesso as aulas AO VIVO 2x por semana","Acesso a plataforma com aulas gravadas","Temas novos todos os meses","Aulas de Hatha e Vinyasa","Aulas práticas e teóricas","Aulas didáticas para avançar e   lapidar sua prática","Acesso a bônus exclusivos da comunidade","Pagamento recorrente, 12x de R$160 (não compromete o limite do cartão)"]}),v.jsx(gn,{isPremium:!1,isMobile:t,isTabletAndMobile:e,title:"iClub",subTitle:"mensal",price:"R$ 69,90/mês",link:"https://pay.hotmart.com/J71174272X?off=4o7gr397",list:["Acesso a plataforma com aulas gravadas","Temas novos todos os meses","Aulas de Hatha e Vinyasa","Aulas práticas e teóricas","Aulas didáticas para avançar e lapidar sua prática","Acesso a bônus exclusivos da comunidade","Pagamento mensal"]})]})})]})})}fm.propTypes={isTabletAndMobile:D.bool.isRequired,isMobile:D.bool.isRequired};const k1="Você perde a cabeça com mais frequência do que gostaria?",_1="Precisa de uma mente mais serena para ter mais organização e disciplina na sua vida?",C1="Quer ter um corpo mais forte e flexível?",P1="Quer ter mais equilíbrio                                        e inteligência emocional?",j1="Sente que precisa de hábitos que tragam mais leveza e felicidade para seus dias?",T1="Gostaria de se sentir mais disposto(a) e com mais energia?",Kc=[k1,_1,C1,P1,j1,T1],O1=Ee.section`
@@ -949,4 +970,4 @@ h4 {
       max-width: 100%;
     }
 }
-`;function hm({isMobile:e}){return v.jsxs($1,{isMobile:e,className:"section-size",children:[v.jsx("div",{className:"blur"}),v.jsx("img",{src:D1,alt:"seal"}),v.jsx("p",{className:e?"text-sm":"text-md",children:"Nos do Yoga iClub criamos o 15payback, que da a você 15 dias para solicitar seu reembolso sem questionamento ou burocracia alguma caso não esteja satisfeito com o produto."})]})}hm.propTypes={isMobile:D.bool.isRequired};function H1(){const e=Yr.useMediaQuery({query:"(max-width: 1127px)"}),t=Yr.useMediaQuery({query:"(max-width: 744px)"}),n=Yr.useMediaQuery({minWidth:745,maxWidth:1127}),r={isTabletAndMobile:e,isMobile:t,isTablet:n};return v.jsxs(v.Fragment,{children:[v.jsx(sm,{...r}),v.jsx(um,{...r}),v.jsx(pm,{...r}),v.jsx(dm,{...r}),v.jsx(Bp,{...r}),v.jsx(cm,{...r}),!t&&v.jsx(mm,{...r}),v.jsx(fm,{...r}),v.jsx(Fp,{...r}),v.jsx(hm,{...r}),v.jsx(Hp,{...r}),v.jsx(u1,{...r})]})}qa.createRoot(document.getElementById("root")).render(v.jsx(er.StrictMode,{children:v.jsx(H1,{})}));
+`;function hm({isMobile:e}){return v.jsxs($1,{isMobile:e,className:"section-size","data-aos":"fade","data-aos-easing":"linear","data-aos-duration":"1800",children:[v.jsx("div",{className:"blur"}),v.jsx("img",{src:D1,alt:"seal"}),v.jsx("p",{className:e?"text-sm":"text-md",children:"Nos do Yoga iClub criamos o 15payback, que da a você 15 dias para solicitar seu reembolso sem questionamento ou burocracia alguma caso não esteja satisfeito com o produto."})]})}hm.propTypes={isMobile:D.bool.isRequired};function H1(){const e=Yr.useMediaQuery({query:"(max-width: 1127px)"}),t=Yr.useMediaQuery({query:"(max-width: 744px)"}),n=Yr.useMediaQuery({minWidth:745,maxWidth:1127}),r={isTabletAndMobile:e,isMobile:t,isTablet:n};return v.jsxs(v.Fragment,{children:[v.jsx(sm,{...r}),v.jsx(um,{...r}),v.jsx(pm,{...r}),v.jsx(dm,{...r}),v.jsx(Bp,{...r}),v.jsx(cm,{...r}),!t&&v.jsx(mm,{...r}),v.jsx(fm,{...r}),v.jsx(Fp,{...r}),v.jsx(hm,{...r}),v.jsx(Hp,{...r}),v.jsx(u1,{...r})]})}qa.createRoot(document.getElementById("root")).render(v.jsx(er.StrictMode,{children:v.jsx(H1,{})}));
