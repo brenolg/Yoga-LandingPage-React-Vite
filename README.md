@@ -5,7 +5,7 @@ A Yoga Landing Page é uma página de destino atraente e responsiva para promove
 
 <img width="100%" src="./demo.gif" />
 
-<a	href="http://isabellacayuela.com.br/"
+<a	href="https://isabellacayuela.com.br/"
 	target="_blank"
 	rel="noopener noreferrer"> Yoga Landing Page
 <a/>
