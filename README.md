@@ -16,6 +16,10 @@ A Yoga Landing Page é uma página de destino atraente e responsiva para promove
 - Apresentação do instrutor e sua biografia
 - Horários disponíveis para as aulas
 
+# Requisitos 
+#### O principal requisito foi seguir o design fornecido na Figma e as diretrizes definidas pela equipe de marketing e design.
+#### [Figma](https://www.figma.com/file/giJBj97zFxQWOWoaGokP2g/Design-Test-05?type=design&node-id=0%3A1&mode=design&t=RCDQteIR9xnkHbzB-1) - Link do protótipo do projeto.
+
 # Tecnologias Utilizadas
 
 - React
@@ -29,9 +33,10 @@ A Yoga Landing Page é uma página de destino atraente e responsiva para promove
 - JavaScript
 - HTML
 - CSS
+  
 # Instalação do Projeto Localmente
 
-Não é necessário rodar o projeto localmente para ver o jogo rodando, pois ele está rodando nesse [link](http://isabellacayuela.com.br/).
+Não é necessário rodar o projeto localmente para ver o jogo rodando, pois ele está rodando nesse [Link](https://isabellacayuela.com.br/).
 
 Caso queira rodar local mesmo assim, siga o tutorial abaixo.
 
@@ -64,7 +69,10 @@ Abra o navegador e acesse http://localhost:5173/ para visualizar a página.
 Gostaria de agradecer às seguintes pessoas por sua contribuição:
 
 - [Marina Lavalle](https://www.linkedin.com/in/marina-lavalle/) - Designer responsável pelo design do projeto.
+- [AnimalAnimal](https://animalanimal.com.br) - Consultoria de Marketing.
 - [Caio Godoi](https://www.linkedin.com/in/caio-augusto-ferreira-godoy-8171a7124/)  - Desenvolvedor que auxiliou no desenvolvimento e deploy AWS.
+
+
 
 
 Obrigado a todos que contribuíram para tornar este projeto possível!
