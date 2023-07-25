@@ -22,12 +22,11 @@ export default defineConfig(({ command, mode }) => {
         }),
       ],
     };
-  } else {
-    return {
-      base: '/Yoga-LandingPage-React-Vite',
-      plugins: [
-        react(),
-      ],
-    };
   }
+  return {
+    base: '/Yoga-LandingPage-React-Vite',
+    plugins: [
+      react(),
+    ],
+  };
 });
