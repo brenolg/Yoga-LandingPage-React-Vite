@@ -3,7 +3,6 @@ import React from 'react';
 import PriceCard from './PriceCard';
 import PricesContainer from './styles';
 
-const premium = true;
 export default function Prices({ isTabletAndMobile, isMobile }) {
   return (
     <PricesContainer id="prices">
@@ -20,13 +19,13 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
             ? (
               <>
                 <PriceCard
-                  isPremium={premium}
+                  isPremium
                   isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
-                  price="R$ 160,00/mês"
-                  link="https://pay.hotmart.com/J71174272X?off=yxz27hdf&bid=1688599747445"
+                  price="R$ 180,00/mês"
+                  link="https://pay.hotmart.com/J71174272X?off=sf2wt9cz&bid=1690060768930"
                   list={[
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',
@@ -101,13 +100,13 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                 />
 
                 <PriceCard
-                  isPremium={premium}
+                  isPremium
                   isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
-                  price="R$ 160,00/mês"
-                  link="https://pay.hotmart.com/J71174272X?off=yxz27hdf&bid=1688599747445"
+                  price="R$ 180,00/mês"
+                  link="https://pay.hotmart.com/J71174272X?off=sf2wt9cz&bid=1690060768930"
                   list={[
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',

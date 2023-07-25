@@ -22,7 +22,7 @@ box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 }//1.5 de padding para não ficar colado no scroll da tela
 
 .headerNav img {
-  height: 52%;
+  max-width: 19.5rem;
 }
 
 .button_container {

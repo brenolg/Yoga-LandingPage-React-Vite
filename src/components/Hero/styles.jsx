@@ -23,10 +23,12 @@ width: 50%;
   flex-direction: column;
   flex-shrink: 0;
   margin: auto;
+  max-width: 90%;
+  padding-bottom: 0.8rem;
 }
 
 .main_text {
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
   margin: auto;
   max-width: 80%;
 }
