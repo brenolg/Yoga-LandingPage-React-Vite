@@ -1,34 +1,47 @@
-import "./Global.css";
-import { AccessSection } from "./components/AccessSection";
-import { DescriptionSection } from "./components/DescriptionSection";
-import { DoubtsSection } from "./components/DoubtsSection";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { HeroSection } from "./components/HeroSection";
-import { MomentSection } from "./components/MomentSection";
-import { PillarsSection } from "./components/PillarsSection";
-import { PricesSection } from "./components/PricesSection";
-import { QuestionsCarrousel } from "./components/QuestionsCarrousel";
-import { ReviewsCarrousel } from "./components/ReviewsCarrousel";
-import { isMobile } from "react-device-detect";
-import { SealSection } from "./components/SealSection";
-
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+import About from './components/About/About';
+import Access from './components/Access/Access';
+import Doubts from './components/Doubts/Doubts';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Moment from './components/Moment/Moment';
+import Pillars from './components/Pillars/Pillars';
+import Prices from './components/Prices/Prices';
+import QuestionsCarrousel from './components/QuestionsCarrousel/QuestionsCarrousel';
+import ReviewsCarrousel from './components/ReviewsCarrousel/ReviewsCarrousel';
+import Seal from './components/Seal/Seal';
+// Responsive check:  Header/ hero / Questions / pillars / access / moment /reviews / doubts / seal /
 function App() {
+  const isTabletAndMobile = useMediaQuery({ query: '(max-width: 1127px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 744px)' });
+  const isTablet = useMediaQuery({ minWidth: 745, maxWidth: 1127 });
+
+  const devicesProps = {
+    isTabletAndMobile,
+    isMobile,
+    isTablet,
+  };
 
   return (
     <>
-      <Header />
-      <HeroSection />
-      <QuestionsCarrousel />
-      <PillarsSection />
-      <AccessSection />
-      <MomentSection />
-      {!isMobile && <ReviewsCarrousel />}
-      <PricesSection />
-      <DoubtsSection />
-      <SealSection />
-      <DescriptionSection />
-      <Footer />
+      <Header {...devicesProps} />
+      <Hero {...devicesProps} />
+      <QuestionsCarrousel {...devicesProps} />
+      <Pillars {...devicesProps} />
+      <Access {...devicesProps} />
+      <Moment {...devicesProps} />
+
+      {!isMobile && (
+      <ReviewsCarrousel {...devicesProps} />
+      )}
+
+      <Prices {...devicesProps} />
+      <Doubts {...devicesProps} />
+      <Seal {...devicesProps} />
+      <About {...devicesProps} />
+      <Footer {...devicesProps} />
     </>
   );
 }

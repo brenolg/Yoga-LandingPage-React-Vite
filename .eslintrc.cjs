@@ -1,15 +1,24 @@
 module.exports = {
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
-  rules: {
-    'react-refresh/only-export-components': 'warn',
+  env: {
+    browser: true,
+    es2021: true,
   },
-}
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+  ],
+  overrides: [
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: [
+    'react',
+  ],
+  rules: {
+    'react/jsx-props-no-spreading': 'off',
+    'no-array-index-key': 'off',
+    'react/no-array-index-key': 'off',
+  },
+};
