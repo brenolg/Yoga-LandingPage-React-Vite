@@ -37,7 +37,7 @@ export default function Doubts({ isMobile, isTabletAndMobile, isTablet }) {
           isMobile={isMobile}
           isTablet={isTablet}
           question="Como funciona o crédito recorrente?"
-          answer="O valor total do iClub Pro anual é R$1.920,00, porém esse valor não irá comprometer totalmente o limite do seu cartão de crédito e sim apenas os R$160,00 por mes"
+          answer="O valor total do iClub Pro anual é R$2.160,00, porém esse valor não irá comprometer totalmente o limite do seu cartão de crédito e sim apenas os R$180,00 por mês"
         />
 
         <DoubtCard
