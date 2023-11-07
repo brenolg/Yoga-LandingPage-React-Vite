@@ -20,7 +20,8 @@ export default function Doubts({ isMobile, isTabletAndMobile, isTablet }) {
           isMobile={isMobile}
           isTablet={isTablet}
           question="Tenho passe livre pelas aulas ao vivo?"
-          answer="Sim, nós temos 4 aulas ao vivo na semana você escolhe quando praticar. As turmas são nas terças e quintas as 9h e as 19h30."
+          answer="Sim, nós temos 4 aulas ao vivo na semana você escolhe quando praticar. As turmas são nas terças: 8h e 19h30, e quintas: 8h e 9h."
+
         />
 
         <DoubtCard
