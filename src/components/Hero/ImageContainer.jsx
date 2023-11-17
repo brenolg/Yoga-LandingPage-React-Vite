@@ -1,6 +1,6 @@
 import React from 'react';
-import bela from '../../images/hero-image.png';
 import { ImageContainerStyle } from './styles';
+import belaBlack from '../../images/heroBlack.png';
 
 export default function ImageContainer() {
   return (
@@ -11,7 +11,7 @@ export default function ImageContainer() {
       data-aos-duration="1800"
     >
       <div className="outer_element">
-        <img className="bela_img" src={bela} alt="bela-img" />
+        <img className="bela_img" src={belaBlack} alt="bela-img" />
       </div>
     </ImageContainerStyle>
 

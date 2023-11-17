@@ -108,7 +108,8 @@ padding-left: 7.5rem;
   bottom: 0;
   height: 100%;
   position: absolute;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 950px) {

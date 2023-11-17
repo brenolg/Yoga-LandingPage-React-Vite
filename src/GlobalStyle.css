@@ -46,6 +46,8 @@
 
   --C4: #123939;
 
+  --C5: #0C2424;
+
   --C2-50p: rgba(201, 211, 208, 0.5);
 
   --spacing-s-1: 0.8rem;
@@ -221,7 +223,6 @@ body {
   background-color: #e3e6e5;
   min-height: 100vh;
   overflow-x: hidden;
-  width: 100vw;
   position: relative;
   padding-bottom: var(--footer-height);
 }
