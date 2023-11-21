@@ -1,6 +1,6 @@
 import React from 'react';
 import BlackStyles from './IclubPriceStyles';
-import line from '../../images/LinePrice.svg';
+import line from '../../images/LinePrice.png';
 
 export default function IclubProPrice() {
   return (

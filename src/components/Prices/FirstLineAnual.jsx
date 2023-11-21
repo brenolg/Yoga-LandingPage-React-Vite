@@ -1,5 +1,5 @@
 import React from 'react';
-import BlackImage from '../../images/LinePrice.svg';
+import BlackImage from '../../images/LinePriceAnual.png';
 import BlackStyle from './FirstLineStyle';
 
 export default function FirstLineAnual() {

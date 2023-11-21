@@ -65,6 +65,8 @@ button {
   color: #123939;
   color: var(--C5);
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button span {

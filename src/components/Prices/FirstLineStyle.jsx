@@ -13,8 +13,11 @@ const BlackStyles = styled.li`
   left: 50%;
   z-index: 1;
   width: 100%;
+  opacity: 100%;
   transform: translate(-50%, -50%);
 }
+
+
 
 `;
 

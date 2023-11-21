@@ -36,6 +36,7 @@ flex-direction: column;
   z-index: 1;
   transform: translate(-50%, 50%);
   width: 100%;
+  opacity: 90%;
 }
 
 h4 {
