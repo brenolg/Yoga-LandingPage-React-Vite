@@ -6,7 +6,7 @@ height: 9.6rem;
 width: 100vw;
 position: sticky;
 top: 0;
-z-index: 1;
+z-index: 3;
 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 
 .link {

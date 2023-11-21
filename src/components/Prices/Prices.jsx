@@ -25,7 +25,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   title="iClub Pro"
                   subTitle="(anual)"
                   price="R$ 180,00/mês"
-                  link="https://pay.hotmart.com/J71174272X?off=0x1wq6ay"
+                  link="https://pay.hotmart.com/J71174272X?off=ikdqz1zf"
                   list={[
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',
@@ -65,6 +65,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   title="iClub"
                   subTitle="mensal"
                   price="R$ 69,90/mês"
+                  mensal
                   link="https://pay.hotmart.com/J71174272X?off=4o7gr397"
                   list={[
                     'Acesso a plataforma com aulas gravadas',
@@ -106,7 +107,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   title="iClub Pro"
                   subTitle="(anual)"
                   price="R$ 180,00/mês"
-                  link="https://pay.hotmart.com/J71174272X?off=0x1wq6ay"
+                  link="https://pay.hotmart.com/J71174272X?off=ikdqz1zf"
                   list={[
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',
@@ -126,6 +127,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   title="iClub"
                   subTitle="mensal"
                   price="R$ 69,90/mês"
+                  mensal
                   link="https://pay.hotmart.com/J71174272X?off=4o7gr397"
                   list={[
                     'Acesso a plataforma com aulas gravadas',

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const HeroContainer = styled.section`
   flex-direction: row;
   padding-bottom : 0;
+  padding-top: 100px;
 `;
 
 const TextContainerStyle = styled.div`
@@ -86,11 +87,11 @@ width: 50%;
 `;
 
 const ImageContainerStyle = styled.div`
-display: flex;
-flex-shrink: 0;
-height: 65vh;
-justify-content: flex-end;
-padding-left: 7.5rem;
+  display: flex;
+  flex-shrink: 0;
+  height: 65vh;
+  justify-content: flex-end;
+  padding-left: 7.5rem;
 
 .outer_element {
   background: var(--C1);

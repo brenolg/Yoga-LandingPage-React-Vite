@@ -13,6 +13,8 @@ import QuestionsCarrousel from './components/QuestionsCarrousel/QuestionsCarrous
 import ReviewsCarrousel from './components/ReviewsCarrousel/ReviewsCarrousel';
 import Seal from './components/Seal/Seal';
 import BlackCarrousel from './components/BlackCarrousel/BlackCarrousel';
+import BlackHeader from './components/BlackHeader/BlackHeader';
+import StickyFooter from './components/StickyFooter/StickyFooter';
 
 function App() {
   const isTabletAndMobile = useMediaQuery({ query: '(max-width: 1127px)' });
@@ -28,6 +30,7 @@ function App() {
   return (
     <>
       <Header {...devicesProps} />
+      <BlackHeader {...devicesProps} />
       <Hero {...devicesProps} />
       <QuestionsCarrousel {...devicesProps} />
       <BlackCarrousel {...devicesProps} text="Yoga iClub 50% off" />
@@ -45,6 +48,7 @@ function App() {
       <Seal {...devicesProps} />
       <About {...devicesProps} />
       <Footer {...devicesProps} />
+      <StickyFooter />
     </>
   );
 }

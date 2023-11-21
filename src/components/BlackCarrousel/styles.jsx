@@ -11,7 +11,7 @@ const CarrouselContainer = styled.div`
 .carrouselInner {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll 26s linear infinite;
+  animation: scroll 48s linear infinite;
 }
 
 @keyframes scroll {
