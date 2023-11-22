@@ -15,7 +15,7 @@ const ProContainerStyle = styled.div`
   color: var(--C1, #EFEFEF);
   text-align: right;
   font-family: syne;
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.45px;
@@ -84,6 +84,7 @@ const ProContainerStyle = styled.div`
   flex: 1;
   align-self: flex-end;
   width: 100%;
+  font-family: syne;
 }
 
 .lineContainerPro {
@@ -147,7 +148,7 @@ const ProContainerStyle = styled.div`
   }
 
   .proMonth {
-    font-size: 18px;
+    font-size: 16px;
     padding-right: 0px;
   }
 

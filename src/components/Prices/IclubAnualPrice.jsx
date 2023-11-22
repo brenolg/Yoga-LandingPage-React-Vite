@@ -8,16 +8,16 @@ export default function IclubAnualPrice() {
     <BlackStyles className="price">
 
       <div className="upperContainer">
-        <span className="twelve">por 12X</span>
+        <span className="twelve">por 12x</span>
 
         <div className="lineContainerPrice">
           <img src={line} alt="linePrice" className="linePrice" />
-          <span>de 12X</span>
+          <span>de 12x</span>
           <span>R$ 39,90/mês</span>
         </div>
       </div>
 
-      <h4>R$ 19,95/mês</h4>
+      <h4>R$ 19,95/mês<spa className="asterisk ">*</spa></h4>
     </BlackStyles>
 
   );

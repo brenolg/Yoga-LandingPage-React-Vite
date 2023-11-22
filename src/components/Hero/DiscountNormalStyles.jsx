@@ -2,20 +2,20 @@ import styled from 'styled-components';
 
 const ProContainerStyle = styled.div`
   position: absolute;
-  bottom: 135px;
+  bottom: 150px;
   right: -15px;
   height: 170px;
   color: var(--C1, #EFEFEF);
   width: 170px;
   border-radius: 50%;
-  background: #0C2424;
+  background: #123939;
   z-index: 1;
 
 .proMonth {
   color: var(--C1, #EFEFEF);
   text-align: right;
   font-family: syne;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.45px;
@@ -91,6 +91,7 @@ const ProContainerStyle = styled.div`
   align-self: flex-end;
   padding-left: 5px;
   width: 100%;
+  font-family: Syne;
 }
 
 .lineContainerPro {
@@ -151,7 +152,7 @@ const ProContainerStyle = styled.div`
   }
 
   .proMonth {
-    font-size: 12px;
+    font-size: 10px;
     padding-right: 0px;
   } */
 

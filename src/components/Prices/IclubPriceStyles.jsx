@@ -43,6 +43,12 @@ h4 {
   font-size: 42px;
 }
 
+.asterisk{
+  position: relative;
+  top: -15px;
+  right: 0px;
+  font-size: 15px;
+}
 
 
 `;

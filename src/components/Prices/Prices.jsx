@@ -35,6 +35,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                     'Aulas didáticas para avançar e   lapidar sua prática',
                     'Acesso a bônus exclusivos da comunidade',
                     'Pagamento recorrente, 12x de R$180 (não compromete o limite do cartão)',
+                    '*O valor parcelado possui acréscimo',
                   ]}
                 />
 
@@ -55,6 +56,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                     'Acesso a bônus exclusivos da comunidade',
                     'Acesso a bônus exclusivos da comunidade',
                     'Pagamento parcelado, até 12x de R$39,90',
+                    '*O valor parcelado possui acréscimo',
                   ]}
                 />
 
@@ -97,6 +99,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                     'Acesso a bônus exclusivos da comunidade',
                     'Acesso a bônus exclusivos da comunidade',
                     'Pagamento parcelado, até 12x de R$39,90',
+                    '*O valor parcelado possui acréscimo',
                   ]}
                 />
 
@@ -117,6 +120,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                     'Aulas didáticas para avançar e   lapidar sua prática',
                     'Acesso a bônus exclusivos da comunidade',
                     'Pagamento recorrente, 12x de R$180 (não compromete o limite do cartão)',
+                    '*O valor parcelado possui acréscimo',
                   ]}
                 />
 
