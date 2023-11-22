@@ -9,10 +9,12 @@ function BlackHeader() {
 
     <HeaderContainer>
       <div className="subContainer">
-        <div className="yogaText">
-          <span>Yoga iClub com</span>
-          <span>50% de desconto</span>
-        </div>
+        <Link className="link" to="prices" {...defaultScrollProps}>
+          <div className="yogaText">
+            <span>Yoga iClub com</span>
+            <span>50% de desconto</span>
+          </div>
+        </Link>
 
         <img src={BlackImage} alt="Black img" />
 
