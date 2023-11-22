@@ -20,7 +20,7 @@ const ProContainerStyle = styled.div`
   font-weight: 500;
   letter-spacing: 0.45px;
   padding-right: 10px;
-  margin-top: -5px;
+  margin-top: 0px;
 }
 
 .proLine {
@@ -65,15 +65,15 @@ const ProContainerStyle = styled.div`
 
 .proPrice {
   color: var(--C1, #EFEFEF);
-  text-align: left;
+  text-align: center;
   font-family: syne;
   display: flex;
   flex-direction: column;
-  font-size: 28px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   width: 90%;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   position: relative;
   padding-left: 3px;
 }
@@ -81,8 +81,8 @@ const ProContainerStyle = styled.div`
 .asterisk{
   position: absolute;
   top: 5px;
-  right: 0px;
-  font-size: 15px;
+  right: -7px;
+  font-size: 12px;
 }
 
 .porDoze {

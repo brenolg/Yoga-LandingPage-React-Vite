@@ -23,12 +23,12 @@ export default function DiscountNormal() {
           <div className="lineContainerPro">
             <img src={line} alt="line" className="proLine" />
             <span>de 12x</span>
-            <span>R$ 180,00/mês</span>
+            <span>R$ 39,90/mês</span>
 
           </div>
         </div>
         <span className="proPrice">
-          <span>R$ 90,00</span>
+          <span>R$ 19,95</span>
           <span className="proMonth">por mês</span>
 
           <spa className="asterisk ">*</spa>
