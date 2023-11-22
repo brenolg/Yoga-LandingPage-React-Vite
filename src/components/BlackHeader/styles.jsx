@@ -24,6 +24,7 @@ const HeaderContainer = styled.header`
 .yogaText {
   display:flex;
   flex-direction: column;
+  max-height: 90%;
 }
 
 span {
@@ -82,6 +83,14 @@ img {
     display: none;
   }
 }
+
+
+@media screen and (max-width: 350px) {
+  span {
+    font-size: 15px;
+  }
+}
+
 `;
 
 export default HeaderContainer;

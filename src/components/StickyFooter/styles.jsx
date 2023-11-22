@@ -8,6 +8,7 @@ const HeaderContainer = styled.header`
   bottom: 0;
   position: sticky;
   top: 0;
+  text-align: center;
   z-index: 99;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
   display: flex;
@@ -84,6 +85,13 @@ img {
   .button {
     display: none;
   }
+}
+
+@media screen and (max-width: 350px) {
+  span {
+    font-size: 15px;
+  }
+
 }
 `;
 

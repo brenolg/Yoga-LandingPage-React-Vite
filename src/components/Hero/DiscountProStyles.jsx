@@ -9,7 +9,7 @@ const ProContainerStyle = styled.div`
   width: 260px;
   border-radius: 50%;
   background: #0C2424;
-  z-index: 1;
+  z-index: 99;
 
 .proMonth {
   color: var(--C1, #EFEFEF);
@@ -152,7 +152,11 @@ const ProContainerStyle = styled.div`
     padding-right: 0px;
   }
 
-}
+
+  @media screen and (max-width: 350px) {
+    top: 14px;
+    left: -20px; 
+  }}
 `;
 
 export default ProContainerStyle;

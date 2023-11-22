@@ -117,7 +117,9 @@ const ProContainerStyle = styled.div`
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 400px) {
+  bottom: 30%;
+  right: -20%;
 
 /* 
   .proTitle {

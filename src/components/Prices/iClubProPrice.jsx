@@ -17,7 +17,10 @@ export default function IclubProPrice() {
         </div>
       </div>
 
-      <h4>R$ 90,00/mês<spa className="asterisk ">*</spa></h4>
+      <h4>
+        R$ 90,00/mês
+        <spa className="asterisk ">*</spa>
+      </h4>
     </BlackStyles>
 
   );

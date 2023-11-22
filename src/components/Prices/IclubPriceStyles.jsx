@@ -6,12 +6,10 @@ flex-direction: column;
 
 .upperContainer {
   display: flex;
-  width: 298px;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 .upperContainer .twelve{
   font-size: 18px;
@@ -51,6 +49,36 @@ h4 {
 }
 
 
+@media screen and (max-width: 750px) {
+  h4 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h4 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h4 {
+    font-size: 38px;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+  h4 {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  h4 {
+    font-size: 30px;
+  }
+}
 `;
 
 export default BlackStyles;
