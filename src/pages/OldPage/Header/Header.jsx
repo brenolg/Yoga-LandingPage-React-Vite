@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-scroll';
-import yogaLogo from '../../images/yoga_iclub.svg';
-import defaultScrollProps from '../../utils/defaultScrollProps';
+import yogaLogo from '../../../images/yoga_iclub.svg';
+import defaultScrollProps from '../../../utils/defaultScrollProps';
 import HeaderContainer from './styles';
 
 function Header({ isTablet }) {

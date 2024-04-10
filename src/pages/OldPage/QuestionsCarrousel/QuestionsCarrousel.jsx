@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import questionsArray from '../../utils/questionsArray';
+import questionsArray from '../../../utils/questionsArray';
 import QuestionsCarrouselContainer from './styles';
 
 export default function QuestionsCarrousel({ isMobile, isTabletAndMobile }) {

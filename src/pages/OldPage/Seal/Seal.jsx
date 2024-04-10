@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import seal from '../../images/seal.svg';
+import seal from '../../../images/seal.svg';
 import SealContainer from './styles';
 
 export default function Seal({ isMobile }) {

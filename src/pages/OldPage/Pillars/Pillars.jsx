@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import body from '../../images/body.png';
-import mind from '../../images/mind.png';
-import soul from '../../images/soul.png';
+import body from '../../../images/body.png';
+import mind from '../../../images/mind.png';
+import soul from '../../../images/soul.png';
 import PillarCard from './PillarCard';
 import { PillarsContainer } from './styles';
 

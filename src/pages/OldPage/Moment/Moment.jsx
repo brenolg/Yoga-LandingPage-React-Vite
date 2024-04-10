@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import accessImg from '../../images/access_img.png';
+import accessImg from '../../../images/access_img.png';
 import TextCard from './TextCard';
 import { MomentContainer } from './styles';
 

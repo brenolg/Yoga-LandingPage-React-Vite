@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import yoga from '../../images/practiceYoga.png';
+import yoga from '../../../images/practiceYoga.png';
 
 const ReviewsCarrouselContainer = styled.section`
 color: var(--C4);

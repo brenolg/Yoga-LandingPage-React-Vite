@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-scroll';
-import defaultScrollProps from '../../utils/defaultScrollProps';
+import defaultScrollProps from '../../../utils/defaultScrollProps';
 import { TextContainerStyle } from './styles';
 
 export default function TextContainer({ isTabletAndMobile, isMobile, isTablet }) {

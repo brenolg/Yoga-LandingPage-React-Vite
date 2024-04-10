@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import instagram from '../../images/instagram.svg';
-import whatsapp from '../../images/whatsapp.svg';
-import yogaLogo from '../../images/yoga_iclub.svg';
-import youtube from '../../images/youtube.svg';
-import defaultScrollProps from '../../utils/defaultScrollProps';
+import instagram from '../../../images/instagram.svg';
+import whatsapp from '../../../images/whatsapp.svg';
+import yogaLogo from '../../../images/yoga_iclub.svg';
+import youtube from '../../../images/youtube.svg';
+import defaultScrollProps from '../../../utils/defaultScrollProps';
 import FooterContainer from './styles';
 
 export default function Footer(isMobile) {

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { useRef, useState } from 'react';
-import after from '../../images/afterIcon.svg';
-import prev from '../../images/prevIcon.svg';
-import reviewsArray from '../../utils/reviewsArray';
+import after from '../../../images/afterIcon.svg';
+import prev from '../../../images/prevIcon.svg';
+import reviewsArray from '../../../utils/reviewsArray';
 import ReviewsCarrouselContainer from './styles';
 
 export default function ReviewsCarrousel({ isTabletAndMobile, isMobile }) {

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import imgDesktop from '../../images/bela-about-desktop.png';
-import imgMobile from '../../images/bela-about-mobile.png';
-import imgTablet from '../../images/bela-about-tablet.png';
+import imgDesktop from '../../../images/bela-about-desktop.png';
+import imgMobile from '../../../images/bela-about-mobile.png';
+import imgTablet from '../../../images/bela-about-tablet.png';
 import { AboutContainer, ContactContainer } from './styles';
 
 export default function About({ isMobile, isTablet }) {

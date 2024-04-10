@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import arow from '../../images/arow.png';
-import girlYoga from '../../images/girlYoga.png';
-import graphic from '../../images/graphic.png';
-import onlineTechs from '../../images/onlineTechs.png';
+import arow from '../../../images/arow.png';
+import girlYoga from '../../../images/girlYoga.png';
+import graphic from '../../../images/graphic.png';
+import onlineTechs from '../../../images/onlineTechs.png';
 import AccessCard from './AccessCard';
 import { AccessContainer } from './styles';
 
