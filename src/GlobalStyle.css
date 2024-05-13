@@ -223,7 +223,6 @@ body {
   overflow-x: hidden;
   width: 100vw;
   position: relative;
-  padding-bottom: var(--footer-height);
 }
 
 /* Tablet */

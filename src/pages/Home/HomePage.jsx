@@ -1,23 +1,24 @@
 import React from 'react';
 import Header from './Header';
 import HeroSection from './HeroSection';
-import OnlineClassesSection from './OnlineClassesSection';
-import PresencialClassesSection from './PresencialClassesSection';
-import EventsSection from './EventsSection';
+import OnlineClasses from './OnlineClasses/OnlineClasses';
+import PresencialClasses from './PresencialClasses/PresencialClassesSection';
+import EventsSection from './EventsSection/EventsSection';
 import PartnersSection from './PartnersSection';
 import Footer from './Footer';
+import MainContainer from './HomePagesStyles';
 
 function Router() {
   return (
-    <main>
+    <MainContainer>
       <Header />
       <HeroSection />
-      <OnlineClassesSection />
-      <PresencialClassesSection />
+      <OnlineClasses />
+      <PresencialClasses />
       <EventsSection />
       <PartnersSection />
       <Footer />
-    </main>
+    </MainContainer>
   );
 }
 

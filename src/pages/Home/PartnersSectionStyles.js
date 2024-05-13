@@ -17,23 +17,25 @@ position: relative;
   min-height: 8rem;
   flex-wrap: wrap;
 }
-.divider{
+.divider-btn {
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height:  13.6rem;
-  background-repeat: no-repeat;
-  z-index: 1;
+  height: 136px;
   transform: translateY(50%);
 }
+
 .last-cta {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background: none;
   gap: 1.6rem;
   padding-top: 2.4rem;
   color: var(--C4);
+  position: relative;
+  z-index: 99;
 }
 .last-cta a{
   padding: 0.9rem 1.6rem ; 

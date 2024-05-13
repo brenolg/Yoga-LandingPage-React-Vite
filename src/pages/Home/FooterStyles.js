@@ -14,6 +14,7 @@ background: var(--C4);
 padding-left: 7.6rem;
 padding-right: 7.6rem;
 z-index: 99;
+position: relative;
 
 .footer-nav  {
   display: flex;

@@ -3,12 +3,8 @@ import styled from 'styled-components';
 const FooterContainer = styled.div`
 background: var(--C2);
 color: var(--C4);
-position: absolute;
 height: var(--footer-height);
-left: 0;
-bottom: 0;
 width: 100%;
-
 .main_container {
   height: 100%;
   flex-direction: row;  

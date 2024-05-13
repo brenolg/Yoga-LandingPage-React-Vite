@@ -1,5 +1,6 @@
 import React from 'react';
 import MainContainer from './HeroSectionStyles';
+import divider from '../../images/DIVISOR.png';
 
 function HeroSection() {
   return (
@@ -18,6 +19,7 @@ function HeroSection() {
 
         </div>
       </div>
+      <img src={divider} alt="divider" className="divider" />
     </MainContainer>
   );
 }

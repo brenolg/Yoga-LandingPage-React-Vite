@@ -39,7 +39,14 @@ position: relative;
 .hero-card-paragraph {
   color: var(--C4);
 }
-
+.divider {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 136px;
+  transform: translateY(50%);
+}
 `;
 
 export default HeroContainer;

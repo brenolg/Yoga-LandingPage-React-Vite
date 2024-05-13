@@ -12,6 +12,7 @@ import piracanga from '../../images/piracanga.svg';
 import plantapra from '../../images/plantapra.svg';
 import farm from '../../images/farm.svg';
 import gili from '../../images/gili.svg';
+import divider from '../../images/DIVISOR.png';
 
 function PartnersSection() {
   return (
@@ -41,6 +42,7 @@ function PartnersSection() {
           converse comigo
         </a>
       </div>
+      <img src={divider} alt="divider" className="divider-btn" />
 
     </PartnersSectionContainer>
   );
