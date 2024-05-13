@@ -1053,7 +1053,7 @@ position: relative;
   height: 136px;
   transform: translateY(50%);
 }
-`,To="/Yoga-LandingPage-React-Vite/assets/DIVISOR-352c5979.png";function Nw(){return u.jsxs(Rw,{children:[u.jsxs("div",{className:"hero-card-home",children:[u.jsx("h1",{className:"hero-card-title H3",children:"Seja muito bem vinda(0)!"}),u.jsxs("div",{className:"hero-card-paragraph-container",children:[u.jsx("p",{className:"hero-card-paragraph text-md",children:"Descubra uma vida com mais disciplina no tempo dedicado a si mesma, tranquilidade mental e clareza em suas decisões."}),u.jsx("p",{className:"hero-card-paragraph text-md",children:"Noites de sono serenas e completas são apenas o começo. Desperte sua flexibilidade, força e  consciência corporal."})]})]}),u.jsx("img",{src:To,alt:"divider",className:"divider"})]})}const Iw=Y.section`
+`,To="/Yoga-LandingPage-React-Vite/assets/DIVISOR-352c5979.png";function Nw(){return u.jsxs(Rw,{children:[u.jsxs("div",{className:"hero-card-home",children:[u.jsx("h1",{className:"hero-card-title H3",children:"Seja muito bem vinda(o)!"}),u.jsxs("div",{className:"hero-card-paragraph-container",children:[u.jsx("p",{className:"hero-card-paragraph text-md",children:"Descubra uma vida com mais disciplina no tempo dedicado a si mesma, tranquilidade mental e clareza em suas decisões."}),u.jsx("p",{className:"hero-card-paragraph text-md",children:"Noites de sono serenas e completas são apenas o começo. Desperte sua flexibilidade, força e  consciência corporal."})]})]}),u.jsx("img",{src:To,alt:"divider",className:"divider"})]})}const Iw=Y.section`
     display: flex;
     height: 386px;
     padding: 8px 76px var(--spacing-s3, 24px) 76px;
@@ -1072,6 +1072,7 @@ position: relative;
     font-style: normal;
     font-weight: 600;
     line-height: 48px; /* 137.143% */
+    margin-bottom: 1rem;
 }
 #wrapper {
     width: 100%;
@@ -1174,11 +1175,11 @@ button:active {
   width: 100% ;
   text-align: center;
   font-family: ivy , syne, sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  letter-spacing: 1.2px;
+  font-weight: 800;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 .event-back-card {
   display: flex;
@@ -1266,6 +1267,7 @@ position: relative;
   line-height: 1.2em;
   position: relative;
   z-index: 99;
+  margin-bottom: 1rem;
 }
 .online-classes-main-container {
   display: flex;
@@ -1350,6 +1352,12 @@ button:active {
   color: var(--C4);
   width: 100% ;
   text-align: center;
+  font-family: ivy , syne, sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 .plus-img-container {
   position: absolute;
@@ -1375,7 +1383,6 @@ button:active {
   gap: 1.2rem;
   border-radius: 2.4rem;
   background: #8CA09A75;
-
 }
 .event-card-paragraph {
   font-family: syne, ivy, sans-serif;
@@ -1424,6 +1431,7 @@ padding-bottom: 3.2rem;
 position: relative;
 .title {
   color: var(--C4);
+  margin-bottom: 1rem;
 }
 .events-card-main-container{
   display: flex;
@@ -1439,6 +1447,12 @@ position: relative;
   text-align: center;
   color: var(--C4);
   font-family: ivy, sans-serif;
+  font-family: ivy , syne, sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 .divider-btn {
   width: 100%;
@@ -1537,6 +1551,7 @@ padding-bottom: 3.2rem;
 position: relative;
 .partner-title {
   color: var(--C4);
+  margin-bottom: 1rem;
 }
 .partners-container {
   display: flex;
@@ -1580,7 +1595,16 @@ position: relative;
   border: 1px solid var(--C4);
   color: var(--C4);
 }
-`,fS="/Yoga-LandingPage-React-Vite/assets/iWanna-d05d9d09.svg",pS="/Yoga-LandingPage-React-Vite/assets/bolixe-eebe59d9.svg",mS="/Yoga-LandingPage-React-Vite/assets/Logodeuzzaroxa-a42627b3.svg",hS="/Yoga-LandingPage-React-Vite/assets/FELICITEA-54b4a12b.svg",gS="/Yoga-LandingPage-React-Vite/assets/gotaRoxa-b6f9592a.svg",vS="/Yoga-LandingPage-React-Vite/assets/hidratei-60742a62.svg",yS="/Yoga-LandingPage-React-Vite/assets/climb-37b820b7.svg",xS="data:image/png;base64,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",wS="/Yoga-LandingPage-React-Vite/assets/piracanga-b1a075d5.svg",SS="/Yoga-LandingPage-React-Vite/assets/plantapra-6e85bfff.svg",ES="/Yoga-LandingPage-React-Vite/assets/farm-b13fe596.svg",kS="/Yoga-LandingPage-React-Vite/assets/gili-7954b564.svg";function CS(){return u.jsxs(dS,{children:[u.jsx("h1",{className:"partner-title text-3xl",children:"Parceiros"}),u.jsxs("div",{className:"partners-container",children:[u.jsx("img",{src:fS,alt:"Parceiro"}),u.jsx("img",{src:pS,alt:"Parceiro"}),u.jsx("img",{src:mS,alt:"Parceiro"}),u.jsx("img",{src:hS,alt:"Parceiro"}),u.jsx("img",{src:gS,alt:"Parceiro"}),u.jsx("img",{src:vS,alt:"Parceiro"}),u.jsx("img",{src:yS,alt:"Parceiro"}),u.jsx("img",{src:xS,alt:"Parceiro"}),u.jsx("img",{src:wS,alt:"Parceiro"}),u.jsx("img",{src:SS,alt:"Parceiro"}),u.jsx("img",{src:ES,alt:"Parceiro"}),u.jsx("img",{src:kS,alt:"Parceiro"})]}),u.jsxs("div",{className:"last-cta ",children:[u.jsx("span",{className:"text-xl",children:"Para parcerias entre em contato:"}),u.jsx("a",{href:"https://api.whatsapp.com/send/?phone=5531996793158",target:"_blank",rel:"noopener noreferrer",children:"converse comigo"})]}),u.jsx("img",{src:To,alt:"divider",className:"divider-btn"})]})}const jS="/Yoga-LandingPage-React-Vite/assets/yoga_iclub1-65b842c9.svg",bS=Y.footer`
+.last-btn {
+  color: var(--C1, #EFEFEF);
+  font-family: syne;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15.953px; /* 113.951% */
+  letter-spacing: 0.35px;
+}
+`,fS="/Yoga-LandingPage-React-Vite/assets/iWanna-d05d9d09.svg",pS="/Yoga-LandingPage-React-Vite/assets/bolixe-eebe59d9.svg",mS="/Yoga-LandingPage-React-Vite/assets/Logodeuzzaroxa-a42627b3.svg",hS="/Yoga-LandingPage-React-Vite/assets/FELICITEA-54b4a12b.svg",gS="/Yoga-LandingPage-React-Vite/assets/gotaRoxa-b6f9592a.svg",vS="/Yoga-LandingPage-React-Vite/assets/hidratei-60742a62.svg",yS="/Yoga-LandingPage-React-Vite/assets/climb-37b820b7.svg",xS="data:image/png;base64,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",wS="/Yoga-LandingPage-React-Vite/assets/piracanga-b1a075d5.svg",SS="/Yoga-LandingPage-React-Vite/assets/plantapra-6e85bfff.svg",ES="/Yoga-LandingPage-React-Vite/assets/farm-b13fe596.svg",kS="/Yoga-LandingPage-React-Vite/assets/gili-7954b564.svg";function CS(){return u.jsxs(dS,{children:[u.jsx("h1",{className:"partner-title text-3xl",children:"Parceiros"}),u.jsxs("div",{className:"partners-container",children:[u.jsx("img",{src:fS,alt:"Parceiro"}),u.jsx("img",{src:pS,alt:"Parceiro"}),u.jsx("img",{src:mS,alt:"Parceiro"}),u.jsx("img",{src:hS,alt:"Parceiro"}),u.jsx("img",{src:gS,alt:"Parceiro"}),u.jsx("img",{src:vS,alt:"Parceiro"}),u.jsx("img",{src:yS,alt:"Parceiro"}),u.jsx("img",{src:xS,alt:"Parceiro"}),u.jsx("img",{src:wS,alt:"Parceiro"}),u.jsx("img",{src:SS,alt:"Parceiro"}),u.jsx("img",{src:ES,alt:"Parceiro"}),u.jsx("img",{src:kS,alt:"Parceiro"})]}),u.jsxs("div",{className:"last-cta ",children:[u.jsx("span",{className:"text-xl",children:"Para parcerias entre em contato:"}),u.jsx("a",{href:"https://api.whatsapp.com/send/?phone=5531996793158",target:"_blank",rel:"noopener noreferrer",className:"last-btn",children:"converse comigo"})]}),u.jsx("img",{src:To,alt:"divider",className:"divider-btn"})]})}const jS="/Yoga-LandingPage-React-Vite/assets/yoga_iclub1-65b842c9.svg",bS=Y.footer`
 width: 100%;
 padding-top: 1.6rem;
 padding-bottom: 1.6rem;
