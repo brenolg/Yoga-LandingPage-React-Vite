@@ -11,26 +11,22 @@ width: 100%;
   align-items: center;
   padding: 0 1.5rem;
 }
-
 .scroll-main-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 50%;
 }
-
 .link {
   height: 100%;
   align-items: center;
   display: flex;
   max-width: 45%;
 }
-
 .logo {
   width: 19.5rem;
   max-width: 100%;
 }
-
 .scroll-sub-container {
   align-items: center;
   display: flex;

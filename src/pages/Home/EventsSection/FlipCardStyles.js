@@ -40,7 +40,12 @@ button:active {
   flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.text-paragraph-container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .event-card-paragraph {
   font-family: syne, ivy, sans-serif;
@@ -50,6 +55,7 @@ button:active {
   line-height: 27px;
   letter-spacing: 0.27px;
   text-align: justify;
+  gap: 30rem;
 }
 .destaque-span {
   text-align: justify;
@@ -80,12 +86,51 @@ button:active {
   border: 1px solid var(--C4, #1E8689);
   color: var(--C4, #1E8689);
 }
-
+@media (max-width: 825px) {
+  .event-front-card {
+    width: 328px;
+  }
+  .event-back-card {
+    width: 328px;
+  }
+}
+@media (max-width: 740px) {
+  .event-front-card {
+    width: 100%;
+  }
+  .event-back-card {
+    width: 100%;
+  }
+}
+@media (max-width: 395px) {
+  .event-front-card {
+    height: 39rem;
+  }
+  .event-back-card {
+    height: 39rem;
+  }
+}
+@media (max-width: 350px) {
+  .event-front-card {
+    height: 41rem;
+  }
+  .event-back-card {
+    height: 41rem;
+  }
+}
 `;
 
-const FlipCardFront = styled.button`
+const ThirdFlipCardStyle = styled(EventFlipCard)`
+@media (max-width: 1265px) {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 740px) {
+  margin-left: 0;
+  transform: translateX(0%);
+}
 `;
 const FlipCardBack = styled.button`
 `;
 
-export { FlipCardBack, FlipCardFront, EventFlipCard };
+export { FlipCardBack, ThirdFlipCardStyle, EventFlipCard };

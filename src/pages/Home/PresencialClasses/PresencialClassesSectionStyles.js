@@ -10,7 +10,6 @@ position: relative;
 .online-classes-title {
   color: var(--C4);
   font-family: syne, ivy, sans-serif;
-  font-family: syne, ivy, sans-serif;
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
@@ -18,6 +17,7 @@ position: relative;
   line-height: 1.2em;
   position: relative;
   z-index: 99;
+  margin-bottom: 1rem;
 }
 .online-classes-main-container {
   display: flex;
@@ -66,6 +66,41 @@ position: relative;
   left: 0;
   height: 136px;
   transform: translateY(-50%);
+}
+@media (max-width: 1250px) {
+  .online-classes-main-container {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .map-container {
+    width: 100%;
+    height: 204px;
+  }
+  .card-main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem 2.4rem ;
+    padding-left: 0;
+  }
+}
+@media (max-width: 960px) {
+  padding: 8px 32px var(--spacing-s3, 24px) 32px;
+}
+@media (max-width: 600px) {
+  .card-main-container {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}
+@media (max-width: 550px) {
+  padding: 8px 16px;
+    .online-classes-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
 }
 
 `;

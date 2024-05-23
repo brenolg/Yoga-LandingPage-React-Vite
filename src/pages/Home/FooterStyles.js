@@ -15,7 +15,6 @@ padding-left: 7.6rem;
 padding-right: 7.6rem;
 z-index: 99;
 position: relative;
-
 .footer-nav  {
   display: flex;
   gap: 2rem;
@@ -28,6 +27,13 @@ position: relative;
 .footer-logo {
   width: 20.1rem;
   height: 5.1rem;
+}
+@media (max-width: 550px) {
+  padding: 12px var(--spacing-s3, 24px) 8px var(--spacing-s3, 24px);
+  .footer-logo {
+  width: 151px;
+  height: 4.2rem;
+}
 }
 `;
 

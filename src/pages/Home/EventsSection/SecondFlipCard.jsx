@@ -11,13 +11,13 @@ function SecondFlipCard() {
         <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="event-front-card second" aria-label="Nature Yoga" />
 
         <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="event-back-card">
-          <div>
+          <div className="text-paragraph-container">
             <p className="event-card-paragraph">
               <span className="destaque-span">NatureYOGA:</span>
               {' '}
               a yoga trip com propósito para sair da rotina e se (re)conectar com si mesmo!
             </p>
-            <br />
+
             <p className="event-card-paragraph">
               Durante 4 dias aprofundaremos na prática e na
               filosofia do Yoga equilibrando seu corpo,
@@ -25,7 +25,7 @@ function SecondFlipCard() {
             </p>
           </div>
           <a
-            href="https://chat.whatsapp.com/EfiSFkE5OOqJiuNM6S5cv8"
+            href="https://unah.eco/nature-yoga/"
             target="_blank"
             rel="noopener noreferrer"
           >

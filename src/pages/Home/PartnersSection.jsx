@@ -17,7 +17,7 @@ import divider from '../../images/DIVISOR.png';
 function PartnersSection() {
   return (
     <PartnersSectionContainer>
-      <h1 className="partner-title text-3xl">Parceiros</h1>
+      <h1 className="partner-title">Parceiros</h1>
       <div className="partners-container">
         <img src={iWanna} alt="Parceiro" />
         <img src={bolixe} alt="Parceiro" />
@@ -33,11 +33,12 @@ function PartnersSection() {
         <img src={gili} alt="Parceiro" />
       </div>
       <div className="last-cta ">
-        <span className="text-xl">Para parcerias entre em contato:</span>
+        <span>Para parcerias entre em contato:</span>
         <a
           href="https://api.whatsapp.com/send/?phone=5531996793158"
           target="_blank"
           rel="noopener noreferrer"
+          className="last-btn"
         >
           converse comigo
         </a>

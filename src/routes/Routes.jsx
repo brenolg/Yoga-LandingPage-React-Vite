@@ -6,7 +6,7 @@ import HomePage from '../pages/Home/HomePage';
 function Router() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="Yoga-LandingPage-React-Vite" element={<HomePage />} />
       <Route path="/iclub" element={<OldPage />} />
     </Routes>
   );

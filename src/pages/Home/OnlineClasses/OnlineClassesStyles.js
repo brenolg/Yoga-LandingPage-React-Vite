@@ -9,16 +9,15 @@ const OnlineClassesMainContainer = styled.section`
     gap: 8px;
     background-color: var(--C2);
     position: relative;
-
 .online-classes-title {
     color: var(--C4);
     font-family: syne, ivy, sans-serif;
-    color: var(--C4, #123939);
     /* text-3xl */
     font-size: 35px;
     font-style: normal;
     font-weight: 600;
     line-height: 48px; /* 137.143% */
+    margin-bottom: 1rem;
 }
 #wrapper {
     width: 100%;
@@ -75,6 +74,18 @@ const OnlineClassesMainContainer = styled.section`
     height: 12px;
     background: var(--C4);
     border-radius: 50%;
+}
+@media (max-width: 960px) {
+    padding: 8px 32px var(--spacing-s3, 24px) 32px;
+}
+@media (max-width: 550px) {
+    padding: 8px 16px;
+    .online-classes-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    }
 }
 `;
 

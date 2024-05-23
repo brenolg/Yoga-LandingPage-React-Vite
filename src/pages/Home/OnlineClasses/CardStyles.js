@@ -52,11 +52,11 @@ button:active {
   width: 100% ;
   text-align: center;
   font-family: ivy , syne, sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  letter-spacing: 1.2px;
+  font-weight: 800;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 .event-back-card {
   display: flex;

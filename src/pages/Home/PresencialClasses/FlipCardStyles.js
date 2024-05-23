@@ -24,20 +24,30 @@ button:active {
 }
 .event-front-card.first {
   background-image: url(${firstImage});
+  background-position: top;
 }
 .event-front-card.second {
   background-image: url(${secondImage});
+  background-position: center;
 }
 .event-front-card.third {
   background-image: url(${thirdImage});
+  background-position: center;
 }
 .event-front-card.fourth{
   background-image: url(${fourthImage});
+  background-position: center;
 }
 .sub-card-text {
   color: var(--C4);
   width: 100% ;
   text-align: center;
+  font-family: ivy , syne, sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.15ch;
+  line-height: 1.5em;
 }
 .plus-img-container {
   position: absolute;
@@ -63,7 +73,6 @@ button:active {
   gap: 1.2rem;
   border-radius: 2.4rem;
   background: #8CA09A75;
-
 }
 .event-card-paragraph {
   font-family: syne, ivy, sans-serif;
@@ -73,7 +82,6 @@ button:active {
   line-height: 24px; /* 150% */
   color: var(--C4, #123939);
 }
-
 .event-card-button {
   font-family: syne, ivy, sans-serif;
   display: flex;
@@ -98,7 +106,14 @@ button:active {
   border: 1px solid var(--C4, #1E8689);
   color: var(--C4, #1E8689);
 }
-
+@media (max-width: 1250px) {
+  .event-back-card {
+    width: 100%;
+  }
+  .event-front-card {
+    width: 100%;
+  }
+}
 `;
 
 const FlipCardFront = styled.button`

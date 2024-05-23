@@ -9,7 +9,7 @@ function EventsSection() {
   return (
     <EventsSectionContainer>
 
-      <h2 className="title text-3xl">Eventos Presenciais</h2>
+      <h2 className="title ">Eventos Presenciais</h2>
       <div className="events-card-main-container">
         <FirstFlipCard />
         <SecondFlipCard />

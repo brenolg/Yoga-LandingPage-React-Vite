@@ -11,14 +11,14 @@ function FirstFlipCard() {
         <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="event-front-card first" aria-label="Yoga no Parque" />
 
         <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="event-back-card">
-          <div>
+          <div className="text-paragraph-container">
             <p className="event-card-paragraph">
               <span className="destaque-span">Yoga no Parque</span>
               {' '}
               é um projeto focado em gerar
               conexão e expansão, afinal queremos um mundo mais livre e saudável.
             </p>
-            <br />
+
             <p className="event-card-paragraph">
               Um projeto
               {' '}
