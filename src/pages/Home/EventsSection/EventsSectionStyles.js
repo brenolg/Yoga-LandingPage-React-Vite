@@ -12,13 +12,13 @@ position: relative;
 .title {
   color: var(--C4);
   margin-bottom: 1rem;
-   color: var(--C4);
-    font-family: syne, ivy, sans-serif;
-    /* text-3xl */
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 48px; /* 137.143% */
+  color: var(--C4);
+  font-family: syne, ivy, sans-serif;
+  /* text-3xl */
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 137.143% */
 }
 .events-card-main-container{
   display: flex;
@@ -74,4 +74,4 @@ position: relative;
 
 `;
 
-export { EventsSectionContainer };
+export default EventsSectionContainer;

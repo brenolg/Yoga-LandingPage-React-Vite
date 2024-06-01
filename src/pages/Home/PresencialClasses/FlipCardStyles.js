@@ -24,7 +24,7 @@ button:active {
 }
 .event-front-card.first {
   background-image: url(${firstImage});
-  background-position: top;
+  background-position: center;
 }
 .event-front-card.second {
   background-image: url(${secondImage});

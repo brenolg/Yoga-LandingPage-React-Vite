@@ -41,7 +41,7 @@ function OnlineClasses() {
     return section === currentSection ? '#12393985' : '#8CA09A75';
   }
   return (
-    <OnlineClassesMainContainer>
+    <OnlineClassesMainContainer id="aulas-online">
       <h1 className="online-classes-title">Aulas online</h1>
       <div id="wrapper">
         <div id="carousel" ref={carouselRef}>

@@ -21,6 +21,5 @@ module.exports = {
     'no-array-index-key': 'off',
     'react/no-array-index-key': 'off',
     'linebreak-style': 'off',
-    'import/prefer-default-export': 'off',
   },
 };

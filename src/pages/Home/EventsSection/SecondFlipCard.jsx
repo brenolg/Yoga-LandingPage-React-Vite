@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { EventFlipCard } from './FlipCardStyles';
+import Plus from '../../../images/Plus.svg';
+import textImg from '../../../images/TextoNatureYOGA.svg';
 
 function SecondFlipCard() {
   const [isFlipped, setIsFlipped] = React.useState(false);
@@ -8,7 +10,12 @@ function SecondFlipCard() {
   return (
     <EventFlipCard>
       <ReactCardFlip isFlipped={isFlipped} flipSpeedBackToFront={1.3} flipSpeedFrontToBack={1.3}>
-        <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="event-front-card second" aria-label="Nature Yoga" />
+        <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="event-front-card second" aria-label="Nature Yoga">
+          <div className="plus-img-container">
+            <img src={Plus} alt="Mais informações" />
+          </div>
+          <img src={textImg} className="text-img second" alt="label" />
+        </button>
 
         <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="event-back-card">
           <div className="text-paragraph-container">

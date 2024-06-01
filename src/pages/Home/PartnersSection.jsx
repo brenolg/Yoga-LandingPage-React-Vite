@@ -16,7 +16,7 @@ import divider from '../../images/DIVISOR.png';
 
 function PartnersSection() {
   return (
-    <PartnersSectionContainer>
+    <PartnersSectionContainer id="contatos">
       <h1 className="partner-title">Parceiros</h1>
       <div className="partners-container">
         <img src={iWanna} alt="Parceiro" />

@@ -17,9 +17,44 @@ button:active {
   height: 36rem;
   border-radius: 2.4rem;
   background-size: cover;
+  background-position: center;
+}
+.plus-img-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  width: 52px;
+  height: 52px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 24px 0px 28px;
+  background: var(--c-375, rgba(140, 160, 154, 0.75));
 }
 .event-front-card.first {
   background-image: url(${firstImage});
+}
+.text-img{
+  position: absolute;
+  width: 80%;
+  height: fit-content;
+  z-index: 1;
+  color: white;
+}
+.text-img.first {
+  bottom: 5%;
+  right: 10%;
+}
+.text-img.second {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+.text-img.third {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
 }
 .event-front-card.second {
   background-image: url(${secondImage});
@@ -100,6 +135,10 @@ button:active {
   }
   .event-back-card {
     width: 100%;
+  }
+  .event-front-card.first {
+    background-position: 30% 30%;
+  
   }
 }
 @media (max-width: 395px) {

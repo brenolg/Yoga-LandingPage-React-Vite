@@ -77,9 +77,21 @@ const OnlineClassesMainContainer = styled.section`
 }
 @media (max-width: 960px) {
     padding: 8px 32px var(--spacing-s3, 24px) 32px;
+    .forward-button  {
+        right: 1.6rem;
+    }
+    .return-button{
+        left: 1.3rem;
+    }
 }
 @media (max-width: 550px) {
     padding: 8px 16px;
+    .forward-button  {
+        right: 1.2rem;
+    }
+    .return-button{
+        left: 0.4rem;
+    }
     .online-classes-title {
     font-size: 32px;
     font-style: normal;

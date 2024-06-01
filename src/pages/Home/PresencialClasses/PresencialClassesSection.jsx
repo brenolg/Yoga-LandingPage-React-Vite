@@ -8,7 +8,7 @@ import divider from '../../../images/DIVISOR.png';
 
 function PresencialClassesSection() {
   return (
-    <PresencialClassesContainer>
+    <PresencialClassesContainer id="aulas-presenciais">
       <h1 className="online-classes-title ">Aulas presenciais</h1>
       <div className="online-classes-main-container">
         <div className="map-container">

@@ -26,25 +26,32 @@ button:active {
   background-size: cover;
 }
 .event-front-card.one {
+  background-position: center;
   background-image: url(${firstImage});
 }
 .event-front-card.two {
   background-image: url(${secondImage});
+  background-position: center;
 }
 .event-front-card.third{
   background-image: url(${thirdImage});
+  background-position: center;
 }
 .event-front-card.fourth{
   background-image: url(${fourthImage});
+  background-position: center;
 }
 .event-front-card.fifth {
   background-image: url(${fifthImage});
+  background-position: center;
 }
 .event-front-card.sixth{
   background-image: url(${sixthImage});
+  background-position: center;
 }
 .event-front-card.seventh {
   background-image: url(${seventhImage});
+  background-position: center;
 }
 .sub-card-text {
   margin-top: 0.8rem;
