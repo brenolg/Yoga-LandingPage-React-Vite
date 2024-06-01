@@ -1508,7 +1508,7 @@ button:active {
 }
 .event-front-card.first {
   background-image: url(${Qw});
-  background-position: top;
+  background-position: center;
 }
 .event-front-card.second {
   background-image: url(${Gw});
@@ -1804,6 +1804,10 @@ button:active {
   }
   .event-back-card {
     width: 100%;
+  }
+  .event-front-card.first {
+    background-position: 30% 30%;
+  
   }
 }
 @media (max-width: 395px) {
