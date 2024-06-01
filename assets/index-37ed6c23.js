@@ -1672,7 +1672,7 @@ position: relative;
     }
 }
 
-`,a2="/Yoga-LandingPage-React-Vite/assets/yogaNoParque-2e1ef641.png",i2="/Yoga-LandingPage-React-Vite/assets/natureYoga-353c6193.png",o2="/Yoga-LandingPage-React-Vite/assets/iceYoga-90caa26a.png",Tu=Y.div`
+`,a2="/Yoga-LandingPage-React-Vite/assets/yogaNoParque-2e1ef641.png",i2="/Yoga-LandingPage-React-Vite/assets/natureYoga-353c6193.png",o2="/Yoga-LandingPage-React-Vite/assets/iceYoga-52264c5d.png",Tu=Y.div`
 button:hover {
   opacity: 1;
 }
