@@ -24,7 +24,7 @@ export default defineConfig(({ command, mode }) => {
     };
   }
   return {
-    base: '/Yoga-LandingPage-React-Vite',
+    base: '/',
     plugins: [
       react(),
     ],
