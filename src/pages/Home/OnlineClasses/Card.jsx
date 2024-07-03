@@ -27,7 +27,7 @@ function Card({ text, className, subText }) {
           <button
             type="button"
             className="event-card-button"
-            onClick={() => navigate('/iclub')}
+            onClick={() => window.open('https://yogaiclub.isabellacayuela.com.br/', '_blank')}
           >
             quero participar
           </button>
